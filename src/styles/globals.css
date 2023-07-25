@@ -1,0 +1,12 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+@import "../fonts/edenred/edenred.css";
+
+@import "react-responsive-carousel/lib/styles/carousel.min.css";
+@import "./swiper.css";
+
+* {
+  font-family: "Edenred";
+}
