@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { useRouter } from "next/router";
+import LogoEdenred from "./images/edenred.png";
 
 const Header = () => {
   return (
@@ -9,18 +10,17 @@ const Header = () => {
     relative
     pl-[5%]
     pr-[5%]
-    pt-8
+    pt-4
     lg:block
-    border-b-[1px]
     border-solid
     bg-white
-    pb-8
+    pb-4
     z-30
     `}
     >
       <div className="flex items-center justify-between">
         <a href="https://ticketlog.com.br/" className="w-[250px]">
-          <Image alt="TicketLog" priority />
+          <Image alt="TicketLog" src={LogoEdenred} priority />
         </a>
         <div className="flex justify-end items-center">        
           <div className="hidden min-[1445px]:flex min-[1285px]:items-center">

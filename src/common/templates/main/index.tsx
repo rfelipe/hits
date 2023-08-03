@@ -9,7 +9,7 @@ type Props = {
 
 const MainTemplate = ({ children }: Props) => {
   return (
-    <div>     
+    <div className="pt-12">     
      <Header />
       <main>{children}</main>
       <Footer />
