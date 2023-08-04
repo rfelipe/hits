@@ -1,8 +1,102 @@
+import Button from "../Buttons";
+import Link from "next/link";
+import Image from "next/image";
+import LogoEdenred from '../Header/images/logo-edenred.png';
+import Linkedin from './images/linkedin.png';
+import Facebook from './images/facebook.png';
+import Youtube from './images/youtube.png';
+import Spotify from './images/spotify.png';
+import Instagram from './images/instagram.png';
+
 const Footer = () => {
+  const links = [
+    {
+      label: 'Despesas',
+      href: '/',
+      color: 'bg-light-violet'
+    },
+    {
+      label: 'Combustível',
+      href: '/',
+      color: 'bg-light-olive'
+    },
+    {
+      label: 'Sobre a Edenred',
+      href: '/',
+      color: 'bg-light-pink'
+    },
+    {
+      label: 'Perguntas Frequentes',
+      href: '/',
+      color: 'bg-light-pink'
+    }
+  ]
   return (
-    <footer className="pl-[5%] pr-[5%] pb-32 ">
-      <div className="lg:flex lg:justify-between">
-        
+    <footer className="lg:max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="flex justify-between">
+        <svg width="315" height="479" viewBox="0 0 315 479" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M59.0001 280C85.8445 301.264 119.916 314 157 314C194.084 314 228.156 301.273 255 280C228.156 258.736 194.084 246 157 246C119.916 246 85.8445 258.727 59.0001 280Z" fill="#FED0C8" />
+          <path d="M255.687 279.758C291.641 250.963 314.666 206.729 314.666 157.124C314.666 70.3483 244.232 4.27029e-05 157.333 2.7509e-05C70.434 1.2315e-05 0.000231842 70.3387 0.000216668 157.124C0.000207995 206.729 23.025 250.963 58.9786 279.758C85.9201 258.187 120.115 245.278 157.333 245.278C194.551 245.278 228.746 258.188 255.687 279.758Z" fill="#F72717" />
+          <path fill-rule="evenodd" clipRule="evenodd" d="M2.48201e-05 410L2.18041e-05 479L20.2633 479C47.2702 526.61 98.5495 558.75 157.371 558.75C216.195 558.75 267.475 526.612 294.482 479L315 479L315 410L314.541 410C314.675 407.35 314.742 404.683 314.742 402C314.742 352.513 291.712 308.385 255.75 279.658C228.802 301.177 194.598 314.056 157.371 314.056C120.144 314.056 85.9409 301.177 58.9929 279.658C23.0305 308.385 8.83681e-05 352.513 8.6205e-05 402C8.60877e-05 404.683 0.0677434 407.35 0.201471 410L2.48201e-05 410Z" fill="#B0EFFF" />
+        </svg>
+        <div className="flex flex-col self-end">
+          {/* <div> */}
+            <div className="flex items-center pb-14">
+              {links.map((link) => (
+
+                <>
+
+                  <Link key={link.href} href={link.href}>
+                    <a >
+
+                      <div className='relative group px-6 py-2 '>
+                        <div className="rounded-md text-lg font-light text-black relative">{link.label}
+                          <div className={`absolute -bottom-2 left-0 right-0 w-[64px] mx-auto scale-x-0 h-1 ${link.color || 'bg-light-pink'} transition-all duration-300 ease-out group-hover:scale-x-100`}></div>
+
+                        </div>
+                      </div>
+                    </a>
+                  </Link>
+                </>
+              ))}
+              <Image src={LogoEdenred} alt={'Logo Edenred'} width={105} height={67}></Image>
+            </div>
+
+            <div className="flex mb-14">
+              <Button type="readMore" href="/">Acesso a plataforma Hit Despesas</Button>
+              <Button type="readMore" href="/">Acesso a plataforma Hit Combustível</Button>
+            </div>
+            <div className="flex items-center gap-16 px-6">
+                <Link href={'/'}>
+                  <a>
+                    <Image src={Linkedin} alt={'Icon'} width={24} height={24}></Image>
+                  </a>
+                </Link>
+                                <Link href={'/'}>
+                  <a>
+                    <Image src={Facebook} alt={'Icon'} width={24} height={24}></Image>
+                  </a>
+                </Link>
+                                <Link href={'/'}>
+                  <a>
+                    <Image src={Instagram} alt={'Icon'} width={24} height={24}></Image>
+                  </a>
+                </Link>
+                                <Link href={'/'}>
+                  <a>
+                    <Image src={Spotify} alt={'Icon'} width={24} height={24}></Image>
+                  </a>
+                </Link>
+                                <Link href={'/'}>
+                  <a>
+                    <Image src={Youtube} alt={'Icon'} width={24} height={24}></Image>
+                  </a>
+                </Link>
+
+            </div>
+          </div>
+
+        {/* </div> */}
       </div>
     </footer>
   );

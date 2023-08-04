@@ -12,6 +12,9 @@ import ProductPrice from "../common/components/ProductPrice";
 import { ProductDataPrice } from "../types";
 import EasyToUse from "../common/components/EasyToUse";
 import WhoEdenred from "../common/components/WhoEdenred";
+import ProductVideo from '../common/components/ProductVideo';
+import WantMoreSuccess from "../common/components/WantMoreSuccess";
+
 const Despesas: NextPage = () => {
   const carouselItems = [
     {
@@ -46,12 +49,24 @@ const Despesas: NextPage = () => {
 
   const faqs = [
   {
-    question: 'What is Next.js?',
-    answer: 'Next.js is a framework for building React applications with server-side rendering and other helpful features.',
+    question: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit?',
+    answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit?',
   },
   {
-    question: 'What is TypeScript?',
-    answer: 'TypeScript is a typed superset of JavaScript that compiles to plain JavaScript.',
+    question: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit?',
+    answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit?',
+  },
+    {
+    question: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit?',
+    answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit?',
+  },
+    {
+    question: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit?',
+    answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit?',
+  },
+    {
+    question: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit?',
+    answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit?',
   },
 
 ];
@@ -85,10 +100,12 @@ const Despesas: NextPage = () => {
         </div>
         <ProductAdvantages></ProductAdvantages>
         <Carousel items={carouselItems}></Carousel>
-        <Faq faqs={faqs}></Faq>
         <ProductPrice {...firstProductData}></ProductPrice>
         <EasyToUse />
+        <ProductVideo/>
         <WhoEdenred />
+        <Faq faqs={faqs}></Faq>
+        <WantMoreSuccess />
       </div>
     </MainTemplate>
   );

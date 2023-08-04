@@ -7,7 +7,7 @@ import IconPhone from '../../../icons/Phone';
 
 const typeIcons = {
   clock: <IconClock />,
-  card: <IconMail />,
+  mail: <IconMail />,
   note: <IconNote />,
   phone: <IconPhone />,
 };
