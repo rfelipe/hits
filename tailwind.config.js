@@ -17,6 +17,7 @@ module.exports = {
       "cold-white": "#F1F7FF",
       "light-olive": "#DCF691",
       "original-red": "#F72717",
+      "light-red": "#FED0C8",
     },
   },
   plugins: [require("flowbite/plugin"), require("tailwind-scrollbar-hide")],
