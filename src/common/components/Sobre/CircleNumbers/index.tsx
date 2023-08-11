@@ -5,20 +5,57 @@ import clock from "./images/clock.svg"
 import user from "./images/user.svg"
 import edit from "./images/edit.svg"
 import CountUp from "react-countup";
+import { Swiper, SwiperSlide } from "swiper/react";
+
+
+
 
 
 const CircleNumbers = () => {
   return (
     <section>
-        <div className="flex items-center justify-end relative pb-56">
-            <div className="w-2/3 mt-32">
-                <div className='pr-6 lg:w-[470px] container mx-auto'>
+        <div className="lg:flex items-center justify-end relative lg:pb-56 pb-12">
+            <div className="lg:w-2/3 lg:mt-32 mt-12">
+                <div className='p-6 lg:w-[470px] container mx-auto'>
                     <h2 className='text-3xl text-black font-light mb-8'>Lorem ipsum dolor amet, consectetur adipiscing elit.</h2>
                     <p className='text-lg mb-6 font-light'>A Edenred é uma das maiores referências do mundo quando o assunto é facilitar a vida de empreendedores e empresas.</p>
                     <p className='text-lg mb-6 font-light'>Mais de <strong>52 milhões de pessoas</strong> utilizam nossos serviços em <strong>45 países</strong>, e contamos com <strong>1 milhão</strong> de empresas clientes e <strong>2 milhões</strong> de estabelecimentos parceiros.</p>
                 </div>
             </div>
-            <div className="w-1/2">
+            <div className="lg:hidden max-w-[90%] ml-auto mr-auto ">
+                <Swiper>
+                    <SwiperSlide className="justify-center items-center flex">
+                        <div className="bg-cold-white w-[227px] h-[227px] py-10 px-5 rounded-full justify-center flex items-center flex-col ">
+                            <Image src={clock} width={48} height={48}/>
+                            <p className="text-2xl">+<CountUp end={2} duration={3}/> milhões</p>
+                            <p className="text-sm">de estabelecimentos</p>
+                        </div>
+                    </SwiperSlide>
+                    <SwiperSlide className="justify-center items-center flex">
+                        <div className="bg-cold-white w-[227px] h-[227px] py-10 px-5 rounded-full justify-center flex items-center flex-col ">
+                            <Image src={mobileHand} width={48} height={48}/>
+                            <p className="text-2xl">+<CountUp end={52} duration={5}/> milhões</p>
+                            <p className="text-sm">de usuários</p>
+                        </div>
+                    </SwiperSlide>
+                    <SwiperSlide className="justify-center items-center flex">
+                        <div className="bg-cold-white w-[227px] h-[227px] py-10 px-5 rounded-full justify-center flex items-center flex-col ">
+                            <Image src={user} width={48} height={48}/>
+                            <p className="text-2xl">+<CountUp end={1} duration={3}/> milhão</p>
+                            <p className="text-sm">de empresas clientes</p>
+                        </div>
+                    </SwiperSlide>
+                    <SwiperSlide className="justify-center items-center flex">
+                        <div className="bg-cold-white w-[227px] h-[227px] py-10 px-5 rounded-full justify-center flex items-center flex-col ">
+                            <Image src={edit} width={48} height={48}/>
+                            <p className="text-2xl"><CountUp end={45} duration={3}/> países</p>
+                            <p className="text-sm text-center">que a Edenred<br/> está presente</p>
+                        </div>
+                    </SwiperSlide>
+                    
+                </Swiper>
+            </div>
+            <div className="lg:w-1/2 hidden lg:block">
                 <svg className="float-right absolute top-0 right-0" width="809" height="640" viewBox="0 0 809 640" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <circle cx="480" cy="480" r="160" fill="#F1F7FF"/>
                     <circle cx="160" cy="480" r="160" fill="#F1F7FF"/>
@@ -31,35 +68,35 @@ const CircleNumbers = () => {
                 <div className=" float-right absolute top-[105px] right-[580px]">
                     <div className="flex items-center flex-col">
                         <Image src={mobileHand} width={48} height={48}/>
-                        <p className="text-2xl">+ <CountUp end={52} duration={5}/> milhões</p>
+                        <p className="text-2xl">+<CountUp end={52} duration={5}/> milhões</p>
                         <p className="text-sm">de usuários</p>
                     </div>
                 </div>
                 <div className=" float-right absolute top-[105px] right-[270px]">
                     <div className="flex items-center flex-col">
                         <Image src={clock} width={48} height={48}/>
-                        <p className="text-2xl">+ <CountUp end={2} duration={3}/> milhões</p>
+                        <p className="text-2xl">+<CountUp end={2} duration={3}/> milhões</p>
                         <p className="text-sm">de estabelecimentos</p>
                     </div>
                 </div>
                 <div className=" float-right absolute top-[415px] right-[585px]">
                     <div className="flex items-center flex-col">
                         <Image src={user} width={48} height={48}/>
-                        <p className="text-2xl">+ <CountUp end={1} duration={3}/> milhão</p>
+                        <p className="text-2xl">+<CountUp end={1} duration={3}/> milhão</p>
                         <p className="text-sm">de empresas clientes</p>
                     </div>
                 </div>
                 <div className=" float-right absolute top-[415px] right-[265px]">
                     <div className="flex items-center flex-col">
                         <Image src={edit} width={48} height={48}/>
-                        <p className="text-2xl">+ <CountUp end={45} duration={3}/> países</p>
+                        <p className="text-2xl"><CountUp end={45} duration={3}/> países</p>
                         <p className="text-sm text-center">que a Edenred<br/> está presente</p>
                     </div>
                 </div>
             </div>
         </div>
-        <div className="flex items-center justify-end pt-32 relative">
-            <div className="w-1/2 ">
+        <div className="lg:flex items-center justify-end lg:pt-32 relative">
+            <div className="lg:w-1/2 hidden lg:block">
                 <svg className="float-left absolute top-0 left-0" width="809" height="640" viewBox="0 0 809 640" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <circle cx="329" cy="480" r="160" transform="rotate(-180 329 480)" fill="#F1F7FF"/>
                     <circle cx="649" cy="480" r="160" transform="rotate(-180 649 480)" fill="#F1F7FF"/>
@@ -98,16 +135,49 @@ const CircleNumbers = () => {
                     </div>
                 </div>
             </div>
-            <div className="w-2/3">
-                <div className='pl-6 lg:w-[470px] container mx-auto'>
+            <div className="lg:w-2/3">
+                <div className='p-6 lg:w-[470px] container mx-auto'>
                     <p className='text-lg mb-6 font-light'>No Brasl, contamos com mais de 130.000 empresas clientes, 8,3 milhões de empregados beneficiados e 500.000 comerciantes credenciados.</p>
                     <p className='text-lg mb-6 font-light'>No mercado nacional, trabalhamos com três linhas de negócios:.</p>
-                    <ul className="ml-10">
+                    <ul className="lg:ml-10 ml-4">
                         <li className="before:inline-block before:-ml-4 before:text-light-red before:font-bold before:w-4 before:content-['\2022'] text-base mt-3 font-medium"><strong>Benefícios ao trabalhador</strong>, com a marca Ticket;</li>
                         <li className="before:inline-block before:-ml-4 before:text-light-red before:font-bold before:w-4 before:content-['\2022'] text-base mt-3 font-medium"><strong>Mobilidade</strong>, com as marcas Ticket Log e Repom;</li>
                         <li className="before:inline-block before:-ml-4 before:text-light-red before:font-bold before:w-4 before:content-['\2022'] text-base mt-3 font-medium"><strong>Soluções de Pagamento e Novos Mercados</strong>, com  Edenred Pay e Punto.</li>
                     </ul>
                 </div>
+            </div>
+            <div className="lg:hidden max-w-[90%] ml-auto mr-auto mt-12">
+                <Swiper>
+                    <SwiperSlide className="justify-center items-center flex">
+                        <div className="bg-cold-white w-[227px] h-[227px] py-10 px-5 rounded-full justify-center flex items-center flex-col ">
+                            <Image src={clock} width={48} height={48}/>
+                            <p className="text-2xl">+<CountUp end={130} duration={5}/> mil</p>
+                            <p className="text-sm text-center">empresas clientes</p>
+                        </div>
+                    </SwiperSlide>
+                    <SwiperSlide className="justify-center items-center flex">
+                        <div className="bg-cold-white w-[227px] h-[227px] py-10 px-5 rounded-full justify-center flex items-center flex-col ">
+                            <Image src={mobileHand} width={48} height={48}/>
+                            <p className="text-2xl">+<CountUp end={8.3} duration={5} decimal="," decimals={1}/> milhões</p>
+                            <p className="text-sm text-center">de usuários</p>
+                        </div>
+                    </SwiperSlide>
+                    <SwiperSlide className="justify-center items-center flex">
+                        <div className="bg-cold-white w-[227px] h-[227px] py-10 px-5 rounded-full justify-center flex items-center flex-col ">
+                            <Image src={edit} width={48} height={48}/>
+                            <p className="text-2xl">+<CountUp end={500} duration={5}/> mil</p>
+                            <p className="text-sm text-center">estabelecimentos<br/>parceiros</p>
+                        </div>
+                    </SwiperSlide>
+                    <SwiperSlide className="justify-center items-center flex">
+                        <div className="bg-cold-white w-[227px] h-[227px] py-10 px-5 rounded-full justify-center flex items-center flex-col ">
+                            <Image src={user} width={48} height={48}/>
+                            <p className="text-2xl">Brasil</p>
+                            <p className="text-sm text-center">Presente em todos os<br/>estados brasileitos</p>
+                        </div>
+                    </SwiperSlide>
+                    
+                </Swiper>
             </div>
         </div>
     </section>

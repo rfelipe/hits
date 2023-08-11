@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const IntroBackgroundSobre = () => {
   return (
-    <div className="absolute -left-[55px] -top-[100px]">
+    <div className="lg:absolute -left-[55px] -top-[100px]">
       <Image src={Img1} width={600} height={600}></Image>
     </div>
   );
