@@ -13,8 +13,8 @@ const Sobre: NextPage = () => {
         <title>Sobre a Endered | Ticket Log</title>
         <meta name="description" content=""></meta>
       </Head>
-      <div className="lg:pt-20">
-        <div className="relative lg:pb-60 overflow-hidden">
+      <div className="lg:pt-10">
+        <div className="relative lg:pb-40 overflow-hidden">
           <IntroBackgroundSobre/>
           <div className="container m-auto z-10 relative">
             <IntroTitleSobre/>
