@@ -3,7 +3,6 @@ import Head from "next/head";
 import MainTemplate from "../common/templates/main";
 import { ProductProvider } from "../common/components/ProductContext";
 import { productsData } from "../common/lib/dataProduct";
-import ProductList from "../common/components/ProductList";
 import { Phone, Clock, Note, Gas } from "../common/components/icons";
 import Button from "../common/components/Buttons";
 import Img3Hits3 from "../static/images/home/hits1.png";

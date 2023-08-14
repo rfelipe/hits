@@ -28,17 +28,17 @@ export const productsData = [
             {
                 tag: 'Hits #1',
                 label: 'Controle de Despesas',
-                title: 'Administre todos os gastos de combustível na sua empresa',
-                text: 'Conte com a gente para o controle e organização dos gastos da sua empresa',
+                title: 'Quer mais sucesso no dia a dia do seu negócio?',
+                text: 'Conte com a gente para o controle e organização de todas as despesas da sua empresa.',
                 showInput: true,
                 colors: productTypeColors.despesas
             },
         ],
         price: [
             {
-                title: 'Quanto você acha justo pagar para resolver a organização das despesas do dia a dia da sua empresa?',
-                price: '3',
-                text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+                title: 'Quanto você acha justo pagar para resolver de vez a organização das despesas do dia a dia da sua empresa?',
+                price: '1,50',
+                text: 'E sem pagar nada nos dois primeiros meses?',
                 colors: productTypeColors.despesas,
                 images: [img1Hits3, img2Hits3, img3Hits3],
             },
@@ -117,26 +117,26 @@ export const productsData = [
                 items: [
                     {
                         type: 'clock',
-                        title: 'Administre despesas fixas e variáveis em tempo real',
-                        text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam et lacinia eros. Duis cursus, nisi a pellentesque finibus.',
+                        title: 'Você está cansado de perder tempo?',
+                        text: 'Com o Hit #1 de despesas, você tem o controle de tudo que está acontecendo no seu negócio. De maneira online, simples de usar.',
                         image: img4Hits1,
                     },
                                         {
                         type: 'note',
-                        title: 'Administre despesas fixas e variáveis em tempo real',
-                        text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam et lacinia eros. Duis cursus, nisi a pellentesque finibus.',
+                        title: 'Controle suas despesas com o aplicativo de carteira virtual.',
+                        text: 'Envie e organize seus comprovantes fiscais,  além de consultar os gastos, saldos e extratos em tempo real.',
                         image: img2Hits3,
                     },
                                         {
                         type: 'phone',
-                        title: 'Administre despesas fixas e variáveis em tempo real',
-                        text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam et lacinia eros. Duis cursus, nisi a pellentesque finibus.',
+                        title: 'Use seu cartão em qualquer estabelecimento.',
+                        text: 'Temos ampla rede parceira com bandeiras Elo e Good Card. Faça sua solicitação agora e comece a usar o seu hit!',
                         image: img4Hits3,
                     },
                                                             {
                         type: 'mail',
-                        title: 'Administre despesas fixas e variáveis em tempo real',
-                        text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam et lacinia eros. Duis cursus, nisi a pellentesque finibus.',
+                        title: 'Organize suas despesas com nossa plataforma de gestão.',
+                        text: 'Você tem todas as despesas organizadas para consultar o período, data local e horário. Contrate agora e comece a economizar!',
                         image: img3Hits3,
                     }
                 ]
@@ -227,7 +227,7 @@ export const productsData = [
                 images: [img1Hits1, img2Hits1, img3Hits1],
                 colors: productTypeColors.despesas,
                 title: 'Quer mais sucesso?',
-                text: 'Se a sua empresa tem veículos, também temos uma solução completa para controle de gastos de combustível e automotivos.',
+                text: 'Se a sua empresa tem gastos de combustível e mobilidade, também temos uma solução completa para você.',
                 label: 'Hit #1',
                 textLabel: 'Quero controlar as despesas do negócio'
             }
