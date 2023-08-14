@@ -4,7 +4,7 @@ const EasyToUse = () => {
     return (
         <div className="pt-16 md:pt-32">
             <div className="container mx-auto px-6 md:px-0">
-                <h2 className="text-3xl md:text-5xl font-light pb-16 text-center">Fácil de usar, fácil de contratar</h2>
+                <h2 className="text-3xl md:text-5xl font-light pb-16 text-center">Fácil de usar, simples de contratar</h2>
                 <div className="flex text-black font-ubuntu text-lg font-semibold justify-center items-center gap-3 pb-12 flex-col md:flex-row">
                     <div className="flex items-center gap-4">
                         <svg width="149" height="182" viewBox="0 0 149 182" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -17,7 +17,7 @@ const EasyToUse = () => {
                             <path d="M57 76.1314C57 67.3746 64.0988 60.2759 72.8555 60.2759L89.7179 60.2759L89.7179 91.987L72.8556 91.987C64.0988 91.987 57 84.8882 57 76.1314Z" fill="#B0EFFF" />
                         </svg>
 
-                        <p className="font-ubuntu lg:w-[200px] w-28 font-light md:font-normal text-grey md:text-black">Contrate de forma simplificada</p>
+                        <p className="font-ubuntu lg:w-[200px] w-28 font-light md:font-normal text-grey md:text-black">Simule a quantidade de cartões que deseja utilizar</p>
                     </div>
                     <svg width="58" height="6" viewBox="0 0 58 6" fill="none" xmlns="http://www.w3.org/2000/svg" className="rotate-90 md:rotate-0 h-12 md:h-auto">
                         <path d="M3 3H55" stroke="#F72717" strokeWidth="5" strokeLinecap="round" strokeDasharray="0.5 15" />
@@ -35,8 +35,7 @@ const EasyToUse = () => {
                             <path d="M90.0469 83.1314C90.0469 74.3746 97.1456 67.2759 105.902 67.2759L122.765 67.2759L122.765 98.987L105.902 98.987C97.1457 98.987 90.0469 91.8882 90.0469 83.1314Z" fill="#B0EFFF" />
                         </svg>
 
-                        <p className="font-ubuntu lg:w-[200px] w-28 font-light md:font-normal text-grey md:text-black">Estabeleça
-                            quem vai usar</p>
+                        <p className="font-ubuntu lg:w-[200px] w-28 font-light md:font-normal text-grey md:text-black">Informe os dados cadastrais necessários</p>
                     </div>
                     <svg width="58" height="6" viewBox="0 0 58 6" fill="none" xmlns="http://www.w3.org/2000/svg" className="rotate-90 md:rotate-0 h-12 md:h-auto">
                         <path d="M3 3H55" stroke="#F72717" strokeWidth="5" strokeLinecap="round" strokeDasharray="0.5 15" />
@@ -54,8 +53,7 @@ const EasyToUse = () => {
                             <path d="M131.917 77.2537C129.025 73.6333 124.582 71.3148 119.6 71.3148C110.885 71.3148 103.82 78.4071 103.82 87.1574C103.82 95.9077 110.884 103 119.6 103C124.582 103 129.025 100.682 131.917 97.0612C129.75 94.3483 128.454 90.9051 128.454 87.1574C128.454 83.4098 129.75 79.9665 131.917 77.2537Z" fill="#B0EFFF" />
                             <path d="M86.0937 87.1314C86.0937 78.3746 93.1925 71.2759 101.949 71.2759L118.812 71.2759L118.812 102.987L101.949 102.987C93.1925 102.987 86.0937 95.8882 86.0937 87.1314Z" fill="#B0EFFF" />
                         </svg>
-                        <p className="font-ubuntu lg:w-[200px] w-28 font-light md:font-normal text-grey md:text-black">Controle as depesas
-                            em tempo real</p>
+                        <p className="font-ubuntu lg:w-[200px] w-28 font-light md:font-normal text-grey md:text-black">Faça o seu login na plataforma e peça seu cartão</p>
                     </div>
                 </div>
                 <div className="flex justify-center"><Button type="red" href="/">Teste grátis por 60 dias</Button></div>

@@ -42,8 +42,9 @@ const CarouselSection: FC<CarouselItems> = ({ items }) => {
                         {
                 breakpoint: 768,
                 settings: {
-                    slidesToShow: 2,
+                    slidesToShow: 1,
                     slidesToScroll: 1,
+                    infinite: false,
                 }
             }
         ],
@@ -65,7 +66,7 @@ const CarouselSection: FC<CarouselItems> = ({ items }) => {
         nextArrow: (
             <div>
                 <button
-                    className='top-full md:top-0 absolute right-1/4 md:-right-6 z-10'
+                    className='top-full md:top-0 absolute right-1/4 md:-right-20 z-10'
                     onClick={handleNext}
                 >
                     <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -82,7 +83,7 @@ const CarouselSection: FC<CarouselItems> = ({ items }) => {
 
     return (
         <div className='pt-14 md:pt-32 container mx-auto'>
-            <h2 className='text-3xl md:text-6xl text-center font-light mb-20'>Lorem ipsum dolor sit</h2>
+            <h2 className='text-3xl md:text-6xl text-center font-light mb-20'>Um cartão que é aceito em todos os lugares que você precisa!</h2>
             <div className='relative md:px-32'>
                 <Slider {...settings}>
                     {items.map((item, index) => (
@@ -90,7 +91,7 @@ const CarouselSection: FC<CarouselItems> = ({ items }) => {
                             key={index}
                             className='md:w-full md:h-full md:flex md:flex-col items-center justify-center relative'
                         >
-                            <div className='flex items-center justify-center ml-auto mb-8 flex-col w-28'>
+                            <div className='flex items-center justify-center m-auto mb-8 flex-col w-28'>
                                 <div className='mb-2'>{typeIcons[item.type]}</div>
                                 <p className='text-grey md:text-black text-base font-light text-center font-ubuntu'>
                                     {item.description}
