@@ -9,9 +9,9 @@ type Props = {
 
 const links = [
   { href: '/despesas', label: 'Despesas', color: 'bg-light-violet'  },
-  { href: '/combustiveis', label: 'Combustíveis', color: 'bg-light-olive' },
-  { href: '/', label: 'Planos' },
-  { href: '/', label: 'Sobre a Edenred' }
+  { href: '/combustivel', label: 'Combustíveis', color: 'bg-light-olive' },
+  { href: '/planos', label: 'Planos', color: 'bg-light-pink' },
+  { href: '/sobre', label: 'Sobre a Edenred', color: 'bg-light-pink' }
 ];
 
 const MainTemplate = ({ children }: Props) => {

@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Button from '../Buttons';
 
 interface IntroTitleProductProps {
   labelName?: string;
@@ -43,6 +44,10 @@ const IntroTitleProduct: React.FC<IntroTitleProductProps> = ({
                     </button>
                     <p className='text-black text-xs font-ubuntu lg:w-56 mx-auto mt-4 font-normal'>Ao continuar, você concorda com a <a className='underline cursor-pointer font-normal font-ubuntu'>Política de Privacidade</a> da Edenred Hits</p>
                 </div>
+            )}
+            
+            {!showInput && (
+                <Button type="red" href="/">Teste grátis por 60 dias</Button>
             )}
         </div>
     );
