@@ -13,7 +13,6 @@ const GlobalMap = () => {
                     <h2 className='text-3xl text-black font-light'>Global:</h2>
                     <h2 className='lg:text-5xl text-3xl text-black mb-8 font-bold'><CountUp end={45} duration={5} /> países atendidos</h2>
                     <p className='text-lg mb-6 font-light'>A Edenred é líder mundial em soluções de benefícios, mobilidade e pagamentos corporativos.</p>
-                    <Button type={'learnMore'} href='/'>Conheça a Edenred</Button>
                 </div>
             </div>
             <div className="mt-12">

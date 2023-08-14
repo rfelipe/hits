@@ -17,7 +17,6 @@ const CircleNumbers = () => {
         <div className="lg:flex items-center justify-end relative lg:pb-56 pb-12">
             <div className="lg:w-2/3 lg:mt-32 mt-12">
                 <div className='p-6 lg:w-[470px] container mx-auto'>
-                    <h2 className='text-3xl text-black font-light mb-8'>Lorem ipsum dolor amet, consectetur adipiscing elit.</h2>
                     <p className='text-lg mb-6 font-light'>A Edenred é uma das maiores referências do mundo quando o assunto é facilitar a vida de empreendedores e empresas.</p>
                     <p className='text-lg mb-6 font-light'>Mais de <strong>52 milhões de pessoas</strong> utilizam nossos serviços em <strong>45 países</strong>, e contamos com <strong>1 milhão</strong> de empresas clientes e <strong>2 milhões</strong> de estabelecimentos parceiros.</p>
                 </div>
@@ -137,7 +136,7 @@ const CircleNumbers = () => {
             </div>
             <div className="lg:w-2/3">
                 <div className='p-6 lg:w-[470px] container mx-auto'>
-                    <p className='text-lg mb-6 font-light'>No Brasl, contamos com mais de 130.000 empresas clientes, 8,3 milhões de empregados beneficiados e 500.000 comerciantes credenciados.</p>
+                    <p className='text-lg mb-6 font-light'>No Brasl, contamos com mais de 130 mil empresas clientes, 8,3 milhões de empregados beneficiados e 500 mil comerciantes credenciados.</p>
                     <p className='text-lg mb-6 font-light'>No mercado nacional, trabalhamos com três linhas de negócios:.</p>
                     <ul className="lg:ml-10 ml-4">
                         <li className="before:inline-block before:-ml-4 before:text-light-red before:font-bold before:w-4 before:content-['\2022'] text-base mt-3 font-medium"><strong>Benefícios ao trabalhador</strong>, com a marca Ticket;</li>

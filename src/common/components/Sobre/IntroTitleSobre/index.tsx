@@ -9,7 +9,7 @@ interface IntroTitleSobreProps {
 
 const IntroTitleSobre: React.FC<IntroTitleSobreProps> = ({
   labelName = 'Sobre a Edenred',
-  title = 'Conte com uma líder mundial em soluções para negócios',
+  title = 'Conte com uma líder mundial em soluções para negócios para apoiar o seu crescimento',
 }) => {
     return (
         <div className='lg:pt-20 lg:w-3/5 float-right'>
