@@ -27,7 +27,7 @@ const arrowVariants = {
 const initialVariant = 'hidden';
 
 const Button: React.FC<ButtonProps> = ({ type, children, href }) => {
-  const buttonClassName = `button ${typeToClassMap[type]} cursor-pointer font-normal inline-flex items-center justify-between max-h-12 max-w-32`;
+  const buttonClassName = `button ${typeToClassMap[type]} cursor-pointer font-normal inline-flex items-center lg:justify-between justify-center max-h-12 max-w-32`;
   const [isHovered, setIsHovered] = useState(false);
 
   const handleMouseEnter = () => {
