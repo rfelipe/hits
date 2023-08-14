@@ -7,7 +7,7 @@ const WhoEdenred = () => {
             <div className="flex items-center justify-end flex-col-reverse md:flex-row md:max-w-7xl md:ml-auto pl-6 md:pl-0">
                 <div className='pr-6 md:w-[480px] container mx-auto'>
                     <h2 className='md:text-5xl text-3xl text-black font-light mb-8 text-center md:text-justify'>Tá, mas quem é essa <span className='font-bold'>Edenred?</span></h2>
-                    <p className='text-grey md:text-black font-ubuntu text-lg md:text-base mb-6 font-light text-center md:text-justify'>Essa parceria é das fortes: a Edenred é líder mundial em serviços e meios de pagamento, e atua como companheira de todas as horas de empresas, trabalhadores e comerciantes.</p>
+                    <p className='text-grey md:text-black font-ubuntu text-lg md:text-base mb-6 font-light text-center md:text-justify'>A Edenred é líder mundial em serviços e meios de pagamento, e atua como companheira de todas as horas das empresas, trabalhadores e comerciantes.</p>
                     <div className='flex justify-center md:justify-start'>
                         <Button type="learnMore" href={'/'}>Saiba mais</Button>
                     </div>

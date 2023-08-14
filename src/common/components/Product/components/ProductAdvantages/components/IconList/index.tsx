@@ -1,5 +1,5 @@
 import React from 'react';
-import { Advantage, IconListProps } from '../../../../../types';
+import { Advantage, IconListProps } from '../../../../../../../types';
 import Icon from '../Icon';
 
 const IconList: React.FC<IconListProps> = ({ advantages, onItemClick, selectedData }) => {

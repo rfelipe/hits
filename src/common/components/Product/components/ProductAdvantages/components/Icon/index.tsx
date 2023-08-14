@@ -1,9 +1,9 @@
 import React from 'react';
-import IconClock from '../../../icons/Clock';
-import IconMail from '../../../icons/Mail';
-import IconNote from '../../../icons/Note';
-import IconPhone from '../../../icons/Phone';
-import { IconProps } from '../../../../../types';
+import IconClock from '../../../../../icons/Clock';
+import IconMail from '../../../../../icons/Mail';
+import IconNote from '../../../../../icons/Note';
+import IconPhone from '../../../../../icons/Phone';
+import { IconProps } from '../../../../../../../types';
 
 const typeIcons = {
   clock: <IconClock />,

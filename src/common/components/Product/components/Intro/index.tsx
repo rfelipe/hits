@@ -43,12 +43,12 @@ const IntroSection: React.FC<IntroProps> = ({ intro }) => {
                         <p className='text-base text-grey md:text-black md:text-lg font-bold lg:w-1/4 my-6 mx-auto font-ubuntu'>{i.text}</p>
 
                         {i.showInput && (
-                            <div className='py-2 relative w-80 mx-auto'>
+                            <div className='py-2 relative md:w-[26rem] w-[19rem] mx-auto'>
                                 <input
                                     type='email'
                                     value={inputValue}
                                     onChange={(e) => setInputValue(e.target.value)}
-                                    placeholder='Coloque seu e-mail e saiba mais'
+                                    placeholder='Insira seu e-mail e baixe o material para saber mais'
                                     className='border border-black rounded-full px-6 py-2 font-light text-sm bg-transparent w-full h-12 placeholder:text-black focus:border-black focus:ring-black font-ubuntu focus:ring-0'
                                 />
                                 <button type='submit' className='w-16 h-16 bg-original-red rounded-full absolute right-0 top-0 hover:bg-black flex items-center justify-center'>

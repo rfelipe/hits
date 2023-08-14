@@ -1,8 +1,8 @@
 import React from 'react';
-import { AdvantageItemProps, AdvantageItems } from '../../../../../types';
+import { AdvantageItemProps, AdvantageItems } from '../../../../../../../types';
 import { useState } from 'react';
 import { motion } from 'framer-motion';
-import Button from '../../../Buttons';
+import Button from '../../../../../Buttons';
 
 const DataItem: React.FC<AdvantageItemProps & { renderImage: (props: AdvantageItems) => JSX.Element, isLoading: boolean }> = ({ advantages, renderImage }) => {
   const [isLoading, setIsLoading] = useState(true);
