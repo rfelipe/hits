@@ -17,11 +17,10 @@ const Document = () => (
         defer
         src="https://cdn.cookielaw.org/consent/daaec1ff-c365-4c92-85ec-6b69eea72558/otSDKStub.js"
         type="text/javascript"
-        charSet="UTF-8"
         data-domain-script="daaec1ff-c365-4c92-85ec-6b69eea72558"
       ></script>
       <script type="text/javascript">function OptanonWrapper() {}</script>
-      <script
+      <Script
         id="gtm"
         dangerouslySetInnerHTML={{
           __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -29,7 +28,7 @@ const Document = () => (
           j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
           })(window,document,'script','dataLayer','GTM-MVR5MFF');
-          `,
+          `
         }}
       />          
     </Head>

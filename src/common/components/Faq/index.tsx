@@ -18,7 +18,7 @@ const Faq: React.FC<FaqProps> = ({ faqs }) => {
     };
 
     return (
-        <div className="py-32">
+        <div className="py-8 md:py-32">
             <div className=''>
                 <div className='relative'>
                     <svg className='inset-0 absolute w-screen' width="1440" height="842" viewBox="0 0 1440 842" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -29,7 +29,7 @@ const Faq: React.FC<FaqProps> = ({ faqs }) => {
                 </div>
 
                 <div className="z-10 relative">
-                    <h2 className="text-6xl text-center font-light pt-32 mb-6">Perguntas Frequentes</h2>
+                    <h2 className="text-6xl text-center font-light pt-8 md:pt-32 mb-6">Perguntas Frequentes</h2>
                     <p className="text-lg font-ubuntu text-end lg:w-[808px] mb-16 mx-auto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam et lacinia eros. Duis cursus, nisi a pellentesque finibus, elit tellus porttitor est, quis porta nunc orci quis massa. </p>
                     <div className='w-[598px] mx-auto'>
                         {faqs.map((faq, index) => (

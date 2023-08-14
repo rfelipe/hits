@@ -2,28 +2,23 @@ import type { NextPage } from "next";
 import Head from "next/head";
 import MainTemplate from "../common/templates/main";
 import { ProductProvider } from "../common/components/ProductContext";
-import { Product } from "../types";
 import { productsData } from "../common/lib/dataProduct";
 import ProductSection from "../common/components/Product";
 
-interface ProductProps {
-  products: Product[];
-}
-
-const Despesas: NextPage = () => {
+const Combustivel: NextPage = () => {
   return (
     <MainTemplate>
       <Head>
-        <title>Despesas | Ticket Log</title>
+        <title>Combustível | Ticket Log</title>
         <meta name="description" content=""></meta>
       </Head>
       <>
-        <ProductProvider type="despesas">
-          <ProductSection products={productsData} type="despesas"></ProductSection>
+        <ProductProvider type="combustivel">
+          <ProductSection products={productsData} type="combustivel"></ProductSection>
         </ProductProvider>
       </>
     </MainTemplate>
   );
 };
 
-export default Despesas;
+export default Combustivel;
