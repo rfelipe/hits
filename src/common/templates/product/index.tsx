@@ -15,15 +15,15 @@ interface ProductTemplateProps {
 }
 
 const ProductTemplate: React.FC<ProductTemplateProps> = ({ product }) => {
-  const { intro, carouselItems, price, faq, video, success, advantages } = product;
+  const { intro, carouselItems, carouselTitle, Easy, price, faq, video, success, advantages } = product;
 
   return (
     <div className="pt-8 md:pt-20 overflow-x-hidden">
         <IntroSection intro={intro} />
         <AdvantagesSection advantages={advantages} />
-        <CarouselSection items={carouselItems} />
+        <CarouselSection title={carouselTitle} items={carouselItems} />
         <PriceSection prices={price} />
-        <EasyToUse/>
+        <EasyToUse texts={Easy} />
         <VideoSection videos={video} />
         <WhoEdenred/>
         <FaqSection faqs={faq} />

@@ -129,9 +129,18 @@ export interface Product {
   advantages?: Advantage[];
   price?: Price[];
   faq?: Faq[];
+  Easy: Easy[];
+  carouselTitle?: string;
   carouselItems?: Carousel[];
   video?: Video;
   success?: WantMoreSuccess[];
 }
 
+export interface Easy {
+  title?: string;
+  text1?: string;
+  text2?: string;
+  text3?: string;
+  textButton?: string;
+}
 

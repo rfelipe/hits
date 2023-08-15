@@ -43,6 +43,16 @@ export const productsData = [
                 images: [img1Hits3, img2Hits3, img3Hits3],
             },
         ],
+        Easy: [
+            {
+                title: 'Fácil de usar, simples de contratar',
+                text1: 'Simule a quantidade de cartões que deseja utilizar',
+                text2: 'Informe os dados cadastrais necessários',
+                text3: 'Faça o seu login na plataforma e peça seu cartão',
+                textButton: 'Teste grátis por 60 dias',
+            }
+        ],
+        carouselTitle: 'Um cartão que é aceito em todos os lugares que você precisa!',
         carouselItems: [
             {
                 type: 'note',
@@ -149,50 +159,53 @@ export const productsData = [
             {
                 tag: 'Hits #2',
                 label: 'Controle de Combustível',
-                title: 'Administre todos os gastos de combustível na sua empresa',
-                text: 'Conte com a gente para o controle e organização dos gastos da sua empresa',
+                title: 'Controle todos os gastos de combustível e mobilidade do seu negócio!',
+                text: 'Tenha o controle na palma da mão com a Ticket Car.',
                 showInput: false,
                 colors: productTypeColors.combustivel
             },
         ],
         price: [
             {
-                title: 'Quanto você acha justo pagar para resolver a organização das despesas do dia a dia da sua empresa?',
-                price: '3',
-                text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+                title: 'Quanto você acha justo pagar para dar o primeiro passo de organização de gastos, tendo o controle de despesas com combustível na palma da sua mão?',
+                price: '1,00',
+                text: 'E sem pagar nada nos dois primeiros meses?',
                 colors: productTypeColors.combustivel,
                 images: [img1Hits2, img2Hits2, img3Hits2],
             },
         ],
+        Easy: [
+            {
+                title: 'Simples de contratar, fácil de usar',
+                text1: 'Simule a quantidade de cartões que deseja utilizar',
+                text2: 'Informe os dados cadastrais necessários e efetue o pagamento da sua recarga',
+                text3: 'Faça o seu login na plataforma e comece a usar',
+                textButton: 'Compre agora',
+            }
+        ],
+        carouselTitle: 'Parceiros',
         carouselItems: [
             {
-                type: 'note',
-                description: 'Material de escritório',
+                type: 'uber',
+                description: '',
             },
             {
-                type: 'gas',
-                description: 'Postos de combustíveis',
+                type: 'kdOficina',
+                description: '',
             },
             {
-                type: 'computer',
-                description: 'Agências de marketing e comunicação',
+                type: 'novenove',
+                description: '',
             },
             {
-                type: 'construction',
-                description: 'Construção e decoração',
+                type: 'bikeItau',
+                description: '',
             },
             {
-                type: 'coffee',
-                description: 'Café e lanchonete',
+                type: 'emoving',
+                description: '',
             },
-            {
-                type: 'mail',
-                description: 'Description 3',
-            },
-            {
-                type: 'carmarket',
-                description: 'Description 1',
-            }
+
         ],
         faq: [
             {
@@ -238,26 +251,26 @@ export const productsData = [
                 items: [
                     {
                         type: 'clock',
-                        title: 'Administre despesas fixas e variáveis em tempo real',
-                        text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam et lacinia eros. Duis cursus, nisi a pellentesque finibus.',
+                        title: '',
+                        text: 'Dê o primeiro passo de controle de gastos começando pela organização com combustível e mobilidade.',
                         image: img1Hits2,
                     },
                                         {
                         type: 'note',
-                        title: 'Administre despesas fixas e variáveis em tempo real',
-                        text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam et lacinia eros. Duis cursus, nisi a pellentesque finibus.',
+                        title: '',
+                        text: 'Pesquise os postos com os melhores preços.',
                         image: img3Hits2,
                     },
                                         {
                         type: 'phone',
-                        title: 'Administre despesas fixas e variáveis em tempo real',
-                        text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam et lacinia eros. Duis cursus, nisi a pellentesque finibus.',
+                        title: '',
+                        text: 'Escolha onde utilizar o seu hit, em um dos mais de 21 mil postos parceiros.',
                         image: img2Hits2,
                     },
                                                             {
                         type: 'mail',
-                        title: 'Administre despesas fixas e variáveis em tempo real',
-                        text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam et lacinia eros. Duis cursus, nisi a pellentesque finibus.',
+                        title: '',
+                        text: 'Simplifique pagamento de serviços veiculares como: lavagens, estacionamento,  manutenção e aplicativos de transporte individual e envio de encomendas.',
                         image: img4Hits2,
                     }
                 ]

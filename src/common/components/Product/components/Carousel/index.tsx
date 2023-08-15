@@ -5,6 +5,13 @@ import { Note, Gas, Computer, Construction, Coffee, Mail, CarMarket } from '../.
 import { Carousel } from '../../../../../types';
 import useWindowSize from '../../../../hooks/useWindowSize';
 import usePageChecker from '../../../../hooks/usePageChecker';
+import uber from '../../../../../static/images/uber.png';
+import novenove from '../../../../../static/images/99.png';
+import bikeItau from '../../../../../static/images/bike-itau.png';
+import kdOficina from '../../../../../static/images/kd-oficina.png';
+import emoving from '../../../../../static/images/emoving.png';
+import Image from 'next/image';
+
 
 const typeIcons = {
   note: <Note />,
@@ -13,14 +20,20 @@ const typeIcons = {
   construction: <Construction />,
   coffee: <Coffee />,
   mail: <Mail />,
-  carmarket: <CarMarket />
+  carmarket: <CarMarket />,
+  uber: <Image src={uber} layout='fixed' alt='Uber'/>,
+  kdOficina: <Image src={kdOficina} layout='fixed' alt='KD Minha Oficina'/>,
+  novenove: <Image src={novenove} layout='fixed' alt='99'/>,
+  bikeItau: <Image src={bikeItau} layout='fixed' alt='Bike Itau'/>,
+  emoving: <Image src={emoving} layout='fixed' alt='E-moving'/>,
 };
 
 interface CarouselItems {
+    title: String;
     items: Carousel[];
 }
 
-const CarouselSection: FC<CarouselItems> = ({ items }) => {
+const CarouselSection: FC<CarouselItems> = ({ items, title }) => {
     const [activeIndex, setActiveIndex] = useState(0);
 
     const handlePrev = () => {
@@ -83,7 +96,7 @@ const CarouselSection: FC<CarouselItems> = ({ items }) => {
 
     return (
         <div className='pt-14 md:pt-32 container mx-auto'>
-            <h2 className='text-3xl md:text-6xl text-center font-light mb-20'>Um cartão que é aceito em todos os lugares que você precisa!</h2>
+            <h2 className='text-3xl md:text-6xl text-center font-light mb-20'>{title}</h2>
             <div className='relative md:px-32'>
                 <Slider {...settings}>
                     {items.map((item, index) => (
