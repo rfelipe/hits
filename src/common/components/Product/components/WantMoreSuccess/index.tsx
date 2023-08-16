@@ -25,13 +25,13 @@ const WantMoreSuccessSection: React.FC<SuccessProps> = ({ success }) => {
                     <div className='px-6 lg:w-[530px] container mx-auto text-center'>
                         <h2 className='text-3xl md:text-5xl text-black font-light mb-6 md:mb-8'>{s.title}</h2>
                         <p className='font-ubuntu md:text-base text-lg text-grey md:text-black  mb-6 font-light lg:w-[388px] pb-8'>{s.text}</p>
-                        <div className='flex flex-col justify-center items-center md:items-start md:justify-normal md:flex-row gap-3'>
+                        <div className='flex flex-col  justify-center items-center 2xl:items-start md:justify-normal 2xl:flex-row gap-3'>
                             <Button type="red" href="/">Teste grátis por 60 dias</Button>
                             <Button type="learnMore" href="/">Saiba mais</Button>
                         </div>
                     </div>
                     <div className='relative pb-8 md:pb-0'>
-                        <svg width="704" height="500" viewBox="0 0 704 500" fill="none" xmlns="http://www.w3.org/2000/svg" className='pl-32 h-80 md:pl-0 md:h-auto'>
+                        <svg width="704" height="500" viewBox="0 0 704 500" fill="none" xmlns="http://www.w3.org/2000/svg" className='pl-32 h-80 md:pl-0 lg:h-auto'>
                             <mask id="maskWantMoreSuccess" maskUnits="userSpaceOnUse" x="0" y="0" width="500" height="500">
                                 <circle cx="250" cy="250" r="250" fill="#D9D9D9" />
                             </mask>

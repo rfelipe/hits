@@ -12,8 +12,8 @@ const ImageItem: React.FC<ImageProps> = ({ src, alt, isLoading, colors }) => {
 
     if (!src) return null;
     return (
-        <div className='md:absolute relative top-0 right-0 pb-7 md:pb-0 pl-6 md:pl-0'>
-            <svg className='relative z-10 w-full h-auto md:w-auto' width="705" height="666" viewBox="0 0 705 666" fill="none" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
+        <div className='2xl:absolute relative top-0 right-0 pb-7 pt-7 2xl:pb-0 pl-6 2xl:pl-0'>
+            <svg className='relative z-10 w-4/5 float-right  h-auto 2xl:w-auto' width="705" height="666" viewBox="0 0 705 666" fill="none" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
                 <defs>
                     <mask id="mask0" maskUnits="userSpaceOnUse" x="0" y="0" width="668" height="666">
                         <ellipse cx="334.072" cy="333.103" rx="333.205" ry="332.897" transform="rotate(-180 334.072 333.103)" fill="#C8C3FF" />
