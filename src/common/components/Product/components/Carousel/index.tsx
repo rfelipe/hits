@@ -95,7 +95,7 @@ const CarouselSection: FC<CarouselItems> = ({ items, title }) => {
     };
 
     return (
-        <div className='pt-14 md:pt-10 2xl:pt-32 container mx-auto'>
+        <div className='pt-14 md:pt-10 2xl:pt-20 container mx-auto'>
             <h2 className='text-3xl md:text-6xl text-center font-light mb-20 2xl:w-2/3 2xl:mx-auto'>{title}</h2>
             <div className='relative md:px-32'>
                 <Slider {...settings}>

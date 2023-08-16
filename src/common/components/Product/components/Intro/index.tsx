@@ -12,7 +12,7 @@ const IntroSection: React.FC<IntroProps> = ({ intro }) => {
     return (
         <div className='text-center'>
             {intro.map((i, index) => (
-                <div key={index} className="relative pb-24 md:pb-32">
+                <div key={index} className="relative pb-24 md:pb-10">
                     <div className='absolute'>
                         <svg
                             className="absolute md:top-0 md:left-0 right-0 bottom-0 h-[335px] md:h-[600px] -top-[16px] -left-[150px] md:w-screen"
