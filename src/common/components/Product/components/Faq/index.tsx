@@ -17,14 +17,23 @@ const FaqSection: React.FC<FaqProps> = ({ faqs }) => {
             <div className=''>
                 {faqs.map((faq, index) => (
                     <><div className='relative'>
-                        <svg className='absolute h-[500px] md:h-auto md:w-screen -ml-80 md:-ml-0' width="1440" height="842" viewBox="0 0 1440 842" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <rect x="103" y="0.327148" width="1870" height="841.673" rx="420.836" fill="#F1F7FF" />
-                            <ellipse cx="-129" cy="420.836" rx="421" ry="420.836" transform="rotate(-180 -129 420.836)" fill={`${faq.colors[0]}`} />
-                            <path fillRule="evenodd" clipRule="evenodd" d="M199.422 156.65C257.37 228.751 292.043 320.341 292.043 420.026C292.043 519.711 257.37 611.301 199.422 683.402C141.474 611.301 106.801 519.711 106.801 420.026C106.801 320.341 141.474 228.751 199.422 156.65Z" fill={`${faq.colors[1]}`} />
-                        </svg>
+                        <div className='md:hidden'>
+                            <svg className='absolute h-[500px] md:h-auto md:w-screen -ml-80 md:-ml-0' width="1440" height="842" viewBox="0 0 1440 842" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="103" y="0.327148" width="1870" height="841.673" rx="420.836" fill="#F1F7FF" />
+                                <ellipse cx="-129" cy="420.836" rx="421" ry="420.836" transform="rotate(-180 -129 420.836)" fill={`${faq.colors[0]}`} />
+                                <path fillRule="evenodd" clipRule="evenodd" d="M199.422 156.65C257.37 228.751 292.043 320.341 292.043 420.026C292.043 519.711 257.37 611.301 199.422 683.402C141.474 611.301 106.801 519.711 106.801 420.026C106.801 320.341 141.474 228.751 199.422 156.65Z" fill={`${faq.colors[1]}`} />
+                            </svg>
+                        </div>
+                        <div className='md:block hidden'>
+                            <svg className='inset-0 absolute w-screen' width="1440" height="842" viewBox="0 0 1440 842" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="103" y="0.327148" width="1870" height="841.673" rx="420.836" fill="#F1F7FF" />
+                                <ellipse cx="-129" cy="420.836" rx="421" ry="420.836" transform="rotate(-180 -129 420.836)" fill={`${faq.colors[0]}`} />
+                                <path fillRule="evenodd" clipRule="evenodd" d="M199.422 156.65C257.37 228.751 292.043 320.341 292.043 420.026C292.043 519.711 257.37 611.301 199.422 683.402C141.474 611.301 106.801 519.711 106.801 420.026C106.801 320.341 141.474 228.751 199.422 156.65Z" fill="#B0EFFF" />
+                            </svg>
+                        </div>
                     </div><div className="z-10 relative px-6">
                             <h2 className="text-3xl md:text-6xl text-center font-light pt-12 md:pt-32 mb-6">Perguntas frequentes</h2>
-                            {/* <p className="hidden md:block text-lg font-ubuntu text-end w-full lg:w-[808px] mb-16 mx-auto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam et lacinia eros. Duis cursus, nisi a pellentesque finibus, elit tellus porttitor est, quis porta nunc orci quis massa. </p> */}
+                            <p className="hidden md:block text-lg font-ubuntu text-end w-full lg:w-[808px] mb-16 mx-auto">{faq.description}</p>
                             <div className='w-full lg:w-[598px] mx-auto'>
                                 {faq.items.map((item, index) => (
                                     <div key={index} className='mb-8'>
