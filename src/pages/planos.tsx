@@ -5,8 +5,12 @@ import Faq from "../common/components/Product/components/Faq";
 import Button from "../common/components/Buttons";
 import Cards from "../common/layouts/Planos/Cards";
 import Duvida from "../common/layouts/Planos/Duvida";
+import Form from "../common/components/Form";
+import {useState} from "react";
 
 const Planos: NextPage = () => {
+  const [showForm, setShowForm] = useState(false);
+
   const faqs = [
     {
       colors: ["#F72717", "#B0EFFF"],
@@ -52,13 +56,11 @@ const Planos: NextPage = () => {
           </div>
         </section>
         <Cards />
-
         {/* ToDo 
              - Cards planos MOBILE
              - Bloco "Na duvida..." 
              - Form
         */}
-
         <Duvida />
         <section className="text-center m-auto p-3 mt-24">
           <h1 className="text-3xl font-bold">
@@ -68,12 +70,13 @@ const Planos: NextPage = () => {
             Veja como podemos ajudar você a acelerar o seu sucesso!
           </p>
           <div className="mt-7">
-            <Button type="red" href="/">
+            <a onClick={() => setShowForm(true)} className="cursor-pointer transition rounded-full text-lg bg-[#F72717] hover:bg-[#000000] text-[#ffffff] px-[40px] py-[12px]">
               Fale com vendas
-            </Button>
+            </a>
           </div>
         </section>
         <Faq faqs={faqs} />
+        {showForm && <Form onClose={() => setShowForm(false)}/>}
       </div>
     </MainTemplate>
   );
