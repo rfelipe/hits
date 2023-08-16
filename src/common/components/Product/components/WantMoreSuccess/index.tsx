@@ -18,7 +18,7 @@ const WantMoreSuccessSection: React.FC<SuccessProps> = ({ success }) => {
     }, []);
     
     return (
-        <div className='py-16 md:py-32'>
+        <div className='py-16 md:pt-32'>
             {success.map((s, index) => (
                 // eslint-disable-next-line react/jsx-key
                 <div className='flex items-center flex-col-reverse md:flex-row md:justify-end'>

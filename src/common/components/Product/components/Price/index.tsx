@@ -21,7 +21,7 @@ const PriceSection: React.FC<PricesProps> = ({ prices }) => {
     }, []);
 
     return (
-        <div className="relative pt-32">
+        <div className="relative pt-24 md:pt-10">
             {prices.map((price: any, index) => (
                 <div className='bg-cold-white w-screen pt-16 px-6 md:pt-0' key={index}>
                     <div className="container mx-auto lg:max-w-7xl">

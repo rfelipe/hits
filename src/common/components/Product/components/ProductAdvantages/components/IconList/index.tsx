@@ -10,7 +10,7 @@ const IconList: React.FC<IconListProps> = ({ advantages, onItemClick, selectedDa
         <div
           key={index}
           onClick={() => onItemClick(advantage)}
-          className={`w-[76px] h-[76px] p-4 md:p-0 md:w-[106px] md:h-[106px] mb-6 border rounded-full flex justify-center items-center cursor-pointer hover:bg-light-violet transition-all ease-in-out`}
+          className={`w-[76px] h-[76px] p-4 md:p-0 md:w-[106px] md:h-[106px] mb-3 border rounded-full flex justify-center items-center cursor-pointer hover:bg-light-violet transition-all ease-in-out`}
           style={{ backgroundColor: selectedData && selectedData.type === advantage.type ? colors[0] : 'transparent', borderColor: colors[0] }}
 
         >

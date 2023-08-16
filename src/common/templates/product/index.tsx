@@ -18,7 +18,7 @@ const ProductTemplate: React.FC<ProductTemplateProps> = ({ product }) => {
   const { intro, carouselItems, carouselTitle, Easy, price, faq, video, success, advantages } = product;
 
   return (
-    <div className="pt-8 md:pt-20 overflow-x-hidden">
+    <div className="pt-8 md:pt-8 overflow-x-hidden">
         <IntroSection intro={intro} />
         <AdvantagesSection advantages={advantages} />
         <CarouselSection title={carouselTitle} items={carouselItems} />

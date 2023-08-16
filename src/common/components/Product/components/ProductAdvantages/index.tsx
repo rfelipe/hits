@@ -31,7 +31,7 @@ const AdvantagesSection: React.FC<AdvantageProps> = ({ advantages }) => {
     };
 
     return (
-        <div className='relative flex flex-col md:flex-row md:pt-32'>
+        <div className='relative flex flex-col md:flex-row 2xl:pt-32'>
             <IconList advantages={advantages} onItemClick={handleItemClick} selectedData={selectedData} />
             {selectedData && (
                 <ItemList

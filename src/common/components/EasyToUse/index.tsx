@@ -7,7 +7,7 @@ interface EasyToUseProps {
 
 const EasyToUse: React.FC<EasyToUseProps> = ({texts}) => {
     return (
-        <div className="pt-16 md:pt-32">
+        <div className="pt-16 md:pt-20">
             {texts.map((i, index) => (
                 <div key={index} className="container mx-auto px-6 md:px-0">
                 <h2 className="text-3xl md:text-5xl font-light pb-16 text-center">{i.title}</h2>

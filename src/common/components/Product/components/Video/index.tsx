@@ -7,10 +7,10 @@ interface VideoProps {
 
 const VideoSection: React.FC<VideoProps> = ({ videos }) => {
     return (
-        <div className='pt-16 md:pt-32'>
+        <div className='pt-16 md:pt-20'>
             <div className='w-full bg-no-repeat bg-cover bg-center' style={{ 'backgroundImage': `url(${videos.image.src})` }}>
                 <div className='px-6 lg:px-0 lg:ml-auto'>
-                    <div className='flex flex-col md:flex-row gap-20 h-[560px] place-items-center content-center container grid-cols-none'>
+                    <div className='flex justify-center flex-col md:flex-row gap-20 h-[560px] place-items-center content-center container grid-cols-none'>
                         <div className='lg:w-[590px] text-center lg:text-justify'>
                             <h2 className='text-white lg:text-5xl text-4xl mb-6 font-light'>{videos.title}</h2>
                             <p className='text-white text-base font-ubuntu font-light mb-8 md:mb-0'>{videos.text}</p>

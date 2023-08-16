@@ -17,14 +17,14 @@ const DataItem: React.FC<AdvantageItemProps & { renderImage: (props: AdvantageIt
 
   return (
     <div className='flex flex-col-reverse md:flex-row pt-3 md:pt-0'>
-      <motion.div
+      <motion.div className='flex items-center'
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
                         transition={{ opacity: { duration: .3, ease:"easeInOut" } }}
                         onLoad={handleLoad}
                         exit={{ opacity: 0 }}
       >
-        <div className='px-6 md:py-24 md:px-8 md:w-[496px]'>
+        <div className='px-6 md:py-24 md:px-0 md:pl-6 md:w-[496px]'>
           <h3 className='text-2xl md:text-4xl font-light mb-8'>{advantages.title}</h3>
           <p className='text-grey md:text-black text-base md:text-lg font-light font-ubuntu mb-8'>{advantages.text}</p>
           <div className='flex justify-center md:justify-start'><Button type="red" href="/">Teste grátis por 60 dias</Button></div>
