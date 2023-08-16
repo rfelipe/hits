@@ -5,7 +5,11 @@ import { ProductProvider } from "../common/components/ProductContext";
 import { productsData } from "../common/lib/dataProduct";
 import { Phone, Clock, Note, Gas } from "../common/components/icons";
 import Button from "../common/components/Buttons";
-import Img3Hits3 from "../static/images/home/hits1.png";
+import Img2 from '../static/images/home/img1.png';
+import Img1 from '../static/images/home/img2.png';
+import Image from "next/image";
+import Hits1Img1 from '../static/images/img1_hits1.png';
+import Hits2Img2 from '../static/images/img1_hits2.png';
 
 const Home: NextPage = () => {
     return (
@@ -15,7 +19,43 @@ const Home: NextPage = () => {
                 <meta name="description" content=""></meta>
             </Head>
             <>
-                <div className="py-32">
+                <div className="pt-32">
+                    <h2 className="text-5xl text-black font-light text-center mb-8">Quem conta com a gente acelera seu sucesso</h2>
+                    <p className="text-grey md:text-black text-base md:text-lg font-light font-ubuntu mb-8 w-[808px] mx-auto text-center">
+                        Ajudamos você a manter o controle dos gastos
+                        usando um aplicativo super simples e eficiente.
+                    </p>
+                    <div className="flex justify-between">
+                        <div className="relative flex">
+                            <svg width="704" height="500" viewBox="0 0 704 500" fill="none" xmlns="http://www.w3.org/2000/svg" className="">
+                                
+
+                                <image
+                                    xlinkHref={Hits1Img1.src}
+                                    className={`absolute top-0 opacity-100 transition-opacity duration-1000 '
+                                            }`}
+                                ></image>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M64 0H-1779V500H64C202.071 500 314 388.071 314 250C314 111.929 202.071 0 64 0Z" fill="#C8C3FF"/>
+                                <path fill-rule="evenodd" clipRule="evenodd" d="M259 406.459C293.411 363.627 314 309.218 314 250C314 190.782 293.411 136.373 259 93.541C224.589 136.373 204 190.782 204 250C204 309.218 224.589 363.627 259 406.459Z" fill="#B0EFFF" />
+
+                            </svg>
+                        </div>
+                        <div className="relative">
+                            <svg width="704" height="500" viewBox="0 0 704 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clipRule="evenodd" d="M640 500C501.929 500 390 388.071 390 250C390 111.929 501.929 0 640 0H890V250V500H640Z" fill="#DCF691" />
+                                <image
+                                    xlinkHref={Hits2Img2.src}
+                                    className={`absolute top-0 opacity-100 transition-opacity duration-1000 '
+                                            }`}
+                                ></image>
+                                <path fill-rule="evenodd" clipRule="evenodd" d="M445 406.459C410.589 363.627 390 309.218 390 250C390 190.782 410.589 136.373 445 93.541C479.411 136.373 500 190.782 500 250C500 309.218 479.411 363.627 445 406.459Z" fill="#FED0C8" />
+
+                            </svg>
+
+                        </div>
+                    </div>
+                </div>
+                <div className="pt-32">
                     <h2 className="text-5xl text-black font-light text-center mb-8">Veja como é fácil</h2>
                     <p className="text-grey md:text-black text-base md:text-lg font-light font-ubuntu mb-8 w-[808px] mx-auto text-center">
                         Se você tem um comércio ou é atacadista, prestador de serviços, construtura ou pequena indústria, você precisa testar essa solução pra manter suas contas em dia, agilizar processos
@@ -54,7 +94,7 @@ const Home: NextPage = () => {
                         </div>
                     </div>
                 </div>
-                <div className="pb-32">
+                <div className="pt-32">
                     <h2 className="text-5xl text-black font-light text-center mb-16">Veja as novidades</h2>
                     <div className="flex gap-8 items-center justify-center pb-16">
                         <div className="w-[368px] h-[440px]">
@@ -94,24 +134,30 @@ const Home: NextPage = () => {
                 </div>
                 <div className="pt-32">
                     <div className="flex">
-                        <div className="relative">
-                            <svg width="705" height="309" viewBox="0 0 705 309" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M429.595 58.2671C408.584 84.7071 396 118.265 396 154.791C396 191.316 408.575 224.874 429.595 251.314C450.606 224.874 463.191 191.316 463.191 154.791C463.191 118.265 450.616 84.7071 429.595 58.2671Z" fill="#C8C3FF" />
-                                <path d="M429.565 251.083C457.915 286.39 501.465 309 550.304 309C635.739 309 705 239.834 705 154.5C705 69.1656 635.748 -3.01851e-06 550.304 -6.74279e-06C501.465 -8.87153e-06 457.915 22.6102 429.565 57.9165C450.802 84.3729 463.512 117.952 463.512 154.5C463.512 191.048 450.802 224.627 429.565 251.083Z" fill="#F1F7FF" />
-                                <mask id="mask0_579_4093" maskUnits="userSpaceOnUse" x="-59" y="0" width="489" height="309">
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M309.89 0C358.474 -2.12368e-06 401.797 22.6102 430 57.9165C408.874 84.3729 396.23 117.952 396.23 154.5C396.23 191.048 408.874 224.627 430 251.083C401.797 286.39 358.474 309 309.89 309C303.936 309 298.06 308.661 292.282 308H-59V6.1307e-06H302V0.199537C304.613 0.0670456 307.244 1.15665e-07 309.89 0Z" fill="#B0EFFF" />
-                                </mask>
-                                <image xlinkHref={Img3Hits3.src} id="imageHome1" className="absolute top-0 left-0"></image>
-                            </svg>
-                            <div className='absolute top-32 left-[35%] text-center md:top-14 w-48 md:left-[32%] items-end md:text-justify'>
-                                <span className={`text-base py-2 px-4 rounded-full inline-flex items-end bg-light-violet mb-3`}>Hit #01</span>
-                                <p className='text-black text-base font-medium w-[128px] mb-3'>Quero controlar as despesas do negócio</p>
-                                <Button type="red" href="/">Eu quero</Button>
+                        <div className="flex">
+                            <div className="relative z-10 shrink-0" >
+                                <Image alt="" src={Img1} />
+                            </div>
+                            <div className="relative flex items-center justify-center bg-cold-white w-[309px] h-[309px] rounded-[100%] ml-[-66px] z-0 ">
+                                <div className="pl-6">
+                                    <span className="inline-flex justify-center bg-[#C8C3FF]  px-4 py-2 rounded-full w-fit mb-2">Hit #01</span>
+                                    <p className="text-lg text-left max-w-[150px] mb-2">Quero controlar as despesas do negócio</p>
+                                    <Button type="red" href="/despesas">Eu quero</Button>
+                                </div>
                             </div>
                         </div>
+                        <h2 className="text-black text-6xl ml-auto font-light w-[500px]">Vem pro lado sucesso da força</h2>
                     </div>
-                    <h2 className="">Vem pro lado
-                        sucesso da força</h2>
+                    <div className="flex justify-end">
+                        <div className="relative flex items-center justify-center bg-cold-white w-[309px] h-[309px] rounded-[100%] mr-[-66px] z-0 ">
+                            <div className="pr-6 text-right">
+                                <span className="inline-flex justify-center bg-[#DCF691]  px-4 py-2 rounded-full w-fit mb-2">Hit #01</span>
+                                <p className="text-lg  max-w-[150px] mb-2">Quero controlar as despesas com combustível</p>
+                                <Button type="red" href="/combustivel">Eu quero</Button>
+                            </div>
+                        </div>
+                        <Image alt="" src={Img2} className="relative z-0" />
+                    </div>
                 </div>
             </>
         </MainTemplate>
