@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import IconList from '../images/planos-list.svg';
-import Button from "../../Buttons";
+import Button from "../../../components/Buttons"
 
 const Cards = () => {
   return (

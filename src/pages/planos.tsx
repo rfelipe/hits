@@ -3,9 +3,10 @@ import Head from "next/head";
 import MainTemplate from "../common/templates/main";
 import Faq from "../common/components/Product/components/Faq";
 import Button from "../common/components/Buttons";
-import Cards from "../common/components/Planos/Cards";
+import Cards from "../common/layouts/Planos/Cards";
+import Duvida from "../common/layouts/Planos/Duvida";
 
-const Sobre: NextPage = () => {
+const Planos: NextPage = () => {
   const faqs = [
     {
       colors: ["#F72717", "#B0EFFF"],
@@ -34,14 +35,10 @@ const Sobre: NextPage = () => {
       <Head>
         <title>Planos | Ticket Log</title>
         <meta name="description" content=""></meta>
-      </Head>
-      <div className="relative">
-        <svg className="absolute" viewBox="0 0 1440 1934" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <circle cx="720" cy="967" r="967" fill="#F1F7FF" />
-        </svg>
-      </div>
+      </Head>      
       <div className="relative overflow-hidden pt-20 md:pb-60 pb-20">
-        <section className="text-center m-auto xl:max-w-[969px] p-3 mb-14">
+        <div className="absolute top-[50px] left-1/2 transform -translate-x-1/2 w-[1890px] h-[1890px] bg-[#F1F7FF] rounded-[100%] z-[-1]"></div>
+        <section className="text-center m-auto xl:max-w-[969px] p-3 mb-[150px]">
           <h1 className="lg:text-6xl text-4xl font-light">
             Qual é o melhor Hit para você?
           </h1>
@@ -62,6 +59,7 @@ const Sobre: NextPage = () => {
              - Form
         */}
 
+        <Duvida />
         <section className="text-center m-auto p-3 mt-24">
           <h1 className="text-3xl font-bold">
             Contrate o Controle de Despesas e Controle de Combustível juntos!
@@ -81,4 +79,4 @@ const Sobre: NextPage = () => {
   );
 };
 
-export default Sobre;
+export default Planos;
