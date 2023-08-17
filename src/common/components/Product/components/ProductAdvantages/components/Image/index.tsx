@@ -19,7 +19,7 @@ const ImageItem: React.FC<ImageProps> = ({ src, alt, isLoading, colors }) => {
                         <ellipse cx="334.072" cy="333.103" rx="333.205" ry="332.897" transform="rotate(-180 334.072 333.103)" fill="#C8C3FF" />
                     </mask>
                 </defs>
-                <image xlinkHref={src.src} className={`opacity-0 transition-opacity duration-1000 w-[666px] h-[666px] ${src ? 'opacity-100' : 'opacity-0'
+                <image xlinkHref={src.src} className={`transition-opacity duration-1000 w-[666px] h-[666px] ${src ? 'opacity-100' : 'opacity-0'
                     }`} />
                 <g mask="url(#mask0)">
 

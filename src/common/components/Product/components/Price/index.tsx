@@ -35,7 +35,7 @@ const PriceSection: React.FC<PricesProps> = ({ prices }) => {
                                         <>
                                             <image
                                                 xlinkHref={image.src}
-                                                className={`opacity-0 transition-opacity duration-1000 w-[493px] h-[494px] ${imageIndex === currentImageIndex ? 'opacity-100' : 'opacity-0'
+                                                className={`transition-opacity duration-1000 w-[493px] h-[494px] ${imageIndex === currentImageIndex ? 'opacity-100' : 'opacity-0'
                                                     }`}
                                             ></image>
                                         </>

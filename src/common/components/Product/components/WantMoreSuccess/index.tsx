@@ -39,7 +39,7 @@ const WantMoreSuccessSection: React.FC<SuccessProps> = ({ success }) => {
                                 <>
                                     <image
                                         xlinkHref={image.src}
-                                        className={`absolute top-0 left-0 opacity-0 transition-opacity duration-1000 ${imageIndex === currentImageIndex ? 'opacity-100' : 'opacity-0'
+                                        className={`absolute top-0 left-0 transition-opacity duration-1000 ${imageIndex === currentImageIndex ? 'opacity-100' : 'opacity-0'
                                             }`}
                                     ></image>
                                 </>
