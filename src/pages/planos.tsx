@@ -41,7 +41,7 @@ const Planos: NextPage = () => {
         <meta name="description" content=""></meta>
       </Head>      
       <div className="relative overflow-hidden pt-20  pb-20">
-        <div className="absolute top-[50px] left-1/2 transform -translate-x-1/2 w-[1890px] h-[60%] bg-[#F1F7FF] rounded-[100%] z-[-1]"></div>
+        <div className="absolute top-[50px] left-1/2 transform -translate-x-1/2 w-[1890px] h-[70%] bg-[#F1F7FF] rounded-[100%] z-[-1]"></div>
         <section className="text-center m-auto xl:max-w-[969px] p-3 md:mb-20 mb-10">
           <h1 className="lg:text-6xl text-4xl font-light">
             Qual é o melhor Hit para você?
