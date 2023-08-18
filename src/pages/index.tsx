@@ -29,11 +29,11 @@ const Home: NextPage = () => {
             <>
                 <div className="pt-32">
                     <h2 className="text-5xl text-black font-light text-center mb-8">Quem conta com a gente acelera seu sucesso</h2>
-                    <p className="text-grey md:text-black text-base md:text-lg font-light font-ubuntu mb-8 w-[808px] mx-auto text-center">
+                    <p className="text-grey md:text-black text-base md:text-lg font-light font-ubuntu mb-8 lg:w-[808px] mx-auto text-center">
                         Ajudamos você a manter o controle dos gastos
                         usando um aplicativo super simples e eficiente.
                     </p>
-                    <div className="flex justify-between">
+                    <div className="flex justify-between flex-wrap gap-5">
                         <div className="relative flex items-center w-[704px] h-[500px]">
                       
                             <div className="absolute right-0 top-0">
@@ -53,7 +53,7 @@ const Home: NextPage = () => {
                                 <Button type="red" href="/combustivel">Eu quero</Button>
                             </div>
                         </div>
-                        <div className="relative flex items-center w-[704px] h-[500px]">
+                        <div className="relative flex items-center ml-auto w-[704px] h-[500px]">
                                                         <div className="absolute left-0 top-0   ">
                                 <Image src={Hits2Img2} alt="" className=" top-0" width={500} height={500}></Image>
                             </div>
@@ -74,7 +74,7 @@ const Home: NextPage = () => {
                 </div>
                 <div className="pt-32"> {/* DONE MOBILE AND DESK */}
                     <h2 className="text-5xl text-black font-light text-center mb-8">Veja como é fácil</h2>
-                    <p className="text-grey md:text-black text-base md:text-lg font-light font-ubuntu mb-8 w-[808px] mx-auto text-center">
+                    <p className="text-grey md:text-black text-base md:text-lg font-light font-ubuntu mb-8 lg:w-[808px] mx-auto text-center">
                         Se você tem um <strong>comércio ou é atacadista, prestador de serviços, construtura ou pequena indústria</strong>, você precisa testar essa solução pra manter suas contas em dia, agilizar processos
                         e acelerar o crescimento do seu negócio.
                     </p>
@@ -90,13 +90,13 @@ const Home: NextPage = () => {
                                     slidesPerView: 2,
                                     spaceBetween: 20,
                                 },
-                                1280: {
+                                1240: {
                                     slidesPerView: 4,
                                 }
                               }}
                         >
                             <SwiperSlide className="flex justify-center">
-                                <div className="w-[283px] h-[283px] border mr-6 rounded-full bg-cold-white flex flex-col justify-center items-center">
+                                <div className="w-[243px] h-[243px] border mr-6 rounded-full bg-cold-white flex flex-col justify-center items-center">
                                     <div className="mb-4">
                                         <Phone />
                                     </div>
@@ -105,7 +105,7 @@ const Home: NextPage = () => {
                                 </div>
                             </SwiperSlide>
                             <SwiperSlide className="flex justify-center">
-                                <div className="w-[283px] h-[283px] border mr-6 rounded-full bg-cold-white flex flex-col justify-center items-center">
+                                <div className="w-[243px] h-[243px] border mr-6 rounded-full bg-cold-white flex flex-col justify-center items-center">
                                     <div className="mb-4">
                                         <Gas />
                                     </div>
@@ -114,7 +114,7 @@ const Home: NextPage = () => {
                                 </div>
                             </SwiperSlide>
                             <SwiperSlide className="flex justify-center">
-                                <div className="w-[283px] h-[283px] border mr-6 rounded-full bg-cold-white flex flex-col justify-center items-center">
+                                <div className="w-[243px] h-[243px] border mr-6 rounded-full bg-cold-white flex flex-col justify-center items-center">
                                     <div className="mb-4">
                                         <Clock />
                                     </div>
@@ -123,7 +123,7 @@ const Home: NextPage = () => {
                                 </div>
                             </SwiperSlide>
                             <SwiperSlide className="flex justify-center">
-                                <div className="w-[283px] h-[283px] border mr-6 rounded-full bg-cold-white flex flex-col justify-center items-center">
+                                <div className="w-[243px] h-[243px] border mr-6 rounded-full bg-cold-white flex flex-col justify-center items-center">
                                     <div className="mb-4">
                                         <Note />
                                     </div>
@@ -219,7 +219,7 @@ const Home: NextPage = () => {
                     <div className="flex justify-end">
                         <div className="relative flex items-center justify-center bg-cold-white w-[309px] h-[309px] rounded-[100%] mr-[-66px] z-0 ">
                             <div className="pr-6 text-right">
-                                <span className="inline-flex justify-center bg-[#DCF691]  px-4 py-2 rounded-full w-fit mb-2">Hit #01</span>
+                                <span className="inline-flex justify-center bg-[#DCF691]  px-4 py-2 rounded-full w-fit mb-2">Hit #02</span>
                                 <p className="text-lg  max-w-[150px] mb-2">Quero controlar as despesas com combustível</p>
                                 <Button type="red" href="/combustivel">Eu quero</Button>
                             </div>
