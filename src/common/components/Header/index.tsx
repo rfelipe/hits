@@ -24,12 +24,12 @@ const Header: React.FC<Props> = ({ links }) => {
 
   return (
     <header className="bg-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-[90rem] mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">
             <Link href="/">
               <a className="text-white">
-                <Image src={Logo} alt="Logo Edenred" width={130} height={87}></Image>
+                <Image src={Logo} alt="Logo Edenred" width={150} height={100}></Image>
               </a>
             </Link>
           </div>
@@ -49,7 +49,7 @@ const Header: React.FC<Props> = ({ links }) => {
                   </Link>
                 </>
               ))}
-              <Button type="red" href={'/'}>Contate agora</Button>
+              <Button type="red" href={'/'}>Contrate agora</Button>
             </div>
           </div>
         </div>

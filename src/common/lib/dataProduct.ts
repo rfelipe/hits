@@ -116,7 +116,7 @@ export const productsData = [
                 images: [img1Hits2, img2Hits2, img3Hits2],
                 colors: productTypeColors.combustivel,
                 title: 'Quer mais sucesso?',
-                text: 'Se a sua empresa tem veículos, também temos uma solução completa para controle de gastos de combustível e mobilidade',
+                text: 'Se a sua empresa tem veículos, também temos uma solução completa para controle de gastos de combustível e mobilidade.',
                 label: 'Hits #2',
                 textLabel: 'Quero controlar as despesas com combustível'
             }
