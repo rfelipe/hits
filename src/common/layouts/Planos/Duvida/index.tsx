@@ -9,14 +9,14 @@ import ImgBg2 from './images/bg-p.png';
 
 const Duvida = () => {
     return (
-        <section className="text-center m-auto mt-[128px] xl:mb-[280px]">
+        <section className="text-center m-auto mt-20">
             <h2 className="text-3xl font-bold">
-                Na dúvida sobre o plano?
+                Ainda em dúvida de qual Hit é o ideal para você?
             </h2>
             <p className="mt-3 text-3xl ">
-                Venha conhecer um poucos mais sobre os produtos Hits!
+                Venha saber mais sobre cada um!
             </p>
-            <div className="mt-24 flex justify-between flex-wrap xl:flex-nowrap">
+            <div className="mt-20 flex justify-between flex-wrap xl:flex-nowrap">
                 <div className="flex">
                     <div className="relative z-10 shrink-0 hidden xl:block -left-[80px]" >
                         <Image alt="" src={Img1}  />

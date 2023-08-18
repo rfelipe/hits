@@ -40,9 +40,9 @@ const Planos: NextPage = () => {
         <title>Planos | Ticket Log</title>
         <meta name="description" content=""></meta>
       </Head>      
-      <div className="relative overflow-hidden pt-20 md:pb-60 pb-20">
-        <div className="absolute top-[50px] left-1/2 transform -translate-x-1/2 w-[1890px] h-[70%] bg-[#F1F7FF] rounded-[100%] z-[-1]"></div>
-        <section className="text-center m-auto xl:max-w-[969px] p-3 md:mb-[150px] mb-10">
+      <div className="relative overflow-hidden pt-20  pb-20">
+        <div className="absolute top-[50px] left-1/2 transform -translate-x-1/2 w-[1890px] h-[60%] bg-[#F1F7FF] rounded-[100%] z-[-1]"></div>
+        <section className="text-center m-auto xl:max-w-[969px] p-3 md:mb-20 mb-10">
           <h1 className="lg:text-6xl text-4xl font-light">
             Qual é o melhor Hit para você?
           </h1>
@@ -69,11 +69,11 @@ const Planos: NextPage = () => {
           <p className="mt-3 text-3xl">
             Veja como podemos ajudar você a acelerar o seu sucesso!
           </p>
-          <div className="mt-7">
+          {/* <div className="mt-7">
             <a onClick={() => setShowForm(true)} className="cursor-pointer transition rounded-full text-lg bg-[#F72717] hover:bg-[#000000] text-[#ffffff] px-[40px] py-[12px]">
               Fale com vendas
             </a>
-          </div>
+          </div> */}
         </section>
         <Faq faqs={faqs} />
         {showForm && <Form onClose={() => setShowForm(false)}/>}

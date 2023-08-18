@@ -82,15 +82,16 @@ const Cards = () => {
             </div>
         </div>
         <div className="bg-white rounded-lg p-12 w-[600px] text-center md:text-start">
-            <h1 className="text-3xl">Despesas com combustível</h1>
+            <h1 className="text-3xl">Despesas combustível</h1>
             <p className="mt-4 bg-[#DCF691] px-4 py-2 max-md:mx-auto rounded-full w-fit">Grátis por 60 dias</p>
-            <p className="mt-4 text-lg leading-6 font-light">Para quem quer ter controle das despesas com combustível, serviços veiculares, e deslocamento, garantindo a organização desses gastos separado das outras despesas da empresa</p>
+            <p className="mt-4 text-lg leading-6 font-light">Para quem quer ter controle das despesas com combustível, serviços veiculares, e deslocamento, garantindo a organização desses gastos separado das outras despesas da empresa.</p>
             <ul className="mt-8 md:block hidden">
-                <li className="flex mt-2 items-center gap-3"><Image src={IconList} alt=""/>Pagamento com cartão físico ou digital</li>
-                <li className="flex mt-2 items-center gap-3"><Image src={IconList} alt=""/>Aplicativo para consultas e pagamentos</li>
                 <li className="flex mt-2 items-center gap-3"><Image src={IconList} alt=""/>Busca dos postos de combustível com melhor preço</li>
                 <li className="flex mt-2 items-center gap-3"><Image src={IconList} alt=""/><p className="w-11/12">Controle de serviços veiculares: manutenção, lavagem, pagamento IPVA</p></li>
-                <li className="flex mt-2 items-center gap-3"><Image src={IconList} alt=""/>Pagamento de deslocamento: Uber, 99, Bike Itaú</li>
+                <li className="flex mt-2 items-center gap-3"><Image src={IconList} alt=""/>Aplicativo carteira digital</li>
+                <li className="flex mt-2 items-center gap-3"><Image src={IconList} alt=""/>Plataforma de gestão</li>
+                <li className="flex mt-2 items-center gap-3"><Image src={IconList} alt=""/>Registro das despesas com combustível</li>
+                <li className="flex mt-2 items-center gap-3"><Image src={IconList} alt=""/>Relatórios online</li>
             </ul>
             <div className="md:block hidden">
                 <p className="mt-8 text-lg leading-6 font-light">Atendimento 24/7</p>
@@ -134,11 +135,12 @@ const Cards = () => {
                         }}>
                             <div className="">
                             <ul className="mt-8 text-start">
-                                <li className="flex mt-2 items-center gap-3"><Image className="shrink-0" src={IconList} alt=""/><p className="w-11/12">Pagamento com cartão físico ou digital</p></li>
-                                <li className="flex mt-2 items-center gap-3"><Image src={IconList} alt=""/><p className="w-11/12">Aplicativo para consultas e pagamentos</p></li>
-                                <li className="flex mt-2 items-center gap-3"><Image src={IconList} alt=""/><p className="w-11/12">Busca dos postos de combustível com melhor preço</p></li>
+                                <li className="flex mt-2 items-center gap-3"><Image className="shrink-0" src={IconList} alt=""/><p className="w-11/12">Busca dos postos de combustível com melhor preço</p></li>
                                 <li className="flex mt-2 items-center gap-3"><Image src={IconList} alt=""/><p className="w-11/12">Controle de serviços veiculares: manutenção, lavagem, pagamento IPVA</p></li>
-                                <li className="flex mt-2 items-center gap-3"><Image src={IconList} alt=""/><p className="w-11/12">Pagamento de deslocamento: Uber, 99, Bike Itaú</p></li>
+                                <li className="flex mt-2 items-center gap-3"><Image src={IconList} alt=""/><p className="w-11/12">Aplicativo carteira digital</p></li>
+                                <li className="flex mt-2 items-center gap-3"><Image src={IconList} alt=""/><p className="w-11/12">Plataforma de gestão</p></li>
+                                <li className="flex mt-2 items-center gap-3"><Image src={IconList} alt=""/><p className="w-11/12">Registro das despesas com combustível</p></li>
+                                <li className="flex mt-2 items-center gap-3"><Image src={IconList} alt=""/><p className="w-11/12">Relatórios online</p></li>
                             </ul>
                                 <p className="mt-8 text-lg leading-6 font-light">Atendimento 24/7</p>
                                 <p className="text-lg leading-6 font-light">Sem contrato de fidelidade</p>
