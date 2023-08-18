@@ -4,7 +4,7 @@ import Button from "../../../components/Buttons"
 
 import Img1 from './images/img1.png';
 import Img2 from './images/img2.png';
-import ImgBg1 from './images/teste2.png';
+import ImgBg1 from './images/bg-p1.png';
 import ImgBg2 from './images/bg-p.png';
 
 const Duvida = () => {
