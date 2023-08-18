@@ -1,4 +1,4 @@
-import LogoEdenred from '../Header/images/logo-edenred.png';
+import LogoEdenred from '../Header/images/edenred-logo.svg';
 import Button from '../Buttons';
 
 const WhoEdenred = () => {

@@ -116,7 +116,7 @@ export const productsData = [
                 images: [img1Hits2, img2Hits2, img3Hits2],
                 colors: productTypeColors.combustivel,
                 title: 'Quer mais sucesso?',
-                text: 'Se a sua empresa tem veículos, também temos uma solução completa para controle de gastos de combustível e automotivos.',
+                text: 'Se a sua empresa tem veículos, também temos uma solução completa para controle de gastos de combustível e mobilidade',
                 label: 'Hits #2',
                 textLabel: 'Quero controlar as despesas com combustível'
             }
@@ -126,22 +126,22 @@ export const productsData = [
                 colors: productTypeColors.despesas,
                 items: [
                     {
-                        type: 'clock',
-                        title: 'Você está cansado de perder tempo?',
-                        text: 'Com o Hit #1 de despesas, você tem o controle de tudo que está acontecendo no seu negócio. De maneira online, simples de usar.',
-                        image: img4Hits1,
+                        type: 'phone',
+                        title: 'Use seu cartão em qualquer estabelecimento.',
+                        text: 'Temos ampla rede parceira com bandeiras Elo e Good Card. Faça sua solicitação agora e comece a usar o seu hit!',
+                        image: img4Hits3,
                     },
-                                        {
+                    {
                         type: 'note',
                         title: 'Controle suas despesas com o aplicativo de carteira virtual.',
                         text: 'Envie e organize seus comprovantes fiscais,  além de consultar os gastos, saldos e extratos em tempo real.',
                         image: img2Hits3,
                     },
-                                        {
-                        type: 'phone',
-                        title: 'Use seu cartão em qualquer estabelecimento.',
-                        text: 'Temos ampla rede parceira com bandeiras Elo e Good Card. Faça sua solicitação agora e comece a usar o seu hit!',
-                        image: img4Hits3,
+                    {
+                        type: 'clock',
+                        title: 'Você está cansado de perder tempo?',
+                        text: 'Com o Hit #1 de despesas, você tem o controle de tudo que está acontecendo no seu negócio. De maneira online, simples de usar.',
+                        image: img4Hits1,
                     },
                                                             {
                         type: 'mail',

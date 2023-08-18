@@ -2,7 +2,7 @@ import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { useState } from 'react';
 import classNames from 'classnames';
-import Logo from './images/logo-edenred.png'
+import Logo from './images/edenred-logo.svg'
 import Image from 'next/image';
 import Button from '../Buttons';
 interface Props {
@@ -29,7 +29,7 @@ const Header: React.FC<Props> = ({ links }) => {
           <div className="flex items-center">
             <Link href="/">
               <a className="text-white">
-                <Image src={Logo} alt="Logo Edenred" width={105} height={67}></Image>
+                <Image src={Logo} alt="Logo Edenred" width={130} height={87}></Image>
               </a>
             </Link>
           </div>
