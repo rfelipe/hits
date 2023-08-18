@@ -14,7 +14,7 @@ const Sobre: NextPage = () => {
         <meta name="description" content=""></meta>
       </Head>
       <div className="lg:pt-10">
-        <div className="relative lg:pb-40 overflow-hidden">
+        <div className="relative lg:pb-20 overflow-hidden">
           <IntroBackgroundSobre/>
           <div className="container m-auto z-10 relative">
             <IntroTitleSobre/>

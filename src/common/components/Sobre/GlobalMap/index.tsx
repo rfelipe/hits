@@ -7,7 +7,7 @@ import mapImg from "./images/map.png"
 const GlobalMap = () => {
   return (
     <section>
-        <div className="lg:flex items-center justify-end lg:pt-56 pt-11">
+        <div className="lg:flex items-center justify-end lg:pt-32 pt-11">
             <div className="lg:w-2/3">
                 <div className='lg:pr-6 p-6 lg:w-[600px] container mx-auto'>
                     <h2 className='text-3xl text-black font-light'>Global:</h2>
