@@ -81,7 +81,7 @@ const Cards = () => {
                 </AnimatePresence>
             </div>
         </div>
-        <div className="bg-white rounded-lg p-12 w-[600px] text-center md:text-start">
+        <div className="bg-white rounded-lg px-7 md:px-12 py-9 md:w-[600px] text-center md:text-start">
             <h1 className="text-3xl">Despesas combustível</h1>
             <p className="mt-4 bg-[#DCF691] px-4 py-2 max-md:mx-auto rounded-full w-fit">Grátis por 60 dias</p>
             <p className="mt-4 text-lg leading-6 font-light">Para quem quer ter controle das despesas com combustível, serviços veiculares, e deslocamento, garantindo a organização desses gastos separado das outras despesas da empresa.</p>
