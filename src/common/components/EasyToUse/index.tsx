@@ -62,7 +62,7 @@ const EasyToUse: React.FC<EasyToUseProps> = ({texts}) => {
                         <p className="font-ubuntu lg:w-[200px] w-28 font-light md:font-normal text-grey md:text-black">{i.text3}</p>
                     </div>
                 </div>
-                <div className="flex justify-center"><Button type="red" href="/">{i.textButton}</Button></div>
+                {/* <div className="flex justify-center"><Button type="red" href="/">{i.textButton}</Button></div> */}
             </div>
             ))}
 

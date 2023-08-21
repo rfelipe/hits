@@ -27,7 +27,7 @@ const DataItem: React.FC<AdvantageItemProps & { renderImage: (props: AdvantageIt
         <div className='px-6 md:py-24 md:px-0 md:pl-6 md:w-[460px] 2xl:w-[496px]'>
           <h3 className='text-2xl md:text-4xl font-light mb-8'>{advantages.title}</h3>
           <p className='text-grey md:text-black text-base md:text-lg font-light font-ubuntu mb-8'>{advantages.text}</p>
-          <div className='flex justify-center md:justify-start'><Button type="red" href="/">Teste grátis por 60 dias</Button></div>
+          <div className='flex justify-center md:justify-start'><Button type="red" href="/">Fale com vendas</Button></div>
         </div>
 
       </motion.div>

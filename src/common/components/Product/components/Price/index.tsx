@@ -66,7 +66,7 @@ const PriceSection: React.FC<PricesProps> = ({ prices }) => {
                                     <p>ao dia do mês, tá bom pra você?</p>
                                 </div>
                                 <span className='font-ubuntu text-grey md:text-black text-base font-light mb-6 block'>{price.text}</span>
-                                <Button type="red" href="/">Teste grátis por 60 dias</Button>
+                                <Button type="borderRed" href="/">Contrate agora</Button>
                             </div>
                         </div>
                     </div>

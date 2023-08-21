@@ -62,7 +62,7 @@ const IntroSection: React.FC<IntroProps> = ({ intro }) => {
                         )}
 
                         {!i.showInput && (
-                            <Button type="red" href="/">Teste grátis por 60 dias</Button>
+                            <Button type="red" href="/">Fale com vendas</Button>
                         )}
                     </div>
                 </div>

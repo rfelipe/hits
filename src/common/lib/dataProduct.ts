@@ -30,7 +30,7 @@ export const productsData = [
                 label: 'Controle de Despesas',
                 title: 'Quer mais sucesso no dia a dia do seu negócio?',
                 text: 'Conte com a gente para o controle e organização de todas as despesas da sua empresa.',
-                showInput: true,
+                showInput: false,
                 colors: productTypeColors.despesas
             },
         ],

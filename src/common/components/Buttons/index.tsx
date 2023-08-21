@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { motion, MotionProps } from 'framer-motion';
 
 interface ButtonProps {
-  type: 'red' | 'learnMore' | 'readMore';
+  type: 'red' | 'learnMore' | 'readMore' | 'borderRed';
   children: React.ReactNode;
   href?: string;
 }
@@ -11,7 +11,8 @@ interface ButtonProps {
 const typeToClassMap = {
   red: 'bg-original-red border-original-red text-white hover:bg-black hover:border-black py-3 px-10 rounded-full border',
   learnMore: 'bg-transparent border-black text-black hover:border-original-red py-3 px-10 rounded-full border',
-  readMore: 'text-black pb-8 md:pb-0 mx-auto md:mx-0 md:px-6'
+  readMore: 'text-black pb-8 md:pb-0 mx-auto md:mx-0 md:px-6',
+  borderRed: 'border-original-red text-original-red hover:bg-original-red hover:border-original-red hover:text-white py-3 px-10 rounded-full border',
 };
 
 const variants = {
