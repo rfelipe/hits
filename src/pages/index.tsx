@@ -15,9 +15,8 @@ import Hits2Img2 from '../static/images/img1_hits2.png';
 import imgNovidades1 from '../static/images/home/novidades1.png'
 import imgNovidades2 from '../static/images/home/novidades2.png'
 import imgNovidades3 from '../static/images/home/novidades3.png'
-import Slider from 'react-slick';
-import 'slick-carousel/slick/slick.css';
 import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation } from "swiper";
 
 
 
@@ -81,7 +80,8 @@ const Home: NextPage = () => {
                     </p>
                     <div className="pt-7 md:pt-16">
                         <div className="lg:max-w-[90%] ml-auto mr-auto">
-                        <Swiper slidesPerView={4} initialSlide={1}
+                        <Swiper slidesPerView={4} initialSlide={1} navigation
+                            modules={[Navigation]}
                             breakpoints={{
                                 320: {
                                     slidesPerView: 1,
@@ -101,7 +101,7 @@ const Home: NextPage = () => {
                                     <div className="mb-4">
                                         <Phone />
                                     </div>
-                                    <h3 className="text-black font-medium text-2xl mb-2">Controle</h3>
+                                    {/* <h3 className="text-black font-medium text-2xl mb-2">Controle</h3> */}
                                     <p className="w-[188px] text-center mx-auto">Aplicativo e plataforma para gestão sem custo adicional.</p>
                                 </div>
                             </SwiperSlide>

@@ -1,2 +1,15 @@
 @import "swiper/css";
 @import "swiper/css/navigation";
+
+
+/* Estilize os botões de navegação conforme necessário */
+.swiper-button-prev,
+.swiper-button-next {
+  color: black; /* Defina a cor do texto */
+}
+
+/* Personalize os botões de navegação ativos */
+.swiper-button-prev.swiper-button-disabled,
+.swiper-button-next.swiper-button-disabled {
+  color: gray; /* Altere a cor para botões desativados */
+}
