@@ -16,7 +16,7 @@ const Cards = () => {
             <h1 className="text-3xl">Despesas Gerais</h1>
             <p className="mt-4 bg-[#C8C3FF] px-4 py-2 max-md:mx-auto rounded-full w-fit">Grátis por 60 dias</p>
             <p className="mt-4 text-lg leading-6 font-light ">Para quem quer ter controle de todas as despesas do negócio, se destacar da concorrência e poder focar no que mais importa.</p>
-            <ul className="mt-8 md:block hidden">
+            <ul className="mt-8 md:block hidden h-52">
                 <li className="flex mt-2 items-center gap-3"><Image src={IconList} alt=""/>Cartão para usar onde quiser</li>
                 <li className="flex mt-2 items-center gap-3"><Image src={IconList} alt=""/> Carteira digital</li>
                 <li className="flex mt-2 items-center gap-3"><Image src={IconList} alt=""/> Plataforma de gestão</li>
@@ -85,7 +85,7 @@ const Cards = () => {
             <h1 className="text-3xl">Despesas combustível</h1>
             <p className="mt-4 bg-[#DCF691] px-4 py-2 max-md:mx-auto rounded-full w-fit">Grátis por 60 dias</p>
             <p className="mt-4 text-lg leading-6 font-light">Para quem quer ter controle das despesas com combustível, serviços veiculares, e deslocamento, garantindo a organização desses gastos separado das outras despesas da empresa.</p>
-            <ul className="mt-8 md:block hidden">
+            <ul className="mt-8 md:block hidden h-52">
                 <li className="flex mt-2 items-center gap-3"><Image src={IconList} alt=""/>Busca dos postos de combustível com melhor preço</li>
                 <li className="flex mt-2 items-center gap-3"><Image src={IconList} alt=""/><p className="w-11/12">Controle de serviços veiculares: manutenção, lavagem, pagamento IPVA</p></li>
                 <li className="flex mt-2 items-center gap-3"><Image src={IconList} alt=""/>Aplicativo carteira digital</li>

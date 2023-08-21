@@ -41,7 +41,7 @@ const Planos: NextPage = () => {
         <meta name="description" content=""></meta>
       </Head>      
       <div className="relative overflow-hidden pt-20  pb-20">
-        <div className="absolute top-[50px] left-1/2 transform -translate-x-1/2 w-[1890px] h-[70%] bg-[#F1F7FF] rounded-[100%] z-[-1]"></div>
+        <div className="absolute top-[50px] left-1/2 transform -translate-x-1/2 w-[1890px] h-[67%] bg-[#F1F7FF] rounded-[100%] z-[-1]"></div>
         <section className="text-center m-auto xl:max-w-[969px] p-3 md:mb-20 mb-10">
           <h1 className="lg:text-6xl text-4xl font-light">
             Qual é o melhor Hit para você?
@@ -62,19 +62,6 @@ const Planos: NextPage = () => {
              - Form
         */}
         <Duvida />
-        <section className="text-center m-auto p-3 mt-24">
-          <h1 className="text-3xl font-bold">
-            Contrate o Controle de Despesas e Controle de Combustível juntos!
-          </h1>
-          <p className="mt-3 text-3xl">
-            Veja como podemos ajudar você a acelerar o seu sucesso!
-          </p>
-          {/* <div className="mt-7">
-            <a onClick={() => setShowForm(true)} className="cursor-pointer transition rounded-full text-lg bg-[#F72717] hover:bg-[#000000] text-[#ffffff] px-[40px] py-[12px]">
-              Fale com vendas
-            </a>
-          </div> */}
-        </section>
         <Faq faqs={faqs} />
         {showForm && <Form onClose={() => setShowForm(false)}/>}
       </div>
