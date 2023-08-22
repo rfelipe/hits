@@ -10,10 +10,10 @@ import ImgBg2 from './images/bg-p.png';
 const Duvida = () => {
     return (
         <section className="text-center m-auto mt-20">
-            <h2 className="text-3xl font-bold">
+            <h2 className="px-4 text-3xl font-bold">
                 Ainda em dúvida de qual Hit é o ideal para você?
             </h2>
-            <p className="mt-3 text-3xl ">
+            <p className="px-4 mt-3 text-3xl ">
                 Venha saber mais sobre cada um!
             </p>
             <div className="mt-20 flex justify-between flex-wrap min-[1230px]:flex-nowrap">
