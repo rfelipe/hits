@@ -27,7 +27,7 @@ const Menu = ({links, setIsMenuOpen, isMenuOpen}:Props) => {
                     <Button type="red" href={'/'}>Contrate agora</Button>
                 </div>
             </div>
-            <a className={`absolute flex items-center gap-2 px-4 py-2 rounded-full bg-cold-white right-[24px] top-[10px]
+            <a className={`absolute flex items-center gap-2 px-4 py-2 rounded-full bg-cold-white right-[24px] top-[10px] md:hidden
               ${isMenuOpen ? 'hidden' : ''}
             `}  onClick={() => { setIsMenuOpen(true);}}>
                 <svg xmlns="http://www.w3.org/2000/svg" width="18" height="9" viewBox="0 0 18 9" fill="none">
