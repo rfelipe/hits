@@ -15,16 +15,11 @@ const Header: React.FC<Props> = ({ links }) => {
   const router = useRouter();
   useEffect(() => {
     if (isMenuOpen) {
-      document.body.style.overflow = 'hidden';
+      document.body.className = 'overflow-hidden md:overflow-visible';
     } else {
-      document.body.style.removeProperty('overflow');
+      document.body.className='overflow-visible';
     }
   }, [isMenuOpen]);
-
-  // const handleLinkClick = (href: string) => {
-  // router.push(href);
-  //  setIsMenuOpen(false);
-  // };
 
   return (
     <header className="relative bg-white z-20">
