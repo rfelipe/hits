@@ -16,7 +16,7 @@ const links = [
 
 const MainTemplate = ({ children }: Props) => {
   return (
-    <div className="pt-12">     
+    <div className="pt-6 md:pt-12">     
      <Header links={links} />
       <main>{children}</main>
       <Footer />
