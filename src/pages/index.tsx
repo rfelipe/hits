@@ -4,10 +4,19 @@ import Head from "next/head";
 import MainTemplate from "../common/templates/main";
 import { Phone, Clock, Note, Gas } from "../common/components/icons";
 import Button from "../common/components/Buttons";
+
 import Img2 from '../static/images/home/img1.png';
+import finalImg2 from '../static/images/home/bg-final2.png'
+
 import Img1 from '../static/images/home/img2.png';
+import finalImg1 from '../static/images/home/bg-final1.png'
+import finalCircleImg1 from '../static/images/home/bg-circle1.png'
+import finalCircleImg2 from '../static/images/home/bg-circle2.png'
+
+
 import Img3 from '../static/images/home/img3.png';
 import Img4 from '../static/images/home/img4.png';
+
 import Image from "next/image";
 import Hits1Img1 from '../static/images/img1_hits1.png';
 import Hits1Img1Mob from '../static/images/home/Group 47274.png';
@@ -28,6 +37,8 @@ import Fade from 'react-reveal/Fade';
 const Home: NextPage = () => {
     const [bannerHits1, setbannerHits1] = useState(false);
     const [bannerHits2, setbannerHits2] = useState(false);
+    const [finalHits1, setfinalHits1] = useState(false);
+    const [finalHits2, setfinalHits2] = useState(false);
 
 
     return (
@@ -322,39 +333,87 @@ const Home: NextPage = () => {
                     </div>
                 </div>
                 <div className="pt-14 md:pt-32 mb-14">
+                    
                     <div className="flex max-xl:flex-col-reverse max-xl:flex-wrap mb-10">
+                        <Fade left>
                         <div className="flex">
-                            <div className="relative z-10 shrink-0 hidden md:block" >
-                                <Image alt="" src={Img1} className=""/>
+                            <div className={`relative ${!finalHits1 ? 'z-10' : ''} shrink-0 hidden md:block`} >
+                                {!finalHits1 ? (
+                                    <Image alt="" src={Img1} className=""/>
+                                ) : (
+                                    <Image alt="" src={finalImg1} className=""/>
+                                )}
                             </div>
                             <div className="relative z-10 shrink-0 md:hidden" >
                                 <Image alt="" src={Img4} className=""/>
                             </div>
-                            <div className="relative flex items-center justify-center bg-cold-white w-[309px] h-[309px] rounded-[100%] ml-[-66px] z-0 ">
-                                <div className="pl-6">
-                                    <span className="inline-flex justify-center bg-[#C8C3FF]  px-4 py-2 rounded-full w-fit mb-2">Hit #01</span>
-                                    <p className="text-lg text-left max-w-[150px] mb-2">Quero controlar as despesas do negócio</p>
-                                    <Button type="red" href="/despesas">Eu quero</Button>
+                            <div className={`relative flex items-center justify-center max-md:!bg-none bg-cold-white w-[309px] h-[309px] rounded-[100%] ml-[-66px] ${!finalHits1 ? '' : 'md:ml-[-69px] md:bg-[#FED0C8]'}  z-0 bg-right bg-no-repeat`} style={{ 'backgroundImage': `url(${finalHits1 ? finalCircleImg1.src : ''})` }}>
+                                <div className="pl-6 text-center md:text-left">
+                                    <span className="inline-flex justify-center bg-[#C8C3FF] px-4 py-2 rounded-full w-fit mb-2">Hit #01</span>
+                                    <p className={`text-lg md:text-left max-w-[150px] mb-2  ${finalHits1 ? 'md:text-white' : 'text-black'}`}>Quero controlar as despesas do negócio</p>
+                                    {!finalHits1 ? (
+                                        <button onClick={() => setfinalHits1(!finalHits1)} className="bg-original-red border-original-red text-white hover:bg-black hover:border-black py-3 px-10 rounded-full border" >Eu quero</button>
+                                    ) : (
+                                        <div>
+                                            <button onClick={() => setfinalHits1(!finalHits1)} className="hidden md:block absolute bg-original-red border-original-red text-white hover:bg-black hover:border-black w-[42px] h-[42px] rounded-full border right-4">X</button>
+                                            <div className="md:hidden">
+                                                <Button type="red" href="/despesas">Eu Quero</Button>
+                                            </div>
+                                        </div>
+                                    )}
                                 </div>
+                                {finalHits1 && (
+                                    <div className="absolute z-20 -left-[264px]">
+                                        <p className="text-2xl">Grátis por</p>
+                                        <p className="text-6xl font-semibold mb-2">60 dias</p>
+                                        <Button type="red" href="/despesas">Saiba mais</Button>
+                                    </div>
+                                ) }
                             </div>
                         </div>
-                        <h2 className="text-black text-6xl ml-auto my-auto font-light max-xl:max-w-4xl max-xl:text-center max-xl:mb-10 xl:w-[500px] mx-auto">Vem pro lado do sucesso, compre o seu Hit online!</h2>
+                        </Fade>
+                        <Fade right>
+                            <h2 className="text-black text-6xl ml-auto my-auto font-light max-xl:max-w-4xl max-xl:text-center max-xl:mb-10 xl:w-[500px] mx-auto">Vem pro lado do sucesso, compre o seu Hit online!</h2>
+                        </Fade>
                     </div>
+                    <Fade right>
                     <div className="flex justify-end">
-                        <div className="relative flex items-center justify-center bg-cold-white w-[309px] h-[309px] rounded-[100%] mr-[-66px] z-0 ">
-                            <div className="pr-6 text-right">
+                        <div className={`relative flex items-center justify-center max-md:!bg-none bg-cold-white w-[309px] h-[309px] rounded-[100%] mr-[-66px] z-0 ${!finalHits2 ? '' : 'md:ml-[-69px] md:!bg-[#DCF691]'} z-0 bg-left bg-no-repeat `} style={{ 'backgroundImage': `url(${finalHits2 ? finalCircleImg2.src : ''})` }}>
+                            <div className="pr-6 text-center md:text-right">
                                 <span className="inline-flex justify-center bg-[#DCF691]  px-4 py-2 rounded-full w-fit mb-2">Hit #02</span>
-                                <p className="text-lg  max-w-[150px] mb-2">Quero controlar as despesas com combustível</p>
-                                <Button type="red" href="/combustivel">Eu quero</Button>
+                                <p className={`text-lg ${finalHits2 ? 'md:text-white' : 'text-black'} max-w-[150px] mb-2`}>Quero controlar as despesas com combustível</p>
+                                {!finalHits2 ? (
+                                    <button onClick={() => setfinalHits2(!finalHits2)} className="bg-original-red border-original-red text-white hover:bg-black hover:border-black py-3 px-10 rounded-full border" >Eu quero</button>
+                                ) : (
+                                    <div>
+                                        <button onClick={() => setfinalHits2(!finalHits2)} className="hidden md:block absolute bg-original-red border-original-red text-white hover:bg-black hover:border-black w-[42px] h-[42px] rounded-full border right-64">X</button>
+                                        <div className="md:hidden">
+                                            <Button type="red" href="/combustivel">Eu Quero</Button>
+                                        </div>
+                                    </div>
+                                )}
                             </div>
+                            {finalHits2 && (
+                                    <div className="absolute z-20 -right-[264px] hidden md:block">
+                                        <p className="text-2xl">Grátis por</p>
+                                        <p className="text-6xl font-semibold mb-2">60 dias</p>
+                                        <Button type="red" href="/combustivel">Saiba mais</Button>
+                                    </div>
+                                ) }
                         </div>
-                        <div className="hidden md:block">
-                            <Image alt="" src={Img2} className=" relative z-0" />
+                        <div className={`hidden ${finalHits2 ? '-z-10' : ''} md:block`}>
+                            {/* <Image alt="" src={Img2} className=" relative z-0" /> */}
+                            {!finalHits2 ? (
+                                    <Image alt="" src={Img2} className=""/>
+                                ) : (
+                                    <Image alt="" src={finalImg2} className=""/>
+                                )}
                         </div>
                         <div className="md:hidden">
                             <Image alt="" src={Img3} className=" relative z-0" />
                         </div>
                     </div>
+                    </Fade>
                 </div>
             </>
         </MainTemplate>
