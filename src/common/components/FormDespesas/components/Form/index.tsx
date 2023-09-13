@@ -22,7 +22,7 @@ const initialValues = {
 };
 
 const validationSchema = Yup.object({
-  name: Yup.string().required("Insira seu nome"),
+  name: Yup.string().matches(/^[A-Za-z ]*$/, 'Nome inválido').required("Insira seu nome"),
   email: Yup.string().email("E-mail inválido").required("Insira seu e-mail"),
   phone: Yup.string()
     .test("valid-phone", "Número inválido", (value?: string) => {
@@ -37,7 +37,7 @@ const validationSchema = Yup.object({
   cars_quantity: Yup.number()
     .min(1, "O valor precisa ser positivo")
     .required("Insira a quantidade de veículos"),
-  porte: Yup.string().required().oneOf(["micro", "pequena", "grande", "media"],"selecione o porte da empresa"),
+  porte: Yup.string().required("selecione o porte da empresa").oneOf(["micro", "pequena", "grande", "media"],"selecione o porte da empresa"),
   assertion: Yup.bool().oneOf([true]),
 });
 

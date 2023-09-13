@@ -21,7 +21,7 @@ const initialValues = {
 };
 
 const validationSchema = Yup.object({
-  name: Yup.string().required("Insira seu nome"),
+  name: Yup.string().matches(/^[A-Za-z ]*$/, 'Nome inválido').required("Insira seu nome"),
   email: Yup.string().email("E-mail inválido").required("Insira seu e-mail"),
   phone: Yup.string()
     .test("valid-phone", "Número inválido", (value?: string) => {
