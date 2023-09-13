@@ -54,7 +54,7 @@ const Button: React.FC<ButtonProps> = ({ type, children, href }) => {
         variants={variants}
         {...motionProps}
       >
-        <a className="flex items-center">
+        <a className="flex items-center gap-3">
           
           {type === 'learnMore' && (
             <motion.svg

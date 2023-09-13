@@ -9,12 +9,14 @@ import VideoSection from '../../components/Product/components/Video';
 import WantMoreSuccessSection from '../../components/Product/components/WantMoreSuccess';
 import AdvantagesSection from '../../components/Product/components/ProductAdvantages';
 import CarouselSection from '../../components/Product/components/Carousel';
-
+import FormDespesas from '../../components/FormDespesas';
+import FormCombustivel from '../../components/FormCombustivel';
 interface ProductTemplateProps {
   product: Product;
+  type?: string;
 }
 
-const ProductTemplate: React.FC<ProductTemplateProps> = ({ product }) => {
+const ProductTemplate: React.FC<ProductTemplateProps> = ({ product, type }) => {
   const { intro, carouselItems, carouselTitle, Easy, price, faq, video, success, advantages } = product;
 
   return (
@@ -25,6 +27,11 @@ const ProductTemplate: React.FC<ProductTemplateProps> = ({ product }) => {
         <PriceSection prices={price} />
         <EasyToUse texts={Easy} />
         <VideoSection videos={video} />
+        {type == 'despesas' ? (
+          <FormDespesas/>
+        ) : (
+          <FormCombustivel/>
+        )}
         <WhoEdenred/>
         <FaqSection faqs={faq} />
         <WantMoreSuccessSection success={success} />

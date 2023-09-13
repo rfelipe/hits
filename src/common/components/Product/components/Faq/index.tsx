@@ -18,14 +18,14 @@ const FaqSection: React.FC<FaqProps> = ({ faqs }) => {
                 {faqs.map((faq, index) => (
                     <><div className='relative'>
                         <div className='md:hidden'>
-                            <svg className='absolute h-[500px] md:h-auto md:w-screen -ml-96 md:-ml-0' width="1440" height="842" viewBox="0 0 1440 842" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <svg className={`absolute ${faq.styleMobile ? faq.styleMobile : "h-[645px]"} h-[645px] md:h-auto md:w-screen -ml-96 md:-ml-0`} width="1440" height="842" viewBox="0 0 1440 842" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <rect x="103" y="0.327148" width="1870" height="841.673" rx="420.836" fill="#F1F7FF" />
                                 <ellipse cx="-129" cy="420.836" rx="421" ry="420.836" transform="rotate(-180 -129 420.836)" fill={`${faq.colors[0]}`} />
                                 <path fillRule="evenodd" clipRule="evenodd" d="M199.422 156.65C257.37 228.751 292.043 320.341 292.043 420.026C292.043 519.711 257.37 611.301 199.422 683.402C141.474 611.301 106.801 519.711 106.801 420.026C106.801 320.341 141.474 228.751 199.422 156.65Z" fill={`${faq.colors[1]}`} />
                             </svg>
                         </div>
                         <div className='md:block hidden'>
-                            <svg className='inset-0 absolute w-screen h-[756px]' width="1440" height="842" viewBox="0 0 1440 842" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <svg className={`inset-0 absolute ${faq.style ? faq.style : "w-screen h-[865px]"} `} width="1440" height="842" viewBox="0 0 1440 842" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <rect x="103" y="0.327148" width="1870" height="841.673" rx="420.836" fill="#F1F7FF" />
                                 <ellipse cx="-129" cy="420.836" rx="421" ry="420.836" transform="rotate(-180 -129 420.836)" fill={`${faq.colors[0]}`} />
                                 <path fillRule="evenodd" clipRule="evenodd" d="M199.422 156.65C257.37 228.751 292.043 320.341 292.043 420.026C292.043 519.711 257.37 611.301 199.422 683.402C141.474 611.301 106.801 519.711 106.801 420.026C106.801 320.341 141.474 228.751 199.422 156.65Z" fill="#B0EFFF" />
@@ -93,7 +93,7 @@ const FaqSection: React.FC<FaqProps> = ({ faqs }) => {
                                                         duration: 0.4,
                                                     }}
                                                 >
-                                                    <p className="pl-6">{item.answer}</p>
+                                                    <p className="pl-6" dangerouslySetInnerHTML={{ __html: item.answer }} ></p>
                                                 </motion.div>
                                             )}
                                         </AnimatePresence>
