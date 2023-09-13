@@ -16,7 +16,7 @@ const initialValues = {
   email: "",
   phone: "",
   cnpj: "",
-  cars_quantity: 0,
+  cars_quantity: "",
   assertion: false,
 };
 
@@ -161,7 +161,7 @@ const Form = ({ className, successCallback }: Props) => {
         <input
           id="privacy-policy"
           type="checkbox"
-          className="w-6 h-6 text-text-red rounded"
+          className="w-6 h-6 text-text-red rounded focus:ring-0 border-black"
           {...formik.getFieldProps("assertion")}
         />
         <label

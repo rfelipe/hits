@@ -10,13 +10,14 @@ import {
 } from "@brazilian-utils/brazilian-utils";
 import DataLayer from "../../../../lib/DataLayer";
 import Cta from "../../../Cta";
+import styles from "./components/Input/index.module.css";
 
 const initialValues = {
   name: "",
   email: "",
   phone: "",
   cnpj: "",
-  cars_quantity: 0,
+  cars_quantity: "",
   porte: "",
   assertion: false,
 };
@@ -161,14 +162,15 @@ const Form = ({ className, successCallback }: Props) => {
       </div>
       <div className="w-full mt-6 lg:mt-8">
         <select name="porte" className={`
+        ${styles.select}
       rounded-full
       w-[100%]
       h-[48px]
       border
       px-5
-      focus:border-[#D5D8DD]
-      focus:shadow-none	
-      ${formik.errors.porte ? "border-border-red" : "border-[#D5D8DD]"}
+      focus:border-black
+      focus:ring-0
+      ${formik.errors.porte ? "border-border-red" : "border-black"}
       `}
           onChange={formik.handleChange}
           onBlur={formik.handleBlur}
@@ -187,7 +189,7 @@ const Form = ({ className, successCallback }: Props) => {
         <input
           id="privacy-policy"
           type="checkbox"
-          className="w-6 h-6 text-text-red rounded"
+          className="w-6 h-6 text-text-red rounded focus:ring-0 border-black"
           {...formik.getFieldProps("assertion")}
         />
         <label

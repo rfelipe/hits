@@ -19,9 +19,9 @@ const Input = ({ label, type, fieldInputProps, mask, error }: Props) => (
         mask={mask}
         type={type}
         className={`${styles.input}
-    focus:border-border-grey
-    border-solid border-1
-    ${error ? "border-border-red text-text-red" : "border-border-grey"}`}
+    focus:border-black focus:ring-0
+    border-solid border-1 
+    ${error ? "border-border-red text-text-red" : "border-black"}`}
         {...fieldInputProps}
         required
       />
@@ -29,9 +29,9 @@ const Input = ({ label, type, fieldInputProps, mask, error }: Props) => (
       <input
         type={type}
         className={`${styles.input}
-      focus:border-border-grey
+      focus:border-black focus:ring-0
       border-solid border-1
-      ${error ? "border-border-red text-text-red" : "border-border-grey"}`}
+      ${error ? "border-border-red text-text-red" : "border-black"}`}
         {...fieldInputProps}
         required
       />
@@ -41,7 +41,7 @@ const Input = ({ label, type, fieldInputProps, mask, error }: Props) => (
       className={`
       ${styles.label}
       font-ubuntu
-      ${error ? "text-text-red" : "text-text-grey"}`}
+      ${error ? "text-text-red" : "text-black"}`}
     >
       <span>{label}</span>
     </label>
