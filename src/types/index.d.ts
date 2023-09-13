@@ -106,6 +106,8 @@ export interface FaqItems {
 }
 export interface Faq {
   description?: string;
+  style?: string;
+  styleMobile?: string;
   colors?: string[];
   items: FaqItems;
 }

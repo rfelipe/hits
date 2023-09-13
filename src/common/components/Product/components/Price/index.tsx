@@ -4,6 +4,8 @@ import Image from 'next/image';
 import React, { useEffect, useState } from 'react';
 import Button from '../../../Buttons';
 import { Price } from '../../../../../types';
+import cart from "../../../Header/images/shopping-cart.png"
+
 
 interface PricesProps {
     prices: Price[];
@@ -66,7 +68,7 @@ const PriceSection: React.FC<PricesProps> = ({ prices }) => {
                                     <p>ao dia do mês, tá bom pra você?</p>
                                 </div>
                                 <span className='font-ubuntu text-grey md:text-black text-base font-light mb-6 block'>{price.text}</span>
-                                <Button type="borderRed" href="/">Contrate agora</Button>
+                                <Button type="borderRed" href="/"><Image src={cart} height={25} width={25} alt=''/>Contrate agora</Button>
                             </div>
                         </div>
                     </div>

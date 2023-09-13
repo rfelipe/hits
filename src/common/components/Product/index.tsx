@@ -13,7 +13,7 @@ const ProductSection: React.FC<ProductListProps> = ({ products, type }) => {
   return (
     <div>
       {filteredProducts.map((product, index) => (
-        <ProductTemplate key={index} product={product} />
+        <ProductTemplate key={index} type={type} product={product} />
       ))}
     </div>
   );

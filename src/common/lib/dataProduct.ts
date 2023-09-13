@@ -88,20 +88,28 @@ export const productsData = [
                 colors: productTypeColors.despesas,
                 items: [
                     {
-                        question: 'Lorem ipsum dolor sit amet?',
-                        answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
+                        question: 'O que é o Hit Controle de Despesas?',
+                        answer: 'O <strong>Controle de Despesas</strong> é o hit ideal para quem quer ter controle de todas as despesas do negócio, se destacar da concorrência e ter tempo para focar no que mais importa. Você tem um cartão recarregável com bandeiras Elo e Good Card para usar onde quiser, um aplicativo de carteira virtual para acompanhar e reportar despesas e uma plataforma web para baixar relatórios e ter controle de movimentações',
                     },
                     {
-                        question: 'Lorem ipsum dolor sit amet?',
-                        answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
+                        question: 'Como funciona a modalidade de pagamento do Hit de Despesas?',
+                        answer: 'Se você é um micro ou pequena empresa, conte com nossa ferramenta e nossa parceria para manter suas contas em dia e fazer sua empresa continuar crescendo.',
                     },
                     {
-                        question: 'Lorem ipsum dolor sit amet?',
-                        answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
+                        question: 'Como funciona a modalidade de pagamento do Hit de Despesas?',
+                        answer: 'Hits Controle de Despesas funciona com a modalidade recarga de crédito, onde você recarrega os seus cartões e paga conforme o uso.'                    
                     },
                     {
-                        question: 'Lorem ipsum dolor sit amet?',
-                        answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit?',
+                        question: 'Como comprar o meu Hits?',
+                        answer: 'Depois de escolher o Hits ideal para você, clique nos botões de “Contrate agora” ou nos links a seguir e dê início ao processo de compra, você só precisa inserir seus dados iniciais e solicitar seu cartão :) <br/><br/> <a href="" style="text-decoration: underline;">Contratar Controle de Despesas</a>',
+                    },
+                    {
+                        question: 'Já comprei o meu Hits, e agora?',
+                        answer: 'Fique de olho em nosso contato por e-mail ou WhatsApp! <br/> Para <strong>Hits Despesas</strong>, finalize pedido na <a href="" style="text-decoration: underline;">plataforma</a>, próximos passos em nosso contato. ',
+                    },
+                    {
+                        question: 'Como acessar minha plataforma?',
+                        answer: 'Acesse pelo computador ou app, como preferir :) <br/><br/>Hits Despesas: <br/><a href="" style="text-decoration: underline;">Portal do Gestor </a> <br/><a href="" style="text-decoration: underline;">App da carteira digital</a>',
                     },
                 ]
             }
@@ -212,20 +220,28 @@ export const productsData = [
                 colors: productTypeColors.combustivel,
                 items: [
                     {
-                        question: 'Lorem ipsum dolor sit amet?',
-                        answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
+                        question: 'O que é o Hit Controle de Combustível?',
+                        answer: 'Com o Hit Controle de Combustível, você encontra os melhores preços de combustível na palma da mão, em tempo real. Você pode pagar por serviços essenciais, como táxi, estacionamento, Uber, 99, bicicletas compartilhadas e muito mais, tudo em um único lugar! <br/><br/>Além disso, nosso aplicativo torna tudo mais prático para você organizar suas despesas – desde o IPVA até o seguro e a manutenção do veículo.',
                     },
                     {
-                        question: 'Lorem ipsum dolor sit amet?',
-                        answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
+                        question: 'Como funciona a modalidade de pagamento do Hit Controle de Combustível?',
+                        answer: 'Hits Controle de Combustível funciona com a modalidade recarga de crédito, onde você recarrega os seus cartões e paga conforme o uso.',
                     },
                     {
-                        question: 'Lorem ipsum dolor sit amet?',
-                        answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
+                        question: 'Como comprar o meu Hit?',
+                        answer: 'Depois de escolher o Hit ideal para você, clique nos botões de “Contrate agora” ou nos links a seguir e dê início ao processo de compra, você só precisa inserir seus dados iniciais e solicitar seu cartão :) <br/><br/> <a href="" style="text-decoration: underline;">Contratar Controle de Combustível</a>',
                     },
                     {
-                        question: 'Lorem ipsum dolor sit amet?',
-                        answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit?',
+                        question: 'Já comprei o meu Hit, e agora?',
+                        answer: 'Fique de olho em nosso contato por e-mail ou WhatsApp!<br/><br/> Para <strong>Hits Combustível</strong>, configure e desbloqueie seu cartão na plataforma, use em nossa rede parceira.',
+                    },
+                    {
+                        question: 'Como acessar minha plataforma?',
+                        answer: 'Acesse pelo computador ou app, como preferir :) <br/><br/>Hits Combustível: <br/><a href="" style="text-decoration: underline;">Sou Log + </a><br/><a href="" style="text-decoration: underline;">App do Gestor</a>',
+                    },
+                    {
+                        question: 'Sou um estabelecimento e quero ser parceiro da Edenred?',
+                        answer: 'Na base da parceria e da tecnologia, a gente faz a diferença no cotidiano dos nossos clientes, usando toda a expertise da Edenred a favor dos pequenos empreendedores. Entre em contato pelo site para parceiros e faça parte da Edenred!',
                     },
                 ]
             }

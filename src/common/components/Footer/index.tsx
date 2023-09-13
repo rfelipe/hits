@@ -7,6 +7,7 @@ import Facebook from './images/facebook.png';
 import Youtube from './images/youtube.png';
 import Spotify from './images/spotify.png';
 import Instagram from './images/instagram.png';
+import Optanon from "../../../common/lib/Optanon";
 
 const Footer = () => {
   const links = [
@@ -67,36 +68,46 @@ const Footer = () => {
               <Image src={LogoEdenred} alt={'Logo Edenred'} width={105} height={67}></Image>
           </div>
 
-          <div className="flex md:mb-14 md:justify-normal flex-col md:flex-row w-full justify-center mx-auto">
+          <div className="flex md:mb-14 md:justify-normal flex-col md:flex-row w-full justify-start mx-auto">
             <Button type="readMore" href="/">Acesso a plataforma Hit Despesas</Button>
             <Button type="readMore" href="/">Acesso a plataforma Hit Combustível</Button>
           </div>
-          <div className="flex justify-between pb-24  gap-8 md:pb-0 md:justify-normal md:items-start md:mr-auto md:gap-16 md:px-6">
-            <Link href={'/'} key="linkedin">
-              <a>
+          <div className="flex justify-between max-md:pb-10 gap-8 md:pb-0 md:justify-normal md:items-start md:mr-auto md:gap-16 md:px-6">
+            <Link href={'https://www.linkedin.com/company/ticket-log/'} key="linkedin">
+              <a className="hover:scale-125 transition-all">
                 <Image src={Linkedin} alt={'Icon'} width={24} height={24}></Image>
               </a>
             </Link>
-            <Link href={'/'} key="facebook">
-              <a>
+            <Link href={'https://www.facebook.com/TicketLog'} key="facebook">
+              <a className="hover:scale-125 transition-all">
                 <Image src={Facebook} alt={'Icon'} width={24} height={24}></Image>
               </a>
             </Link>
-            <Link href={'/'} key="instagram">
-              <a>
+            <Link href={'https://www.instagram.com/ticket.log/'} key="instagram">
+              <a className="hover:scale-125 transition-all">
                 <Image src={Instagram} alt={'Icon'} width={24} height={24}></Image>
               </a>
             </Link>
             <Link href={'/'} key="spotify">
-              <a>
+              <a className="hover:scale-125 transition-all">
                 <Image src={Spotify} alt={'Icon'} width={24} height={24}></Image>
               </a>
             </Link>
-            <Link href={'/'} key="youtube">
-              <a>
+            <Link href={'https://www.youtube.com/ticketlog'} key="youtube">
+              <a className="hover:scale-125 transition-all">
                 <Image src={Youtube} alt={'Icon'} width={24} height={24}></Image>
               </a>
             </Link>
+          </div>
+          <div className="flex max-md:flex-col max-md:text-center max-md:gap-5 max-md:m-auto gap-10 my-5 mr-auto max-md:pb-14 px-6 text-xs">
+              <a href="https://www.ticketlog.com.br/lgpd/#termos-de-servico" target="_blank" rel="noreferrer">Termos de Uso e Política de Privacidade</a>
+              <a href="https://www.ticketlog.com.br/lgpd" target="_blank" rel="noreferrer" >LGPD</a>
+              <a id="onetrust" className="optanon-show-settings cursor-pointer" onClick={() => {
+                      Optanon.triggerGoogleAnalyticsEvent(
+                        "OneTrust Cookie Consent",
+                        "Banner Open Preferences"
+                      );
+          }}>Gerenciar Cookies</a>
           </div>
         </div>
       </div>

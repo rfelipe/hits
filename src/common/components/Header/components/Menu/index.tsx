@@ -1,5 +1,8 @@
 import Link from 'next/link';
 import Button from '../../../Buttons';
+import Image from "next/image";
+import cart from "../../images/shopping-cart.png"
+
 type Props = {
   links: { href: string; label: string, color?: string }[];
   setIsMenuOpen: (open: boolean) => void;
@@ -24,7 +27,7 @@ const Menu = ({ links, setIsMenuOpen, isMenuOpen }: Props) => {
               </Link>
             </>
           ))}
-          <Button type="red" href={'/'}>Contrate agora</Button>
+          <Button type="red" href={'/'}><Image src={cart} height={25} width={25} alt=''/>Contrate agora</Button>
         </div>
       </div>
       <div className='md:hidden'>
