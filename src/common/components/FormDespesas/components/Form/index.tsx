@@ -17,6 +17,7 @@ const initialValues = {
   phone: "",
   cnpj: "",
   cars_quantity: 0,
+  porte: "",
   assertion: false,
 };
 
@@ -36,6 +37,7 @@ const validationSchema = Yup.object({
   cars_quantity: Yup.number()
     .min(1, "O valor precisa ser positivo")
     .required("Insira a quantidade de veículos"),
+  porte: Yup.string().required().oneOf(["micro", "pequena", "grande", "media"],"selecione o porte da empresa"),
   assertion: Yup.bool().oneOf([true]),
 });
 
@@ -53,7 +55,7 @@ const Form = ({ className, successCallback }: Props) => {
     onSubmit: async (values) => {
       setSending(true);
       try {
-        const { name, email, phone, cnpj, cars_quantity, assertion } = values;
+        const { name, email, phone, cnpj, cars_quantity, porte, assertion } = values;
         const trackerParams = await DataLayer.getTrackerParams();
 
         await fetch(
@@ -70,16 +72,17 @@ const Form = ({ className, successCallback }: Props) => {
               cnpj,
               cars_quantity,
               assertion,
+              porte,
               type: "hits",
-              source: "hits-abastecimento",
+              source: "hits-despesas",
               ...trackerParams
             }),
           }
         );
 
-        const p = name.split(' ')			
-        const nome =  p.shift().toLowerCase()
-        const sobrenome =  p.join(' ').toLowerCase()
+        const p = name.split(' ')
+        const nome = p.shift().toLowerCase()
+        const sobrenome = p.join(' ').toLowerCase()
 
         DataLayer.logEvent({
           event: "success",
@@ -93,7 +96,7 @@ const Form = ({ className, successCallback }: Props) => {
           "nome": sha256(nome),
           "nome_sem_hash": nome,
           "sobrenome": sha256(sobrenome),
-          "sobrenome_sem_hash": sobrenome,          
+          "sobrenome_sem_hash": sobrenome,
           leadid: Date.now(),
         });
 
@@ -157,23 +160,28 @@ const Form = ({ className, successCallback }: Props) => {
         />
       </div>
       <div className="w-full mt-6 lg:mt-8">
-          <select className={`
+        <select name="porte" className={`
       rounded-full
       w-[100%]
       h-[48px]
       border
-      border-[#D5D8DD]
       px-5
       focus:border-[#D5D8DD]
       focus:shadow-none	
+      ${formik.errors.porte ? "border-border-red" : "border-[#D5D8DD]"}
       `}
-          >
-              <option>Porta de empresa</option>
-              <option value="Micro">Micro</option>
-              <option value="Pequena">Pequena</option>
-              <option value="Media">Media</option>
-              <option value="Grande">Grande</option>
-          </select>
+          onChange={formik.handleChange}
+          onBlur={formik.handleBlur}
+        >
+          <option>Porte da empresa</option>
+          <option value="micro">Micro</option>
+          <option value="pequena">Pequena</option>
+          <option value="media">Media</option>
+          <option value="grande">Grande</option>
+        </select>
+        {formik.errors.porte && (
+          <span className="block mt-1 text-xs text-right text-[#F72717]">{formik.errors.porte}</span>
+        )}
       </div>
       <div className="flex items-center mt-10 text-left">
         <input
@@ -184,11 +192,10 @@ const Form = ({ className, successCallback }: Props) => {
         />
         <label
           htmlFor="privacy-policy"
-          className={`ml-4 text-sm font-ubuntu ${
-            formik.touched.assertion && formik.errors.assertion
+          className={`ml-4 text-sm font-ubuntu ${formik.touched.assertion && formik.errors.assertion
               ? "text-text-black"
               : "text-text-black"
-          }`}
+            }`}
         >
           Você concorda que os dados informados podem ser utilizados para o
           envio de ofertas de produtos e serviços, de acordo

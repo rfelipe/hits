@@ -35,6 +35,7 @@ const validationSchema = Yup.object({
     cars_quantity: Yup.number()
         .min(1, "O valor precisa ser positivo")
         .required("Insira a quantidade de veículos"),
+    porte: Yup.string().required("Escolha o porte da empresa").oneOf(["micro", "pequena", "grande", "media"]),
     assertion: Yup.bool().oneOf([true]),
 });
 
