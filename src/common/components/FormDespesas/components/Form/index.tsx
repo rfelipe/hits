@@ -38,7 +38,7 @@ const validationSchema = Yup.object({
   cars_quantity: Yup.number()
     .min(1, "O valor precisa ser positivo")
     .required("Insira a quantidade de veículos"),
-  porte: Yup.string().required("selecione o porte da empresa").oneOf(["micro", "pequena", "grande", "media"],"selecione o porte da empresa"),
+  porte: Yup.string().required("selecione o porte da empresa"),
   assertion: Yup.bool().oneOf([true]),
 });
 
@@ -176,10 +176,10 @@ const Form = ({ className, successCallback }: Props) => {
           onChange={formik.handleChange}
           onBlur={formik.handleBlur}
         >
-          <option>Porte da empresa</option>
+          <option value="">Porte da empresa</option>
           <option value="Micro">Micro</option>
-          <option value="Pequeno">Pequena</option>
-          <option value="Medio">Media</option>
+          <option value="Pequena">Pequena</option>
+          <option value="Média">Média</option>
           <option value="Grande">Grande</option>
         </select>
         {formik.errors.porte && (
