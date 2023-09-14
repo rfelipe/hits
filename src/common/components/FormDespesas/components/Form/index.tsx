@@ -3,14 +3,14 @@ import { useState } from "react";
 import md5 from "md5";
 import { sha256 } from 'js-sha256';
 import * as Yup from "yup";
-import Input from "./components/Input";
+import Input from "../../../Input";
 import {
   isValidMobilePhone,
   isValidCNPJ,
 } from "@brazilian-utils/brazilian-utils";
 import DataLayer from "../../../../lib/DataLayer";
 import Cta from "../../../Cta";
-import styles from "./components/Input/index.module.css";
+import styles from "../../../Input/index.module.css";
 
 const initialValues = {
   name: "",
@@ -152,8 +152,9 @@ const Form = ({ className, successCallback }: Props) => {
 
       <div className="w-full mt-6 lg:mt-8">
         <Input
-          type="number"
-          label="Quantidade de veículos"
+          type="Number"
+          label="Quantidade de veículos"  
+          maxlength="4"
           fieldInputProps={formik.getFieldProps("cars_quantity")}
           error={
             formik.touched.cars_quantity ? formik.errors.cars_quantity : ""
@@ -176,10 +177,10 @@ const Form = ({ className, successCallback }: Props) => {
           onBlur={formik.handleBlur}
         >
           <option>Porte da empresa</option>
-          <option value="micro">Micro</option>
-          <option value="pequena">Pequena</option>
-          <option value="media">Media</option>
-          <option value="grande">Grande</option>
+          <option value="Micro">Micro</option>
+          <option value="Pequeno">Pequena</option>
+          <option value="Medio">Media</option>
+          <option value="Grande">Grande</option>
         </select>
         {formik.errors.porte && (
           <span className="block mt-1 text-xs text-right text-[#F72717]">{formik.errors.porte}</span>
