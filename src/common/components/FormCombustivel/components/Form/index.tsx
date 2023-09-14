@@ -3,7 +3,7 @@ import { useState } from "react";
 import md5 from "md5";
 import { sha256 } from 'js-sha256';
 import * as Yup from "yup";
-import Input from "./components/Input";
+import Input from "../../../Input";
 import {
   isValidMobilePhone,
   isValidCNPJ,
@@ -150,6 +150,7 @@ const Form = ({ className, successCallback }: Props) => {
         <Input
           type="number"
           label="Quantidade de veículos"
+          maxlength={4}
           fieldInputProps={formik.getFieldProps("cars_quantity")}
           error={
             formik.touched.cars_quantity ? formik.errors.cars_quantity : ""

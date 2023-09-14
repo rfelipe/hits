@@ -7,12 +7,23 @@ import ErrorIcon from "./images/error-icon.png";
 type Props = {
   label: string;
   type: string;
+  maxlength?: number;
   fieldInputProps: FieldInputProps<any>;
   mask?: string;
   error?: string;
 };
 
-const Input = ({ label, type, fieldInputProps, mask, error }: Props) => (
+const handleKeyPress = (e) => {
+  const maxLength = e.target.getAttribute('maxlength')
+  const inputValue = e.target.value
+  if(maxLength > 0){
+    if (inputValue.length >= maxLength) {
+      e.preventDefault()
+    }
+  } 
+}
+const Input = ({ label, type,maxlength, fieldInputProps, mask, error }: Props) => (
+  
   <div className={styles.wrapper}>
     {mask ? (
       <InputMask
@@ -28,6 +39,8 @@ const Input = ({ label, type, fieldInputProps, mask, error }: Props) => (
     ) : (
       <input
         type={type}
+        maxLength={maxlength}
+        onKeyPress={handleKeyPress} 
         className={`${styles.input}
       focus:border-black focus:ring-0
       border-solid border-1
