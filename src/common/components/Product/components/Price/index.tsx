@@ -4,7 +4,8 @@ import Image from 'next/image';
 import React, { useEffect, useState } from 'react';
 import Button from '../../../Buttons';
 import { Price } from '../../../../../types';
-import cart from "../../../Header/images/shopping-cart.png"
+import cart_red from "../../../Header/images/shopping-cart-red.png";
+import cart from "../../../Header/images/shopping-cart.png";
 
 
 interface PricesProps {
@@ -68,7 +69,9 @@ const PriceSection: React.FC<PricesProps> = ({ prices }) => {
                                     <p>ao dia do mês, tá bom pra você?</p>
                                 </div>
                                 <span className='font-ubuntu text-grey md:text-black text-base font-light mb-6 block'>{price.text}</span>
-                                <Button type="borderRed" href="/"><Image src={cart} height={25} width={25} alt=''/>Contrate agora</Button>
+                                <div className='group'>
+                                    <Button type="borderRed" href="/"><div className='group-hover:hidden'><Image  src={cart_red} height={25} width={25} alt=''/></div><div className='group-hover:block hidden'><Image  src={cart} height={25} width={25} alt=''/></div>Contrate agora</Button>
+                                </div>
                             </div>
                         </div>
                     </div>

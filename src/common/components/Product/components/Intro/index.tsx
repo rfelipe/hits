@@ -8,7 +8,15 @@ interface IntroProps {
 
 const IntroSection: React.FC<IntroProps> = ({ intro }) => {
     const [inputValue, setInputValue] = useState('');
-    console.log(intro)
+
+    const Anchor = () => {
+        const form = document.querySelector("#form-request-budget");
+        if (form) {
+          form.scrollIntoView({
+            behavior: "smooth",
+          });
+        }
+      };
     return (
         <div className='text-center'>
             {intro.map((i, index) => (
@@ -62,7 +70,9 @@ const IntroSection: React.FC<IntroProps> = ({ intro }) => {
                         )}
 
                         {!i.showInput && (
-                            <Button type="red" href="/">Fale com vendas</Button>
+                            <div onClick={Anchor} className="button bg-original-red border-original-red text-white hover:bg-black hover:border-black py-3 px-10 rounded-full border cursor-pointer font-normal inline-flex items-center lg:justify-between justify-center max-h-12 max-w-32">
+                                <a className="flex items-center gap-3">{i.textInput}</a>
+                            </div>
                         )}
                     </div>
                 </div>

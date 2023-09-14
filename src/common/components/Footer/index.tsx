@@ -28,7 +28,7 @@ const Footer = () => {
     },
     {
       label: 'Perguntas Frequentes',
-      href: '/faq',
+      href: '/planos',
       color: 'bg-light-pink'
     }
   ]
@@ -86,11 +86,6 @@ const Footer = () => {
             <Link href={'https://www.instagram.com/ticket.log/'} key="instagram">
               <a className="hover:scale-125 transition-all">
                 <Image src={Instagram} alt={'Icon'} width={24} height={24}></Image>
-              </a>
-            </Link>
-            <Link href={'/'} key="spotify">
-              <a className="hover:scale-125 transition-all">
-                <Image src={Spotify} alt={'Icon'} width={24} height={24}></Image>
               </a>
             </Link>
             <Link href={'https://www.youtube.com/ticketlog'} key="youtube">

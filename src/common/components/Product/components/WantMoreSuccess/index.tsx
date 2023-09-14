@@ -11,7 +11,7 @@ const WantMoreSuccessSection: React.FC<SuccessProps> = ({ success }) => {
 
     useEffect(() => {
         const interval = setInterval(() => {
-            setCurrentImageIndex((prevIndex) => (prevIndex + 1) % 3);
+            setCurrentImageIndex((prevIndex) => (prevIndex + 1) % 2);
         }, 5000);
 
         return () => clearInterval(interval);
