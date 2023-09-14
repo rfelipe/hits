@@ -154,7 +154,7 @@ const Form = ({ className, successCallback }: Props) => {
         <Input
           type="Number"
           label="Quantidade de veículos"  
-          maxlength="4"
+          maxlength={4}
           fieldInputProps={formik.getFieldProps("cars_quantity")}
           error={
             formik.touched.cars_quantity ? formik.errors.cars_quantity : ""
