@@ -15,6 +15,7 @@ import img4Hits3 from '../../static/images/img4_hits3.png';
 import img2Hits3 from '../../static/images/img2_hits3.png';
 import img3Hits3 from '../../static/images/img3_hits3.png';
 import img1Hits3 from '../../static/images/img1_hits3.png';
+import card_ticket from '../../static/images/card-ticket.png';
 
 const productTypeColors: ProductTypeColors = {
     despesas: ['#C8C3FF', '#B0EFFF'],
@@ -138,24 +139,28 @@ export const productsData = [
                         type: 'phone',
                         title: 'Use seu cartão em qualquer estabelecimento.',
                         text: 'Temos ampla rede parceira com bandeiras Elo e Good Card. Faça sua solicitação agora e comece a usar o seu hit!',
+                        textInput: 'Fale com vendas',
                         image: img4Hits3,
                     },
                     {
                         type: 'note',
                         title: 'Controle suas despesas com o aplicativo de carteira virtual.',
                         text: 'Envie e organize seus comprovantes fiscais,  além de consultar os gastos, saldos e extratos em tempo real.',
+                        textInput: 'Fale com vendas',
                         image: img2Hits3,
                     },
                     {
                         type: 'mail',
                         title: 'Organize suas despesas com nossa plataforma de gestão.',
                         text: 'Você tem todas as despesas organizadas para consultar o período, data local e horário. Contrate agora e comece a economizar!',
+                        textInput: 'Fale com vendas',
                         image: img3Hits3,
                     },
                     {
                         type: 'clock',
                         title: 'Você está cansado de perder tempo?',
                         text: 'Com o Hit #1 de despesas, você tem o controle de tudo que está acontecendo no seu negócio. De maneira online, simples de usar.',
+                        textInput: 'Fale com vendas',
                         image: img4Hits1,
                     },
                 ]
@@ -196,25 +201,110 @@ export const productsData = [
         carouselTitle: 'Parceiros',
         carouselItems: [
             {
-                type: 'uber',
+                type: 'nove',
                 description: '',
             },
             {
-                type: 'kdOficina',
+                type: 'bikeBH',
                 description: '',
             },
             {
-                type: 'novenove',
+                type: 'BikeBicicletar',
                 description: '',
             },
             {
-                type: 'bikeItau',
+                type: 'BikeItau',
                 description: '',
             },
             {
-                type: 'emoving',
+                type: 'BikePelotas',
                 description: '',
             },
+            {
+                type: 'BikePetrolina',
+                description: '',
+            },
+            {
+                type: 'BikeSambaSJC',
+                description: '',
+            },
+            {
+                type: 'BikeSantos',
+                description: '',
+            },
+            {
+                type: 'BikeSerra',
+                description: '',
+            },
+            {
+                type: 'CarBee',
+                description: '',
+            },
+            {
+                type: 'Cittamobi',
+                description: '',
+            },
+            {
+                type: 'Copark',
+                description: '',
+            },
+            {
+                type: 'Emoving',
+                description: '',
+            },
+            {
+                type: 'EZvolt',
+                description: '',
+            },
+            {
+                type: 'Frame',
+                description: '',
+            },
+            {
+                type: 'Fretadao',
+                description: '',
+            },
+            {
+                type: 'LavadoresCredenciados',
+                description: '',
+            },
+            {
+                type: 'Tembici',
+                description: '',
+            },
+            {
+                type: 'Tupinamba',
+                description: '',
+            },
+            {
+                type: 'VaDeTaxi',
+                description: '',
+            },
+            {
+                type: 'ZAE',
+                description: '',
+            },
+            {
+                type: 'ZAERECIFE',
+                description: '',
+            },
+            {
+                type: 'ZAESANTOS',
+                description: '',
+            },
+            {
+                type: 'ZAESERRA',
+                description: '',
+            },
+            {
+                type: 'ZAESJC',
+                description: '',
+            },
+            {
+                type: 'Zapya',
+                description: '',
+            }
+            
 
         ],
         faq: [
@@ -258,7 +348,7 @@ export const productsData = [
                 images: [img1Hits1, img2Hits1, img3Hits1],
                 colors: productTypeColors.despesas,
                 title: 'Quer mais sucesso?',
-                text: 'Se a sua empresa tem gastos de combustível e mobilidade, também temos uma solução completa para você.',
+                text: 'Se você quer ter controle total das despesas do negócio, se destacar da concorrência e poder focar no que mais importa, também temos uma solução completa para você.',
                 label: 'Hit #1',
                 textLabel: 'Quero controlar as despesas do negócio'
             }
@@ -268,27 +358,31 @@ export const productsData = [
                 colors: productTypeColors.combustivel,
                 items: [
                     {
-                        type: 'clock',
-                        title: '',
-                        text: 'Dê o primeiro passo de controle de gastos começando pela organização com combustível e mobilidade.',
-                        image: img1Hits2,
+                        type: 'gas',
+                        title: 'Abasteça onde quiser.',
+                        text: 'Acompanhe os dados dos seus veículos, pesquisa e compare os melhores preços de combustível. São mais de 21 mil postos para abastecer seu veículo.',
+                        textInput: 'Fale com vendas',
+                        image: card_ticket,
                     },
                                         {
                         type: 'note',
-                        title: '',
-                        text: 'Pesquise os postos com os melhores preços.',
-                        image: img3Hits2,
+                        title: 'Parceria para o que precisar. ',
+                        text: 'Simplifique pagamento de serviços veiculares como: lavagens, estacionamento, manutenção e aplicativos de transporte individual e envio de encomendas.',
+                        textInput: 'Fale com vendas',
+                        image: img2Hits2,
                     },
                                         {
                         type: 'phone',
-                        title: '',
-                        text: 'Escolha onde utilizar o seu hit, em um dos mais de 21 mil postos parceiros.',
-                        image: img2Hits2,
+                        title: 'Tudo na palma da mão.',
+                        text: 'Com os Apps Ticket Log, gestores e usuários podem acompanhar saldo e despesas, encontrar parceiros, saber o preço do combustível e ainda realizar o pagamento do combustível pelo celular.',
+                        textInput: 'Fale com vendas',
+                        image: img1Hits2,
                     },
                                                             {
                         type: 'mail',
-                        title: '',
-                        text: 'Simplifique pagamento de serviços veiculares como: lavagens, estacionamento,  manutenção e aplicativos de transporte individual e envio de encomendas.',
+                        title: 'Precisando de uma ajuda?',
+                        text: 'Conte com atendimento 24/7 prontos para te ajudar no que precisar na hora em que quiser.',
+                        textInput: 'Fale com vendas',
                         image: img4Hits2,
                     }
                 ]

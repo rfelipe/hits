@@ -3,6 +3,7 @@ import IconClock from '../../../../../icons/Clock';
 import IconMail from '../../../../../icons/Mail';
 import IconNote from '../../../../../icons/Note';
 import IconPhone from '../../../../../icons/Phone';
+import IconGas from '../../../../../icons/Gas';
 import { IconProps } from '../../../../../../../types';
 
 const typeIcons = {
@@ -10,6 +11,7 @@ const typeIcons = {
   mail: <IconMail />,
   note: <IconNote />,
   phone: <IconPhone />,
+  gas: <IconGas />
 };
 
 const Icon: React.FC<IconProps> = ({ type } ) => {

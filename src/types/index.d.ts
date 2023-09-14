@@ -24,6 +24,7 @@ import type { StaticImageData } from 'next/image';
 export interface  AdvantageItems {
   title: string;
   text: string;
+  textInput: string;
   image: string;
   src?: any;
   type: string;

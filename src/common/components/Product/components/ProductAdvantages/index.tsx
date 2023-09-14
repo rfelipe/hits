@@ -5,7 +5,7 @@ import IconList from './components/IconList';
 import ItemList from './components/ItemList';
 import ImageItem from './components/Image';
 import { Advantage } from '../../../../../types';
-import { Phone, Note, Clock, Mail } from '../../../icons';
+import { Phone, Note, Clock, Mail, Gas } from '../../../icons';
 
 interface AdvantageProps {
     advantages: Advantage[];
@@ -15,7 +15,8 @@ const typeIcons = {
   phone: <Phone />,
   note: <Note />,
   clock: <Clock />,
-  mail: <Mail />
+  mail: <Mail />,
+  gas: <Gas />
 };
 
 const AdvantagesSection: React.FC<AdvantageProps> = ({ advantages }) => {
