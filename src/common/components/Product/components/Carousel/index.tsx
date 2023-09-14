@@ -10,6 +10,9 @@ import novenove from '../../../../../static/images/99.png';
 import bikeItau from '../../../../../static/images/bike-itau.png';
 import kdOficina from '../../../../../static/images/kd-oficina.png';
 import emoving from '../../../../../static/images/emoving.png';
+import supermercado from '../../../../../static/images/supermercado.jpg';
+import graficas from '../../../../../static/images/graficas.jpg';
+import viagens from '../../../../../static/images/viagens.jpg';
 import Image from 'next/image';
 
 
@@ -26,6 +29,9 @@ const typeIcons = {
   novenove: <Image src={novenove} layout='fixed' alt='99'/>,
   bikeItau: <Image src={bikeItau} layout='fixed' alt='Bike Itau'/>,
   emoving: <Image src={emoving} layout='fixed' alt='E-moving'/>,
+  supermercado: <Image src={supermercado} layout='fixed' height={48} width={48} alt='Supermercado'/>,
+  graficas: <Image src={graficas} layout='fixed' height={48} width={48} alt='Graficas'/>, 
+  viagens: <Image src={viagens} layout='fixed' height={48} width={48} alt='Viagens'/>,
 };
 
 interface CarouselItems {

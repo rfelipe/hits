@@ -28,7 +28,7 @@ const Footer = () => {
     },
     {
       label: 'Perguntas Frequentes',
-      href: '/faq',
+      href: '/planos',
       color: 'bg-light-pink'
     }
   ]

@@ -26,11 +26,12 @@ export const productsData = [
         type: 'despesas',
         intro: [
             {
-                tag: 'Hits #1',
+                tag: 'Hit #1',
                 label: 'Controle de Despesas',
-                title: 'Quer mais sucesso no dia a dia do seu negócio?',
-                text: 'Conte com a gente para o controle e organização de todas as despesas da sua empresa.',
+                title: 'Sente falta de prever suas despesas e não ter surpresas no final do mês?',
+                text: 'Com o Hit #1 você tem controle de todas as despesas... Fica tão fácil que parece invisível!',
                 showInput: false,
+                textInput: 'Quero Conhecer',
                 colors: productTypeColors.despesas
             },
         ],
@@ -75,12 +76,16 @@ export const productsData = [
                 description: 'Café e lanchonete',
             },
             {
-                type: 'mail',
-                description: 'Description 3',
+                type: 'supermercado',
+                description: 'Supermercado',
             },
             {
-                type: 'carmarket',
-                description: 'Description 1',
+                type: 'graficas',
+                description: 'Graficas',
+            },
+            {
+                type: 'viagens',
+                description: 'Viagens',
             }
         ],
         faq: [
@@ -117,11 +122,11 @@ export const productsData = [
         },
         success: [
             {
-                images: [img1Hits2, img2Hits2, img3Hits2],
+                images: [img1Hits2, img2Hits2],
                 colors: productTypeColors.combustivel,
                 title: 'Quer mais sucesso?',
-                text: 'Se a sua empresa tem veículos, também temos uma solução completa para controle de gastos de combustível e mobilidade.',
-                label: 'Hits #2',
+                text: 'Se a sua empresa tem veículos, também temos uma solução completa para controle de gastos com combustível e mobilidade.',
+                label: 'Hit #2',
                 textLabel: 'Quero controlar as despesas com combustível'
             }
         ],
@@ -142,17 +147,17 @@ export const productsData = [
                         image: img2Hits3,
                     },
                     {
+                        type: 'mail',
+                        title: 'Organize suas despesas com nossa plataforma de gestão.',
+                        text: 'Você tem todas as despesas organizadas para consultar o período, data local e horário. Contrate agora e comece a economizar!',
+                        image: img3Hits3,
+                    },
+                    {
                         type: 'clock',
                         title: 'Você está cansado de perder tempo?',
                         text: 'Com o Hit #1 de despesas, você tem o controle de tudo que está acontecendo no seu negócio. De maneira online, simples de usar.',
                         image: img4Hits1,
                     },
-                                                            {
-                        type: 'mail',
-                        title: 'Organize suas despesas com nossa plataforma de gestão.',
-                        text: 'Você tem todas as despesas organizadas para consultar o período, data local e horário. Contrate agora e comece a economizar!',
-                        image: img3Hits3,
-                    }
                 ]
             }
         ]
@@ -166,6 +171,7 @@ export const productsData = [
                 title: 'Controle todos os gastos de combustível e mobilidade do seu negócio!',
                 text: 'Tenha o controle na palma da mão com a Ticket Car.',
                 showInput: false,
+                textInput: 'Quero Conhecer',
                 colors: productTypeColors.combustivel
             },
         ],

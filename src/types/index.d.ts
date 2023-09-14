@@ -96,6 +96,7 @@ export interface Intro {
   title?: string;
   text?: string;
   showInput?: boolean;
+  textInput?: string;
   colors?: string[];
 }
 
