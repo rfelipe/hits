@@ -1,0 +1,70 @@
+.wrapper {
+  position: relative;
+  min-width: 390px;
+}
+
+@media (max-width: 420px) {
+  .wrapper {
+    min-width: 280px;
+  }
+}
+
+.input {
+  width: 100%;
+  padding: 10px 20px;
+  border-radius: 100px;
+  outline: none;
+}
+
+.input:focus + .label,
+.input:valid + .label {
+  top: -8px;
+  font-size: 13px;
+  left: 15px;
+}
+
+.label {
+  position: absolute;
+  left: 20px;
+  top: 10px;
+  pointer-events: none;
+  display: flex;
+  transition: 0.2s ease;
+}
+
+.label::before {
+  transition: all 0.2s ease;
+  position: absolute;
+  height: 50%;
+  width: 100%;
+  content: "";
+}
+
+.label::after {
+  transition: all 0.2s ease;
+  position: absolute;
+  height: 50%;
+  width: 100%;
+  content: "";
+  top: 50%;
+}
+
+.label span {
+  position: relative;
+  z-index: 99;
+  padding-left: 10px;
+  padding-right: 10px;
+  background: #ffffff;
+}
+
+.error {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 5px;
+  background: #ffffff;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 11px;
+  z-index: 99;
+}

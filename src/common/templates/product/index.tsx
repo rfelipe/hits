@@ -28,9 +28,9 @@ const ProductTemplate: React.FC<ProductTemplateProps> = ({ product, type }) => {
         <EasyToUse texts={Easy} />
         <VideoSection videos={video} />
         {type == 'despesas' ? (
-          <FormDespesas/>
+          <FormDespesas className="mt-10 lg:mt-20"/>
         ) : (
-          <FormCombustivel/>
+          <FormCombustivel className="mt-10 lg:mt-20" />
         )}
         <WhoEdenred/>
         <FaqSection faqs={faq} />
