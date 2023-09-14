@@ -88,11 +88,6 @@ const Footer = () => {
                 <Image src={Instagram} alt={'Icon'} width={24} height={24}></Image>
               </a>
             </Link>
-            <Link href={'/'} key="spotify">
-              <a className="hover:scale-125 transition-all">
-                <Image src={Spotify} alt={'Icon'} width={24} height={24}></Image>
-              </a>
-            </Link>
             <Link href={'https://www.youtube.com/ticketlog'} key="youtube">
               <a className="hover:scale-125 transition-all">
                 <Image src={Youtube} alt={'Icon'} width={24} height={24}></Image>

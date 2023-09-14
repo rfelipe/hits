@@ -89,28 +89,24 @@ export const productsData = [
                 items: [
                     {
                         question: 'O que é o Hit Controle de Despesas?',
-                        answer: 'O <strong>Controle de Despesas</strong> é o hit ideal para quem quer ter controle de todas as despesas do negócio, se destacar da concorrência e ter tempo para focar no que mais importa. Você tem um cartão recarregável com bandeiras Elo e Good Card para usar onde quiser, um aplicativo de carteira virtual para acompanhar e reportar despesas e uma plataforma web para baixar relatórios e ter controle de movimentações',
+                        answer: 'O <strong>Controle de Despesas</strong> é o hit ideal para quem quer ter controle de todas as despesas do negócio, se destacar da concorrência e ter tempo para focar no que mais importa. Você tem um cartão recarregável com bandeiras Elo e Good Card para usar onde quiser, um aplicativo de carteira virtual para acompanhar e reportar despesas e uma plataforma web para baixar relatórios e ter controle de movimentações.',
                     },
                     {
                         question: 'Como funciona a modalidade de pagamento do Hit de Despesas?',
-                        answer: 'Se você é um micro ou pequena empresa, conte com nossa ferramenta e nossa parceria para manter suas contas em dia e fazer sua empresa continuar crescendo.',
-                    },
-                    {
-                        question: 'Como funciona a modalidade de pagamento do Hit de Despesas?',
-                        answer: 'Hits Controle de Despesas funciona com a modalidade recarga de crédito, onde você recarrega os seus cartões e paga conforme o uso.'                    
+                        answer: 'Hits Controle de Despesas funciona com a modalidade recarga de crédito, onde você recarrega os seus cartões e paga conforme o uso.',
                     },
                     {
                         question: 'Como comprar o meu Hits?',
-                        answer: 'Depois de escolher o Hits ideal para você, clique nos botões de “Contrate agora” ou nos links a seguir e dê início ao processo de compra, você só precisa inserir seus dados iniciais e solicitar seu cartão :) <br/><br/> <a href="" style="text-decoration: underline;">Contratar Controle de Despesas</a>',
+                        answer: 'Depois de escolher o Hits ideal para você, clique nos botões de <a href="/" style="text-decoration: underline;font-weight: bold;">“Contrate agora”</a> ou nos links a seguir e dê início ao processo de compra, você só precisa inserir seus dados iniciais e solicitar seu cartão :) <br/><br/> <a href="" style="text-decoration: underline;font-weight: bold;">Contratar Controle de Despesas</a>',
                     },
                     {
                         question: 'Já comprei o meu Hits, e agora?',
-                        answer: 'Fique de olho em nosso contato por e-mail ou WhatsApp! <br/> Para <strong>Hits Despesas</strong>, finalize pedido na <a href="" style="text-decoration: underline;">plataforma</a>, próximos passos em nosso contato. ',
+                        answer: 'Fique de olho em nosso contato por e-mail ou WhatsApp! <br/> Para <strong>Hits Despesas</strong>, finalize pedido na <a href="https://www.iflexaccmm.com.br" style="text-decoration: underline;font-weight: bold;">plataforma</a>, próximos passos em nosso contato. ',
                     },
                     {
                         question: 'Como acessar minha plataforma?',
-                        answer: 'Acesse pelo computador ou app, como preferir :) <br/><br/>Hits Despesas: <br/><a href="" style="text-decoration: underline;">Portal do Gestor </a> <br/><a href="" style="text-decoration: underline;">App da carteira digital</a>',
-                    },
+                        answer: 'Acesse pelo computador ou app, como preferir :) <br/><br/>Hits Despesas: <br/><a href="https://www.iflexaccmm.com.br" style="text-decoration: underline;font-weight: bold;">Portal do Gestor </a> <br/><a href="https://play.google.com/store/apps/details?id=com.edenred.espp.digitalaccount&hl=pt_BR&gl=US" style="text-decoration: underline;font-weight: bold;">App da carteira digital (Android)</a><br/><a href="https://apps.apple.com/br/app/edenred-wallet/id1542995489" style="text-decoration: underline;font-weight: bold;">App da carteira digital (IOS)</a>',
+                    }
                 ]
             }
         ],
@@ -229,7 +225,7 @@ export const productsData = [
                     },
                     {
                         question: 'Como comprar o meu Hit?',
-                        answer: 'Depois de escolher o Hit ideal para você, clique nos botões de “Contrate agora” ou nos links a seguir e dê início ao processo de compra, você só precisa inserir seus dados iniciais e solicitar seu cartão :) <br/><br/> <a href="" style="text-decoration: underline;">Contratar Controle de Combustível</a>',
+                        answer: 'Depois de escolher o Hit ideal para você, clique nos botões de <a style="text-decoration: underline;font-weight: bold;" href="/">“Contrate agora”</a> ou nos links a seguir e dê início ao processo de compra, você só precisa inserir seus dados iniciais e solicitar seu cartão :) <br><br> <a href="" style="text-decoration: underline;font-weight: bold">Contratar Controle de Combustível</a>',
                     },
                     {
                         question: 'Já comprei o meu Hit, e agora?',
@@ -237,11 +233,11 @@ export const productsData = [
                     },
                     {
                         question: 'Como acessar minha plataforma?',
-                        answer: 'Acesse pelo computador ou app, como preferir :) <br/><br/>Hits Combustível: <br/><a href="" style="text-decoration: underline;">Sou Log + </a><br/><a href="" style="text-decoration: underline;">App do Gestor</a>',
+                        answer: 'Acesse pelo computador ou app, como preferir :) <br/><br/>Hits Combustível: <br/><a href="https://plataforma.ticketlog.com.br/" style="text-decoration: underline;font-weight: bold;">Sou Log + </a><br/><a href="https://play.google.com/store/apps/details?id=com.embratec.ecofrotas&hl=pt_BR&gl=US" style="text-decoration: underline;font-weight: bold;">App do Gestor (Android)</a><br/><a href="https://apps.apple.com/br/app/minha-mobilidade/id886670547" style="text-decoration: underline;font-weight: bold;">App do Gestor (IOS)</a>',
                     },
                     {
                         question: 'Sou um estabelecimento e quero ser parceiro da Edenred?',
-                        answer: 'Na base da parceria e da tecnologia, a gente faz a diferença no cotidiano dos nossos clientes, usando toda a expertise da Edenred a favor dos pequenos empreendedores. Entre em contato pelo site para parceiros e faça parte da Edenred!',
+                        answer: 'Na base da parceria e da tecnologia, a gente faz a diferença no cotidiano dos nossos clientes, usando toda a expertise da Edenred a favor dos pequenos empreendedores. Entre em contato pelo <a style="text-decoration: underline;font-weight: bold;" href="https://www.ticketlog.com.br/credencie-se/">site para parceiros</a> e faça parte da Edenred!',
                     },
                 ]
             }
