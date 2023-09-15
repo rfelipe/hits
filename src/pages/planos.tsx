@@ -78,11 +78,6 @@ const Planos: NextPage = () => {
           </div>
         </section>
         <Cards />
-        {/* ToDo 
-             - Cards planos MOBILE
-             - Bloco "Na duvida..." 
-             - Form
-        */}
         <Duvida />
         <Faq faqs={faqs} />
         {showForm && <Form onClose={() => setShowForm(false)}/>}

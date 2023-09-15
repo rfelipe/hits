@@ -26,7 +26,7 @@ const Duvida = () => {
                     </div>
                     <div className="absolute z-10 left-[99px]     min-[1230px]:relative flex items-center justify-center min-[1230px]:bg-white w-[309px] h-[309px] rounded-[100%] ml-[-66px] min-[1230px]:ml-[-248px] min-[1230px]:z-0 ">                        
                         <div className="pl-6">
-                            <span className="inline-flex justify-center bg-[#C8C3FF]  px-4 py-2 rounded-full w-fit mb-2">Hit #01</span>
+                            <span className="inline-flex justify-center bg-[#C8C3FF]  px-4 py-2 rounded-full w-fit mb-2">Hit #1</span>
                             <p className="text-lg text-center min-[1230px]:text-left max-w-[150px] mb-2">Quero controlar as despesas do negócio</p>
                             <Button type="red" href="/despesas">Saiba mais</Button>
                         </div>
@@ -35,7 +35,7 @@ const Duvida = () => {
                 <div className="flex ml-auto">
                     <div className="absolute z-10   min-[1230px]:relative flex items-center justify-center min-[1230px]:bg-white w-[309px] h-[309px] rounded-[100%] mr-[274px] min-[1230px]:z-0 ">
                         <div className="pr-6">
-                            <span className="inline-flex justify-center bg-[#DCF691]  px-4 py-2 rounded-full w-fit mb-2">Hit #02</span>
+                            <span className="inline-flex justify-center bg-[#DCF691]  px-4 py-2 rounded-full w-fit mb-2">Hit #2</span>
                             <p className="text-lg text-center min-[1230px]:text-end  max-w-[150px] mb-2">Quero controlar as despesas com combustível</p>
                             <Button type="red" href="/combustivel">Saiba mais</Button>
                         </div>

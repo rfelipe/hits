@@ -15,10 +15,10 @@ const CircleNumbers = () => {
   return (
     <section>
         <div className="lg:flex items-center justify-end relative lg:pb-56 pb-12">
-            <div className="lg:w-1/2 lg:mr-auto lg:mt-32 mt-12">
+            <div className="lg:w-1/2 lg:mr-auto lg:mt-40 mt-12">
                 <div className='p-6 lg:w-[470px] container mx-auto'>
-                    <p className='text-lg mb-6 font-light'>A Edenred é uma das maiores referências do mundo quando o assunto é facilitar a vida de empreendedores e empresas.</p>
-                    <p className='text-lg mb-6 font-light'>Mais de <strong>52 milhões de pessoas</strong> utilizam nossos serviços em <strong>45 países</strong>, e contamos com <strong>1 milhão</strong> de empresas clientes e <strong>2 milhões</strong> de estabelecimentos parceiros.</p>
+                    <p className='text-lg mb-6 font-light'>A Edenred é uma marca global e digital de serviços e meios de pagamento que atua como companheira de todas as horas para trabalhadores e empresas.</p>
+                    <p className='text-lg mb-6 font-light'>Líder em seu segmento, conecta <strong>60 milhões</strong> de usuários, <strong>2 milhões</strong> de estabelecimentos e aproximadamente <strong>1 milhão</strong> de empresas-clientes, em <strong>45 países</strong>.</p>
                 </div>
             </div>
             <div className="lg:hidden max-w-[90%] ml-auto mr-auto ">
@@ -33,7 +33,7 @@ const CircleNumbers = () => {
                     <SwiperSlide className="justify-center items-center flex">
                         <div className="bg-cold-white w-[227px] h-[227px] py-10 px-5 rounded-full justify-center flex items-center flex-col ">
                             <Image src={mobileHand} width={48} height={48}/>
-                            <p className="text-2xl">+<CountUp end={52} duration={5}/> milhões</p>
+                            <p className="text-2xl">+<CountUp end={60} duration={5}/> milhões</p>
                             <p className="text-sm">de usuários</p>
                         </div>
                     </SwiperSlide>
@@ -68,7 +68,7 @@ const CircleNumbers = () => {
                     <div className=" float-right absolute top-[105px] right-[580px] max-xl:top-[130px] max-xl:right-[488px]">
                         <div className="flex items-center flex-col">
                             <Image src={mobileHand} width={48} height={48}/>
-                            <p className="text-2xl">+<CountUp end={52} duration={5}/> milhões</p>
+                            <p className="text-2xl">+<CountUp end={60} duration={5}/> milhões</p>
                             <p className="text-sm">de usuários</p>
                         </div>
                     </div>
@@ -118,7 +118,7 @@ const CircleNumbers = () => {
                     <div className="flex items-center flex-col">
                         <Image src={mobileHand} width={48} height={48}/>
                         <p className="text-2xl">+ <CountUp end={8.3} duration={5} decimal="," decimals={1}/> milhões</p>
-                        <p className="text-sm text-center">de usuários</p>
+                        <p className="text-sm text-center">de empregados<br/> beneficiados</p>
                     </div>
                 </div>
                 <div className=" float-left absolute top-[415px] left-[270px] max-xl:top-[395px] max-xl:left-[228px]">
@@ -160,7 +160,7 @@ const CircleNumbers = () => {
                         <div className="bg-cold-white w-[227px] h-[227px] py-10 px-5 rounded-full justify-center flex items-center flex-col ">
                             <Image src={mobileHand} width={48} height={48}/>
                             <p className="text-2xl">+<CountUp end={8.3} duration={5} decimal="," decimals={1}/> milhões</p>
-                            <p className="text-sm text-center">de usuários</p>
+                            <p className="text-sm text-center">de empregados <br/>beneficiados</p>
                         </div>
                     </SwiperSlide>
                     <SwiperSlide className="justify-center items-center flex">
