@@ -96,10 +96,10 @@ const Home: NextPage = () => {
                         </div>
                     </Fade>
                 )}
-                <div className="pt-14 md:pt-32">
-                    <h2 className="text-5xl text-black font-light text-center md:max-w-4xl mx-auto mb-8">Descubra como gerenciar suas despesas diárias de forma eficaz!</h2>
+                <div className="pt-14 md:pt-20">
+                    <h2 className="text-5xl text-black font-light text-center md:max-w-4xl mx-auto mb-8">Descubra como ter controle total do seu negócio e sem surpresas no final do mês!</h2>
                     <p className="text-grey md:text-black text-base md:text-lg font-light font-ubuntu mb-8 lg:w-[808px] mx-auto text-center">
-                        Se você tem muito para conquistar, mas não tem tempo para perder, acelere seu sucesso com a Edenred Hits.
+                        Você é o protagonista dessa história e nossos hits são a trilha sonora para te acompanhar no corre do dia a dia: controle das despesas e de combustível de um jeito fácil, para você tocar seu negócio mais tranquilo.
                     </p>
                     <div className="flex justify-between flex-wrap md:gap-5">
                         {/* HITS 01 */} {!bannerHits2 && (
@@ -138,7 +138,7 @@ const Home: NextPage = () => {
                                     </div>
                                 )}
                                 <div className={`md:pr-6 text-center md:text-left absolute max-md:left-24 max-md:bottom-20  ${ bannerHits1  ? 'md:-right-[27rem]' : 'md:right-16'}`}>
-                                    <span className="inline-flex justify-center bg-light-violet px-4 py-2 rounded-full w-fit mb-2">Hit #01</span>
+                                    <span className="inline-flex justify-center bg-light-violet px-4 py-2 rounded-full w-fit mb-2">Hit #1</span>
                                     <p className="text-white text-3xl max-w-[250px] mb-2">Quero controlar as despesas do negócio</p>
                                     {!bannerHits1 ? (
                                         <button onClick={() => setbannerHits1(!bannerHits1)} className="bg-original-red border-original-red text-white hover:bg-black hover:border-black py-3 px-10 rounded-full border" >Eu quero</button>
@@ -188,7 +188,7 @@ const Home: NextPage = () => {
                                 )}        
                                 
                                 <div className={`pr-6 md:text-right text-center max-md:right-16 max-md:bottom-20  absolute ${ bannerHits2  ? 'md:-left-[27rem]' : 'md:left-16'}`}>
-                                    <span className="inline-flex justify-center bg-[#DCF691]  px-4 py-2 rounded-full w-fit mb-2">Hit #02</span>
+                                    <span className="inline-flex justify-center bg-[#DCF691]  px-4 py-2 rounded-full w-fit mb-2">Hit #2</span>
                                     <p className="text-white text-3xl max-w-[250px] mb-2">Quero controlar as despesas com combustível</p>
                                     {!bannerHits2 ? (
                                         <button onClick={() => setbannerHits2(!bannerHits2)} className="bg-original-red border-original-red text-white hover:bg-black hover:border-black py-3 px-10 rounded-full border" >Eu quero</button>
@@ -248,19 +248,19 @@ const Home: NextPage = () => {
                             <SwiperSlide className="flex justify-center">
                                 <div className="w-[243px] h-[243px] border mr-6 rounded-full bg-cold-white flex flex-col justify-center items-center">
                                     <div className="mb-4">
-                                        <Clock />
+                                        <Note />
                                     </div>
                                     {/* <h3 className="text-black font-medium text-2xl mb-2">Controle</h3> */}
-                                    <p className="w-[188px] text-center mx-auto">Tempo para focar no crescimento do seu negócio.</p>
+                                    <p className="w-[188px] text-center mx-auto">Visibilidade e controle em todos os gastos.</p>
                                 </div>
                             </SwiperSlide>
                             <SwiperSlide className="flex justify-center">
                                 <div className="w-[243px] h-[243px] border mr-6 rounded-full bg-cold-white flex flex-col justify-center items-center">
                                     <div className="mb-4">
-                                        <Note />
+                                        <Clock />
                                     </div>
                                     {/* <h3 className="text-black font-medium text-2xl mb-2">Controle</h3> */}
-                                    <p className="w-[188px] text-center mx-auto">Visibilidade e controle em todos os gastos.</p>
+                                    <p className="w-[188px] text-center mx-auto">Tempo para focar no crescimento do seu negócio.</p>
                                 </div>
                             </SwiperSlide>
                         </Swiper>
@@ -349,7 +349,7 @@ const Home: NextPage = () => {
                             </div>
                             <div className={`relative flex items-center justify-center max-md:!bg-none bg-cold-white w-[309px] h-[309px] rounded-[100%] ml-[-66px] ${!finalHits1 ? '' : 'md:ml-[-69px] md:bg-[#FED0C8]'}  z-0 bg-right bg-no-repeat`} style={{ 'backgroundImage': `url(${finalHits1 ? finalCircleImg1.src : ''})` }}>
                                 <div className="pl-6 text-center md:text-left">
-                                    <span className="inline-flex justify-center bg-[#C8C3FF] px-4 py-2 rounded-full w-fit mb-2">Hit #01</span>
+                                    <span className="inline-flex justify-center bg-[#C8C3FF] px-4 py-2 rounded-full w-fit mb-2">Hit #1</span>
                                     <p className={`text-lg md:text-left max-w-[150px] mb-2  ${finalHits1 ? 'md:text-white' : 'text-black'}`}>Quero controlar as despesas do negócio</p>
                                     {!finalHits1 ? (
                                         <button onClick={() => setfinalHits1(!finalHits1)} className="bg-original-red border-original-red text-white hover:bg-black hover:border-black py-3 px-10 rounded-full border" >Eu quero</button>
@@ -373,14 +373,14 @@ const Home: NextPage = () => {
                         </div>
                         </Fade>
                         <Fade right>
-                            <h2 className="text-black text-6xl ml-auto my-auto font-light max-xl:max-w-4xl max-xl:text-center max-xl:mb-10 xl:w-[500px] mx-auto">Vem pro lado do sucesso, compre o seu Hit online!</h2>
+                            <h2 className="text-black text-3xl ml-auto my-auto font-light max-xl:max-w-4xl max-xl:text-center max-xl:mb-10 xl:w-[500px] mx-auto">Nossa dupla de milhões, pronta para passar pelos altos e baixos do empreendedorismo ao seu lado!</h2>
                         </Fade>
                     </div>
                     <Fade right>
                     <div className="flex justify-end">
                         <div className={`relative flex items-center justify-center max-md:!bg-none bg-cold-white w-[309px] h-[309px] rounded-[100%] mr-[-66px] z-0 ${!finalHits2 ? '' : 'md:ml-[-69px] md:!bg-[#DCF691]'} z-0 bg-left bg-no-repeat `} style={{ 'backgroundImage': `url(${finalHits2 ? finalCircleImg2.src : ''})` }}>
                             <div className="pr-6 text-center md:text-right">
-                                <span className="inline-flex justify-center bg-[#DCF691]  px-4 py-2 rounded-full w-fit mb-2">Hit #02</span>
+                                <span className="inline-flex justify-center bg-[#DCF691]  px-4 py-2 rounded-full w-fit mb-2">Hit #2</span>
                                 <p className={`text-lg ${finalHits2 ? 'md:text-white' : 'text-black'} max-w-[150px] mb-2`}>Quero controlar as despesas com combustível</p>
                                 {!finalHits2 ? (
                                     <button onClick={() => setfinalHits2(!finalHits2)} className="bg-original-red border-original-red text-white hover:bg-black hover:border-black py-3 px-10 rounded-full border" >Eu quero</button>
