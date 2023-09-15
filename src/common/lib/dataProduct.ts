@@ -171,10 +171,10 @@ export const productsData = [
         type: 'combustivel',
         intro: [
             {
-                tag: 'Hits #2',
+                tag: 'Hit #2',
                 label: 'Controle de Combustível',
-                title: 'Controle todos os gastos de combustível e mobilidade do seu negócio!',
-                text: 'Tenha o controle na palma da mão com a Ticket Car.',
+                title: 'Já sabe como dar o primeiro passo para controle de despesas?',
+                text: 'Separe os gastos com combustível e mobilidade das outras despesas da empresa tendo o Ticket Car na palma da mão.',
                 showInput: false,
                 textInput: 'Quero Conhecer',
                 colors: productTypeColors.combustivel
