@@ -103,7 +103,7 @@ export const productsData = [
                     },
                     {
                         question: 'Como comprar o meu Hits?',
-                        answer: 'Depois de escolher o Hits ideal para você, clique nos botões de <a href="/" style="text-decoration: underline;font-weight: bold;">“Contrate agora”</a> ou nos links a seguir e dê início ao processo de compra, você só precisa inserir seus dados iniciais e solicitar seu cartão :) <br/><br/> <a href="" style="text-decoration: underline;font-weight: bold;">Contratar Controle de Despesas</a>',
+                        answer: 'Depois de escolher o Hits ideal para você, clique nos botões de <a onClick="document.getElementById(`modalproduct`).style.display = `block`;" style="cursor: pointer; text-decoration: underline;font-weight: bold;">“Contrate agora”</a> ou nos links a seguir e dê início ao processo de compra, você só precisa inserir seus dados iniciais e solicitar seu cartão :) <br/><br/> <a href="" style="text-decoration: underline;font-weight: bold;">Contratar Controle de Despesas</a>',
                     },
                     {
                         question: 'Já comprei o meu Hits, e agora?',
@@ -321,7 +321,7 @@ export const productsData = [
                     },
                     {
                         question: 'Como comprar o meu Hit?',
-                        answer: 'Depois de escolher o Hit ideal para você, clique nos botões de <a style="text-decoration: underline;font-weight: bold;" href="/">“Contrate agora”</a> ou nos links a seguir e dê início ao processo de compra, você só precisa inserir seus dados iniciais e solicitar seu cartão :) <br><br> <a href="" style="text-decoration: underline;font-weight: bold">Contratar Controle de Combustível</a>',
+                        answer: 'Depois de escolher o Hit ideal para você, clique nos botões de <a onClick="document.getElementById(`modalproduct`).style.display = `block`;" style="cursor: pointer; text-decoration: underline;font-weight: bold;">“Contrate agora”</a> ou nos links a seguir e dê início ao processo de compra, você só precisa inserir seus dados iniciais e solicitar seu cartão :) <br><br> <a href="" style="text-decoration: underline;font-weight: bold">Contratar Controle de Combustível</a>',
                     },
                     {
                         question: 'Já comprei o meu Hit, e agora?',

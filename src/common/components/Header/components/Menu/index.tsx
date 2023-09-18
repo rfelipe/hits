@@ -7,8 +7,10 @@ type Props = {
   links: { href: string; label: string, color?: string }[];
   setIsMenuOpen: (open: boolean) => void;
   isMenuOpen: boolean
+  setIsModalOpen: (open: boolean) => void;
+  isModalOpen: boolean
 };
-const Menu = ({ links, setIsMenuOpen, isMenuOpen }: Props) => {
+const Menu = ({ links, setIsMenuOpen, isMenuOpen, setIsModalOpen, isModalOpen  }: Props) => {
   return (
     <div>
       <div className="hidden md:block">
@@ -27,7 +29,9 @@ const Menu = ({ links, setIsMenuOpen, isMenuOpen }: Props) => {
               </Link>
             </>
           ))}
-          <Button type="red" href={'/'}><Image src={cart} height={25} width={25} alt=''/>Contrate agora</Button>
+          <div onClick={() => { setIsModalOpen(true); }} className="button bg-original-red border-original-red text-white hover:bg-black hover:border-black py-3 px-10 rounded-full border cursor-pointer font-normal inline-flex items-center lg:justify-between justify-center max-h-12 max-w-32">
+              <a className="flex items-center gap-3"><Image src={cart} height={25} width={25} alt=''/>Contrate agora</a>
+          </div>
         </div>
       </div>
       <div className='md:hidden'>
@@ -66,6 +70,14 @@ const Menu = ({ links, setIsMenuOpen, isMenuOpen }: Props) => {
                 </Link>
               </>
             ))}
+            <div className='bg-white bottom-0 rounded-t-full absolute w-full h-1/2 flex justify-center items-center flex-col'>
+              <p className='mb-8'>Login</p>
+              <Button type='readMore' href='/'>Acesso a plataforma Hit Despesas</Button>
+              <Button type='readMore' href='/'>Acesso a plataforma Hit Combustível</Button>
+              <div onClick={() => { setIsModalOpen(true); }} className="button bg-original-red border-original-red text-white hover:bg-black hover:border-black py-3 px-10 rounded-full border cursor-pointer font-normal inline-flex items-center lg:justify-between justify-center max-h-12 max-w-32">
+                <a className="flex items-center gap-3"><Image src={cart} height={25} width={25} alt=''/>Contrate agora</a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
