@@ -31,7 +31,7 @@ const RequestBudget = ({ className }: Props) => {
       ) : (
         <>
           <h2 className="text-5xl lg:text-5xl font-light mb-5">
-            Solicite uma proposta
+            Vamos conversar!
           </h2>
           <p className="text-center font-light mt-2 max-w-[600px] ml-auto mr-auto">
             Preencha os dados e entraremos em contato com você

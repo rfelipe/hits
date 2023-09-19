@@ -86,7 +86,7 @@ const Cards = () => {
             <ul className="mt-8 md:block hidden h-52">
                 <li className="flex mt-2 items-center gap-3"><Image src={IconList} alt=""/>Busca dos postos de combustível com melhor preço</li>
                 <li className="flex mt-2 items-center gap-3"><Image src={IconList} alt=""/><p className="w-11/12">Controle de serviços veiculares: manutenção, lavagem, pagamento IPVA</p></li>
-                <li className="flex mt-2 items-center gap-3"><Image src={IconList} alt=""/>Plataforma de gestão</li>
+                <li className="flex mt-2 items-center gap-3"><Image src={IconList} alt=""/>Aplicativo e Plataforma de gestão</li>
                 <li className="flex mt-2 items-center gap-3"><Image src={IconList} alt=""/>Registro das despesas com combustível</li>
                 <li className="flex mt-2 items-center gap-3"><Image src={IconList} alt=""/>Relatórios online</li>
             </ul>
@@ -133,7 +133,7 @@ const Cards = () => {
                             <ul className="mt-8 text-start">
                                 <li className="flex mt-2 items-center gap-3"><Image className="shrink-0" src={IconList} alt=""/><p className="w-11/12">Busca dos postos de combustível com melhor preço</p></li>
                                 <li className="flex mt-2 items-center gap-3"><Image src={IconList} alt=""/><p className="w-11/12">Controle de serviços veiculares: manutenção, lavagem, pagamento IPVA</p></li>
-                                <li className="flex mt-2 items-center gap-3"><Image src={IconList} alt=""/><p className="w-11/12">Plataforma de gestão</p></li>
+                                <li className="flex mt-2 items-center gap-3"><Image src={IconList} alt=""/><p className="w-11/12">Aplicativo e Plataforma de gestão</p></li>
                                 <li className="flex mt-2 items-center gap-3"><Image src={IconList} alt=""/><p className="w-11/12">Registro das despesas com combustível</p></li>
                                 <li className="flex mt-2 items-center gap-3"><Image src={IconList} alt=""/><p className="w-11/12">Relatórios online</p></li>
                             </ul>

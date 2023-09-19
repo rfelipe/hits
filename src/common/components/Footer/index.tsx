@@ -70,7 +70,7 @@ const Footer = () => {
 
           <div className="flex md:mb-14 md:justify-normal flex-col md:flex-row w-full justify-start mx-auto">
             <Button type="readMore" href="https://www.iflexaccmm.com.br">Acesso a plataforma Hit Despesas</Button>
-            <Button type="readMore" href="https://www.ticketlog.com.br">Acesso a plataforma Hit Combustível</Button>
+            <Button type="readMore" href="https://plataforma.ticketlog.com.br/">Acesso a plataforma Hit Combustível</Button>
           </div>
           <div className="flex justify-between max-md:pb-10 gap-8 md:pb-0 md:justify-normal md:items-start md:mr-auto md:gap-16 md:px-6">
             <Link href={'https://www.linkedin.com/company/ticket-log/'} key="linkedin">
