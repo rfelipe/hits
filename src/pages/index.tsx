@@ -97,7 +97,7 @@ const Home: NextPage = () => {
                     </Fade>
                 )}
                 <div className="pt-14 md:pt-20">
-                    <h2 className="text-3xl text-black font-light text-center md:max-w-4xl mx-auto mb-8">Descubra como ter controle total do seu negócio e sem surpresas no final do mês!</h2>
+                    <h2 className="md:text-5xl text-3xl text-black font-light text-center md:max-w-4xl mx-auto mb-8">Descubra como ter controle total do seu negócio e sem surpresas no final do mês!</h2>
                     <p className="text-grey md:text-black text-base md:text-lg font-light font-ubuntu mb-8 lg:w-[808px] mx-auto text-center">
                         Você é o protagonista dessa história e nossos hits são a trilha sonora para te acompanhar no corre do dia a dia: controle das despesas e de combustível de um jeito fácil, para você tocar seu negócio mais tranquilo.
                     </p>
