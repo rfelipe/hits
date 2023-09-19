@@ -5,7 +5,6 @@ import { Note, Gas, Computer, Construction, Coffee, Mail, CarMarket } from '../.
 import { Carousel } from '../../../../../types';
 import useWindowSize from '../../../../hooks/useWindowSize';
 import usePageChecker from '../../../../hooks/usePageChecker';
-import uber from '../../../../../static/images/uber.png';
 import novenove from '../../../../../static/images/99.png';
 import bikeItau from '../../../../../static/images/bike-itau.png';
 import kdOficina from '../../../../../static/images/kd-oficina.png';
@@ -14,24 +13,25 @@ import supermercado from '../../../../../static/images/supermercado.jpg';
 import graficas from '../../../../../static/images/graficas.jpg';
 import viagens from '../../../../../static/images/viagens.jpg';
 
-import nove from '../../../../../static/images/parceiros/99.png';
+import nove from '../../../../../static/images/parceiros/logo-992.png';
+import uber from '../../../../../static/images/parceiros/logo-uber2.png';
 import bikeBH from '../../../../../static/images/parceiros/BikeBH.png';
 import BikeBicicletar from '../../../../../static/images/parceiros/BikeBicicletar.png';
-import BikeItau from '../../../../../static/images/parceiros/BikeItau.png';
+import BikeItau from '../../../../../static/images/parceiros/bike-itau2.png';
 import BikePelotas from '../../../../../static/images/parceiros/BikePelotas.png';
 import BikePetrolina from '../../../../../static/images/parceiros/BikePetrolina.png';
 import BikeSambaSJC from '../../../../../static/images/parceiros/BikeSambaSJC.png';
 import BikeSantos from '../../../../../static/images/parceiros/BikeSantos.png';
 import BikeSerra from '../../../../../static/images/parceiros/BikeSerra.png';
-import CarBee from '../../../../../static/images/parceiros/CarBee.png';
+import CarBee from '../../../../../static/images/parceiros/carbee2.png';
 import Cittamobi from '../../../../../static/images/parceiros/Cittamobi.png';
 import Copark from '../../../../../static/images/parceiros/Copark.png';
-import Emoving from '../../../../../static/images/parceiros/Emoving.png';
-import EZvolt from '../../../../../static/images/parceiros/EZvolt.png';
+import Emoving from '../../../../../static/images/parceiros/e-moving2.png';
+import EZvolt from '../../../../../static/images/parceiros/ezvolt2.png';
 import Frame from '../../../../../static/images/parceiros/Frame.png';
-import Fretadao from '../../../../../static/images/parceiros/Fretadao.png';
+import Fretadao from '../../../../../static/images/parceiros/fretadao2.png';
 import LavadoresCredenciados from '../../../../../static/images/parceiros/LavadoresCredenciados.png';
-import Tembici from '../../../../../static/images/parceiros/Tembici.png';
+import Tembici from '../../../../../static/images/parceiros/tembici2.png';
 import Tupinamba from '../../../../../static/images/parceiros/Tupinamba.png';
 import VaDeTaxi from '../../../../../static/images/parceiros/VaDeTaxi.png';
 import ZAE from '../../../../../static/images/parceiros/ZAE.png';
@@ -53,7 +53,6 @@ const typeIcons = {
     coffee: <Coffee />,
     mail: <Mail />,
     carmarket: <CarMarket />,
-    uber: <Image src={uber} layout='fixed' alt='Uber'/>,
     kdOficina: <Image src={kdOficina} layout='fixed' alt='KD Minha Oficina'/>,
     novenove: <Image src={novenove} layout='fixed' alt='99'/>,
     bikeItau: <Image src={bikeItau} layout='fixed' alt='Bike Itau'/>,
@@ -62,32 +61,15 @@ const typeIcons = {
     graficas: <Image src={graficas} layout='fixed' height={48} width={48} alt='Graficas'/>, 
     viagens: <Image src={viagens} layout='fixed' height={48} width={48} alt='Viagens'/>,
     //parceiros
+    uber: <Image height={50} width={50} src={uber} layout='fixed' alt='Uber'/>,
     nove: <Image src={nove} layout='fixed' height={50} width={50} alt='nove'/>,
-    bikeBH: <Image src={bikeBH} layout='fixed' height={50} width={50} alt='bikeBH'/>,
-    BikeBicicletar: <Image src={BikeBicicletar} layout='fixed' height={50} width={50} alt='BikeBicicletar'/>,
     BikeItau: <Image src={BikeItau} layout='fixed' height={50} width={50} alt='BikeItau'/>,
-    BikePelotas: <Image src={BikePelotas} layout='fixed' height={50} width={50} alt='BikePelotas'/>,
-    BikePetrolina: <Image src={BikePetrolina} layout='fixed' height={50} width={50} alt='BikePetrolina'/>,
-    BikeSambaSJC: <Image src={BikeSambaSJC} layout='fixed' height={50} width={50} alt='BikeSambaSJC'/>,
-    BikeSantos: <Image src={BikeSantos} layout='fixed' height={50} width={50} alt='BikeSantos'/>,
-    BikeSerra: <Image src={BikeSerra} layout='fixed' height={50} width={50} alt='BikeSerra'/>,
     CarBee: <Image src={CarBee} layout='fixed' height={50} width={50} alt='CarBee'/>,
-    Cittamobi: <Image src={Cittamobi} layout='fixed' height={50} width={50} alt='Cittamobi'/>,
-    Copark: <Image src={Copark} layout='fixed' height={50} width={50} alt='Copark'/>,
     Emoving: <Image src={Emoving} layout='fixed' height={50} width={50} alt='Emoving'/>,
     EZvolt: <Image src={EZvolt} layout='fixed' height={50} width={50} alt='EZvolt'/>,
-    Frame: <Image src={Frame} layout='fixed' height={50} width={50} alt='Frame'/>,
     Fretadao: <Image src={Fretadao} layout='fixed' height={50} width={50} alt='Fretadao'/>,
-    LavadoresCredenciados: <Image src={LavadoresCredenciados} layout='fixed' height={50} width={50} alt='LavadoresCredenciados'/>,
     Tembici: <Image src={Tembici} layout='fixed' height={50} width={50} alt='Tembici'/>,
-    Tupinamba: <Image src={Tupinamba} layout='fixed' height={50} width={50} alt='Tupinamba'/>,
-    VaDeTaxi: <Image src={VaDeTaxi} layout='fixed' height={50} width={50} alt='VaDeTaxi'/>,
-    ZAE: <Image src={ZAE} layout='fixed' height={50} width={50} alt='ZAE'/>,
-    ZAERECIFE: <Image src={ZAERECIFE} layout='fixed' height={50} width={50} alt='ZAERECIFE'/>,
-    ZAESANTOS: <Image src={ZAESANTOS} layout='fixed' height={50} width={50} alt='ZAESANTOS'/>,
-    ZAESERRA: <Image src={ZAESERRA} layout='fixed' height={50} width={50} alt='ZAESERRA'/>,
-    ZAESJC: <Image src={ZAESJC} layout='fixed' height={50} width={50} alt='ZAESJC'/>,
-    Zapya: <Image src={Zapya} layout='fixed' height={50} width={50} alt='Zapya'/>,
+    
 
 };
 

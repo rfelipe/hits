@@ -31,7 +31,7 @@ const Planos: NextPage = () => {
         },
         {
             question: 'Como funciona o teste grátis do Hits?',
-            answer: 'O teste grátis é a isenção da mensalidade por 60 (sessenta) dias. Para utilizar, basta solicitar seus cartões e <a style="text-decoration: underline;font-weight: bold;">começar a usar!</a>',
+            answer: 'O teste grátis é a isenção da mensalidade por 60 (sessenta) dias. Para utilizar, basta solicitar seus cartões e <a onClick="document.getElementById(`modalproduct`).style.display = `block`;" style="cursor: pointer; text-decoration: underline;font-weight: bold;">começar a usar!</a>',
         },
         {
             question: 'Como usar os meu Hits?',
@@ -39,7 +39,7 @@ const Planos: NextPage = () => {
         },
         {
             question: 'Como comprar o meu Hit?',
-            answer: 'Depois de escolher o Hit ideal para você, clique nos botões de <a style="text-decoration: underline;font-weight: bold;" href="/">“Contrate agora”</a> ou nos links a seguir e dê início ao processo de compra, você só precisa inserir seus dados iniciais e solicitar seu cartão :) <br/><br/><a href="" style="text-decoration: underline;font-weight: bold;">Contratar Controle de Despesas</a><br/><a href="" style="text-decoration: underline;font-weight: bold;">Contratar Controle de Combustível</a>',
+            answer: 'Depois de escolher o Hit ideal para você, clique nos botões de <a onClick="document.getElementById(`modalproduct`).style.display = `block`;" style="cursor: pointer; text-decoration: underline;font-weight: bold;">“Contrate agora”</a> ou nos links a seguir e dê início ao processo de compra, você só precisa inserir seus dados iniciais e solicitar seu cartão :) <br/><br/><a href="" style="text-decoration: underline;font-weight: bold;">Contratar Controle de Despesas</a><br/><a href="" style="text-decoration: underline;font-weight: bold;">Contratar Controle de Combustível</a>',
         },
         {
             question: 'Já comprei o meu Hit, e agora?',
@@ -63,7 +63,7 @@ const Planos: NextPage = () => {
         <meta name="description" content=""></meta>
       </Head>      
       <div className="relative overflow-hidden pt-20  pb-20">
-        <div className="absolute top-[50px] left-1/2 transform -translate-x-1/2 w-[1890px] h-[58%] bg-[#F1F7FF] rounded-[100%] z-[-1]"></div>
+        <div className="absolute top-[50px] left-1/2 transform -translate-x-1/2 w-[1890px] h-[58%] max-md:h-[71%] bg-[#F1F7FF] rounded-[100%] z-[-1]"></div>
         <section className="text-center m-auto xl:max-w-[969px] p-3 md:mb-20 mb-10">
           <h1 className="lg:text-6xl text-4xl font-light">
             Qual é o melhor Hit para você?

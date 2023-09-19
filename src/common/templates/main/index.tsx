@@ -9,7 +9,7 @@ type Props = {
 
 const links = [
   { href: '/despesas', label: 'Despesas', color: 'bg-light-violet'  },
-  { href: '/combustivel', label: 'Combustíveis', color: 'bg-light-olive' },
+  { href: '/combustivel', label: 'Combustível', color: 'bg-light-olive' },
   { href: '/planos', label: 'Planos', color: 'bg-light-pink' },
   { href: '/sobre', label: 'Sobre a Edenred', color: 'bg-light-pink' }
 ];

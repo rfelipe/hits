@@ -28,7 +28,7 @@ const Footer = () => {
     },
     {
       label: 'Perguntas Frequentes',
-      href: '/planos',
+      href: '/planos#faq',
       color: 'bg-light-pink'
     }
   ]
@@ -41,8 +41,8 @@ const Footer = () => {
             <path d="M255.687 279.758C291.641 250.963 314.666 206.729 314.666 157.124C314.666 70.3483 244.232 4.27029e-05 157.333 2.7509e-05C70.434 1.2315e-05 0.000231842 70.3387 0.000216668 157.124C0.000207995 206.729 23.025 250.963 58.9786 279.758C85.9201 258.187 120.115 245.278 157.333 245.278C194.551 245.278 228.746 258.188 255.687 279.758Z" fill="#F72717" />
             <path fillRule="evenodd" clipRule="evenodd" d="M2.48201e-05 410L2.18041e-05 479L20.2633 479C47.2702 526.61 98.5495 558.75 157.371 558.75C216.195 558.75 267.475 526.612 294.482 479L315 479L315 410L314.541 410C314.675 407.35 314.742 404.683 314.742 402C314.742 352.513 291.712 308.385 255.75 279.658C228.802 301.177 194.598 314.056 157.371 314.056C120.144 314.056 85.9409 301.177 58.9929 279.658C23.0305 308.385 8.83681e-05 352.513 8.6205e-05 402C8.60877e-05 404.683 0.0677434 407.35 0.201471 410L2.48201e-05 410Z" fill="#B0EFFF" />
           </svg>
-          <div className="absolute top-24 -left-2 md:left-0 right-0 w-40 m-auto text-center">
-            <span className="text-white text-2xl font-light">Acelere seu sucesso com <strong className="font-bold">Edenred Hits</strong></span>
+          <div className="absolute top-24 -left-2 md:left-0 right-0 w-48 m-auto text-center">
+            <span className="text-white text-2xl font-light">Acelere seu sucesso com os <strong className="font-bold">Hits da Edenred</strong></span>
           </div>
         </div>
         <div className="flex flex-col md:self-end items-center">
@@ -69,8 +69,8 @@ const Footer = () => {
           </div>
 
           <div className="flex md:mb-14 md:justify-normal flex-col md:flex-row w-full justify-start mx-auto">
-            <Button type="readMore" href="/">Acesso a plataforma Hit Despesas</Button>
-            <Button type="readMore" href="/">Acesso a plataforma Hit Combustível</Button>
+            <Button type="readMore" href="https://www.iflexaccmm.com.br">Acesso a plataforma Hit Despesas</Button>
+            <Button type="readMore" href="https://www.ticketlog.com.br">Acesso a plataforma Hit Combustível</Button>
           </div>
           <div className="flex justify-between max-md:pb-10 gap-8 md:pb-0 md:justify-normal md:items-start md:mr-auto md:gap-16 md:px-6">
             <Link href={'https://www.linkedin.com/company/ticket-log/'} key="linkedin">

@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import { Intro } from '../../../../../types';
+import cart from "../../../Header/images/shopping-cart.png"
+import Image from 'next/image';
 import Button from '../../../Buttons';
 
 interface IntroProps {
@@ -70,8 +72,8 @@ const IntroSection: React.FC<IntroProps> = ({ intro }) => {
                         )}
 
                         {!i.showInput && (
-                            <div onClick={Anchor} className="button bg-original-red border-original-red text-white hover:bg-black hover:border-black py-3 px-10 rounded-full border cursor-pointer font-normal inline-flex items-center lg:justify-between justify-center max-h-12 max-w-32">
-                                <a className="flex items-center gap-3">{i.textInput}</a>
+                            <div  className="button bg-original-red border-original-red text-white hover:bg-black hover:border-black py-3 px-10 rounded-full border cursor-pointer font-normal inline-flex items-center lg:justify-between justify-center max-h-12 max-w-32">
+                                <a href='/' className="flex items-center gap-3"><Image src={cart} height={25} width={25} alt=''/>Contrate agora</a>
                             </div>
                         )}
                     </div>

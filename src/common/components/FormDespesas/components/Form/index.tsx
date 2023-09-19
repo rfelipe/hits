@@ -19,7 +19,6 @@ const initialValues = {
   cnpj: "",
   cars_quantity: "",
   porte: "",
-  assertion: false,
 };
 
 const validationSchema = Yup.object({
@@ -39,7 +38,6 @@ const validationSchema = Yup.object({
     .min(1, "O valor precisa ser positivo")
     .required("Insira a quantidade de veículos"),
   porte: Yup.string().required("selecione o porte da empresa"),
-  assertion: Yup.bool().oneOf([true]),
 });
 
 type Props = {
@@ -56,7 +54,7 @@ const Form = ({ className, successCallback }: Props) => {
     onSubmit: async (values) => {
       setSending(true);
       try {
-        const { name, email, phone, cnpj, cars_quantity, porte, assertion } = values;
+        const { name, email, phone, cnpj, cars_quantity, porte } = values;
         const trackerParams = await DataLayer.getTrackerParams();
 
         await fetch(
@@ -72,7 +70,6 @@ const Form = ({ className, successCallback }: Props) => {
               phone,
               cnpj,
               cars_quantity,
-              assertion,
               porte,
               type: "hits",
               source: "hits-despesas",
@@ -187,35 +184,27 @@ const Form = ({ className, successCallback }: Props) => {
         )}
       </div>
       <div className="flex items-center mt-10 text-left">
-        <input
-          id="privacy-policy"
-          type="checkbox"
-          className="w-6 h-6 text-text-red rounded focus:ring-0 border-black"
-          {...formik.getFieldProps("assertion")}
-        />
+      
         <label
           htmlFor="privacy-policy"
-          className={`ml-4 text-sm font-ubuntu ${formik.touched.assertion && formik.errors.assertion
-              ? "text-text-black"
-              : "text-text-black"
-            }`}
+          className={`ml-4 text-sm font-ubuntu `}
         >
           Você concorda que os dados informados podem ser utilizados para o
           envio de ofertas de produtos e serviços, de acordo
           <br /> com nossa{" "}
           <a
-            href="https://www.ticketlog.com.br/lgpd/"
+            href="https://www.edenredpay.com.br/politica-privacidade/"
             target="_blank"
             rel="noreferrer"
             className="text-pedagio-blue underline"
           >
-            Política de Privacidade.
+            Política de Privacidade da Edenred Pay.
           </a>
         </label>
       </div>
 
       <Cta type="submit" className="mt-12" loading={sending}>
-        Solicite contato
+        Solicitar contato
       </Cta>
     </form>
   );

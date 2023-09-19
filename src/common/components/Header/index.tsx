@@ -48,7 +48,7 @@ const Header: React.FC<Props> = ({ links }) => {
           <div onClick={() => {setIsModalOpen(false), document.getElementById("modalproduct").style.display = "none";}} className='absolute right-4 cursor-pointer bg-white rounded-full w-9 h-9 text-center flex items-center justify-center top-4'>X</div>
           <section className="text-center m-auto mt-10">
               <p className="px-4 mt-3 text-3xl ">
-              Escolha o produto que deseja falar
+              Escolha o produto que deseja:
               </p>
               <div className="mt-20 flex justify-between flex-wrap min-[1337px]:flex-nowrap">
                   <div className="flex">

@@ -13,7 +13,7 @@ const FaqSection: React.FC<FaqProps> = ({ faqs }) => {
     };
 
     return (
-        <div className="py-16 md:py-32">
+        <div id='faq' className="py-16 md:py-32">
             <div className=''>
                 {faqs.map((faq, index) => (
                     <><div className='relative'>

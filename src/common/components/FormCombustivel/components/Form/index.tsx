@@ -17,7 +17,6 @@ const initialValues = {
   phone: "",
   cnpj: "",
   cars_quantity: "",
-  assertion: false,
 };
 
 const validationSchema = Yup.object({
@@ -36,7 +35,6 @@ const validationSchema = Yup.object({
   cars_quantity: Yup.number()
     .min(1, "O valor precisa ser positivo")
     .required("Insira a quantidade de veículos"),
-  assertion: Yup.bool().oneOf([true]),
 });
 
 type Props = {
@@ -53,7 +51,7 @@ const Form = ({ className, successCallback }: Props) => {
     onSubmit: async (values) => {
       setSending(true);
       try {
-        const { name, email, phone, cnpj, cars_quantity, assertion } = values;
+        const { name, email, phone, cnpj, cars_quantity } = values;
         const trackerParams = await DataLayer.getTrackerParams();
 
         await fetch(
@@ -69,7 +67,6 @@ const Form = ({ className, successCallback }: Props) => {
               phone,
               cnpj,
               cars_quantity,
-              assertion,
               type: "hits",
               source: "hits-abastecimento",
               ...trackerParams
@@ -159,19 +156,9 @@ const Form = ({ className, successCallback }: Props) => {
       </div>
 
       <div className="flex items-center mt-10 text-left">
-        <input
-          id="privacy-policy"
-          type="checkbox"
-          className="w-6 h-6 text-text-red rounded focus:ring-0 border-black"
-          {...formik.getFieldProps("assertion")}
-        />
         <label
           htmlFor="privacy-policy"
-          className={`ml-4 text-sm font-ubuntu ${
-            formik.touched.assertion && formik.errors.assertion
-              ? "text-text-black"
-              : "text-text-black"
-          }`}
+          className={`ml-4 text-sm font-ubuntu `}
         >
           Você concorda que os dados informados podem ser utilizados para o
           envio de ofertas de produtos e serviços, de acordo
@@ -188,7 +175,7 @@ const Form = ({ className, successCallback }: Props) => {
       </div>
 
       <Cta type="submit" className="mt-12" loading={sending}>
-        Solicite contato
+        Solicitar contato
       </Cta>
     </form>
   );

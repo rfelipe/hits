@@ -6,8 +6,11 @@ import videoHits2 from '../../static/images/video_hits2.jpg';
 import img1Hits1 from '../../static/images/img1_hits1.png';
 import img2Hits1 from '../../static/images/img2_hits1.png';
 import img3Hits1 from '../../static/images/img3_hits1.png';
+
 import img1Hits2 from '../../static/images/img1_hits2.png';
 import img2Hits2 from '../../static/images/img2_hits2.png';
+import img5Hits2 from '../../static/images/img5_hits2.png';
+
 import img3Hits2 from '../../static/images/img3_hits2.png';
 import img4Hits1 from '../../static/images/img4_hits1.png';
 import img4Hits2 from '../../static/images/img4_hits2.png';
@@ -123,7 +126,7 @@ export const productsData = [
         },
         success: [
             {
-                images: [img1Hits2, img2Hits2],
+                images: [img1Hits2, img5Hits2],
                 colors: productTypeColors.combustivel,
                 title: 'Quer mais sucesso?',
                 text: 'Se a sua empresa tem veículos, também temos uma solução completa para controle de gastos com combustível e mobilidade.',
@@ -186,7 +189,7 @@ export const productsData = [
                 price: '1,00',
                 text: 'E sem pagar nada nos dois primeiros meses?',
                 colors: productTypeColors.combustivel,
-                images: [img1Hits2, img2Hits2, img3Hits2],
+                images: [img1Hits2, img5Hits2, img3Hits2],
             },
         ],
         Easy: [
@@ -205,11 +208,7 @@ export const productsData = [
                 description: '',
             },
             {
-                type: 'bikeBH',
-                description: '',
-            },
-            {
-                type: 'BikeBicicletar',
+                type: 'uber',
                 description: '',
             },
             {
@@ -217,35 +216,7 @@ export const productsData = [
                 description: '',
             },
             {
-                type: 'BikePelotas',
-                description: '',
-            },
-            {
-                type: 'BikePetrolina',
-                description: '',
-            },
-            {
-                type: 'BikeSambaSJC',
-                description: '',
-            },
-            {
-                type: 'BikeSantos',
-                description: '',
-            },
-            {
-                type: 'BikeSerra',
-                description: '',
-            },
-            {
                 type: 'CarBee',
-                description: '',
-            },
-            {
-                type: 'Cittamobi',
-                description: '',
-            },
-            {
-                type: 'Copark',
                 description: '',
             },
             {
@@ -257,53 +228,13 @@ export const productsData = [
                 description: '',
             },
             {
-                type: 'Frame',
-                description: '',
-            },
-            {
                 type: 'Fretadao',
-                description: '',
-            },
-            {
-                type: 'LavadoresCredenciados',
                 description: '',
             },
             {
                 type: 'Tembici',
                 description: '',
             },
-            {
-                type: 'Tupinamba',
-                description: '',
-            },
-            {
-                type: 'VaDeTaxi',
-                description: '',
-            },
-            {
-                type: 'ZAE',
-                description: '',
-            },
-            {
-                type: 'ZAERECIFE',
-                description: '',
-            },
-            {
-                type: 'ZAESANTOS',
-                description: '',
-            },
-            {
-                type: 'ZAESERRA',
-                description: '',
-            },
-            {
-                type: 'ZAESJC',
-                description: '',
-            },
-            {
-                type: 'Zapya',
-                description: '',
-            }
             
 
         ],
@@ -353,7 +284,7 @@ export const productsData = [
                 textLabel: 'Quero controlar as despesas do negócio'
             }
         ],
-                advantages: [
+        advantages: [
             {
                 colors: productTypeColors.combustivel,
                 items: [
@@ -369,7 +300,7 @@ export const productsData = [
                         title: 'Parceria para o que precisar. ',
                         text: 'Simplifique pagamento de serviços veiculares como: lavagens, estacionamento, manutenção e aplicativos de transporte individual e envio de encomendas.',
                         textInput: 'Fale com vendas',
-                        image: img2Hits2,
+                        image: img5Hits2,
                     },
                                         {
                         type: 'phone',
