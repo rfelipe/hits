@@ -126,6 +126,7 @@ export interface WantMoreSuccess {
   label?: string;
   textLabel?: string;
   colors?: string[];
+  link?: string;
 }
 
 export interface Product {

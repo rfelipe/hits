@@ -44,7 +44,7 @@ const Home: NextPage = () => {
     return (
         <MainTemplate>
             <Head>
-                <title>Ticket Log</title>
+                <title>Edenred Hits</title>
                 <meta name="description" content=""></meta>
             </Head>
             <>
@@ -329,7 +329,7 @@ const Home: NextPage = () => {
                         </Swiper>
                     </div>
                     <div className="flex justify-center mt-10">
-                        <Button type="learnMore" href="/">Confira todas as notícias</Button>
+                        <Button type="learnMore" href="https://www.ticketlog.com.br/blog/">Confira todas as notícias</Button>
                     </div>
                 </div>
                 <div className="pt-14 md:pt-32 mb-14">

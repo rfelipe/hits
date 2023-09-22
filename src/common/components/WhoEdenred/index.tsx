@@ -9,7 +9,7 @@ const WhoEdenred = () => {
                     <h2 className='md:text-5xl text-3xl text-black font-light mb-8 text-center md:text-start'>Tá, mas quem é essa <span className='font-bold'>Edenred?</span></h2>
                     <p className='text-grey md:text-black font-ubuntu text-lg md:text-base mb-6 font-light text-center md:text-justify'>A Edenred é líder mundial em serviços e meios de pagamento, e atua como companheira de todas as horas das empresas, trabalhadores e comerciantes.</p>
                     <div className='flex justify-center md:justify-start'>
-                        <Button type="learnMore" href={'/'}>Saiba mais</Button>
+                        <Button type="learnMore" href={'/sobre'}>Saiba mais</Button>
                     </div>
                 </div>
                 <svg width="704" height="332" viewBox="0 0 704 332" fill="none" xmlns="http://www.w3.org/2000/svg" className='md:w-1/2 md:ml-auto md:mb-auto mb-12 ml-80'>

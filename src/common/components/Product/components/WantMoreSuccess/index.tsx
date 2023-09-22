@@ -27,7 +27,7 @@ const WantMoreSuccessSection: React.FC<SuccessProps> = ({ success }) => {
                         <p className='font-ubuntu md:text-base text-lg text-grey md:text-black  mb-6 font-light lg:w-[388px] pb-8 mx-auto'>{s.text}</p>
                         <div className='flex flex-col  justify-center items-center 2xl:items-start md:justify-normal 2xl:flex-row gap-3'>
                             {/* <Button type="red" href="/">Teste grátis por 60 dias</Button> */}
-                            <Button type="learnMore" href="/">Saiba mais</Button>
+                            <Button type="learnMore" href={`${s.link}`}>Saiba mais</Button>
                         </div>
                     </div>
                     <div className='relative pb-8 md:pb-0'>

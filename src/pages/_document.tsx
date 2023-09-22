@@ -6,7 +6,7 @@ const Document = () => (
     <Head>
       <link
         rel="shortcut icon"
-        href="https://www.ticketlog.com.br/static/favicon.png"
+        href="https://www.edenred.com/themes/custom/edenred/proto/assets/media/favicons/favicon-16x16.png"
       />
       <link
         href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap"

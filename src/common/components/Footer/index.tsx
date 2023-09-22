@@ -74,22 +74,22 @@ const Footer = () => {
           </div>
           <div className="flex justify-between max-md:pb-10 gap-8 md:pb-0 md:justify-normal md:items-start md:mr-auto md:gap-16 md:px-6">
             <Link href={'https://www.linkedin.com/company/ticket-log/'} key="linkedin">
-              <a className="hover:scale-125 transition-all">
+              <a target="_blank" className="hover:scale-125 transition-all">
                 <Image src={Linkedin} alt={'Icon'} width={24} height={24}></Image>
               </a>
             </Link>
             <Link href={'https://www.facebook.com/TicketLog'} key="facebook">
-              <a className="hover:scale-125 transition-all">
+              <a target="_blank" className="hover:scale-125 transition-all">
                 <Image src={Facebook} alt={'Icon'} width={24} height={24}></Image>
               </a>
             </Link>
             <Link href={'https://www.instagram.com/ticket.log/'} key="instagram">
-              <a className="hover:scale-125 transition-all">
+              <a target="_blank" className="hover:scale-125 transition-all">
                 <Image src={Instagram} alt={'Icon'} width={24} height={24}></Image>
               </a>
             </Link>
             <Link href={'https://www.youtube.com/ticketlog'} key="youtube">
-              <a className="hover:scale-125 transition-all">
+              <a target="_blank" className="hover:scale-125 transition-all">
                 <Image src={Youtube} alt={'Icon'} width={24} height={24}></Image>
               </a>
             </Link>

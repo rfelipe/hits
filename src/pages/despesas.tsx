@@ -14,7 +14,7 @@ const Despesas: NextPage = () => {
   return (
     <MainTemplate>
       <Head>
-        <title>Despesas | Ticket Log</title>
+        <title>Despesas | Edenred Hits</title>
         <meta name="description" content=""></meta>
       </Head>
       <>

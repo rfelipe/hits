@@ -106,15 +106,15 @@ export const productsData = [
                     },
                     {
                         question: 'Como comprar o meu Hits?',
-                        answer: 'Depois de escolher o Hits ideal para você, clique nos botões de <a onClick="document.getElementById(`modalproduct`).style.display = `block`;" style="cursor: pointer; text-decoration: underline;font-weight: bold;">“Contrate agora”</a> ou nos links a seguir e dê início ao processo de compra, você só precisa inserir seus dados iniciais e solicitar seu cartão :) <br/><br/> <a href="" style="text-decoration: underline;font-weight: bold;">Contratar Controle de Despesas</a>',
+                        answer: 'Depois de escolher o Hits ideal para você, clique nos botões de <a target="_blank" onClick="document.getElementById(`modalproduct`).style.display = `block`;" style="cursor: pointer; text-decoration: underline;font-weight: bold;">“Contrate agora”</a> ou nos links a seguir e dê início ao processo de compra, você só precisa inserir seus dados iniciais e solicitar seu cartão :) <br/><br/> <a target="_blank" href="" style="text-decoration: underline;font-weight: bold;">Contratar Controle de Despesas</a>',
                     },
                     {
                         question: 'Já comprei o meu Hits, e agora?',
-                        answer: 'Fique de olho em nosso contato por e-mail ou WhatsApp! <br/> Para <strong>Hits Despesas</strong>, finalize pedido na <a href="https://www.iflexaccmm.com.br" style="text-decoration: underline;font-weight: bold;">plataforma</a>, próximos passos em nosso contato. ',
+                        answer: 'Fique de olho em nosso contato por e-mail ou WhatsApp! <br/> Para <strong>Hits Despesas</strong>, finalize pedido na <a target="_blank" href="https://www.iflexaccmm.com.br" style="text-decoration: underline;font-weight: bold;">plataforma</a>, próximos passos em nosso contato. ',
                     },
                     {
                         question: 'Como acessar minha plataforma?',
-                        answer: 'Acesse pelo computador ou app, como preferir :) <br/><br/>Hits Despesas: <br/><a href="https://www.iflexaccmm.com.br" style="text-decoration: underline;font-weight: bold;">Portal do Gestor </a> <br/><a href="https://play.google.com/store/apps/details?id=com.edenred.espp.digitalaccount&hl=pt_BR&gl=US" style="text-decoration: underline;font-weight: bold;">App da carteira digital (Android)</a><br/><a href="https://apps.apple.com/br/app/edenred-wallet/id1542995489" style="text-decoration: underline;font-weight: bold;">App da carteira digital (IOS)</a>',
+                        answer: 'Acesse pelo computador ou app, como preferir :) <br/><br/>Hits Despesas: <br/><a target="_blank" href="https://www.iflexaccmm.com.br" style="text-decoration: underline;font-weight: bold;">Portal do Gestor </a> <br/><a target="_blank" href="https://play.google.com/store/apps/details?id=com.edenred.espp.digitalaccount&hl=pt_BR&gl=US" style="text-decoration: underline;font-weight: bold;">App da carteira digital (Android)</a><br/><a target="_blank" href="https://apps.apple.com/br/app/edenred-wallet/id1542995489" style="text-decoration: underline;font-weight: bold;">App da carteira digital (IOS)</a>',
                     }
                 ]
             }
@@ -131,7 +131,9 @@ export const productsData = [
                 title: 'Quer mais sucesso?',
                 text: 'Se a sua empresa tem veículos, também temos uma solução completa para controle de gastos com combustível e mobilidade.',
                 label: 'Hit #2',
-                textLabel: 'Quero controlar as despesas com combustível'
+                textLabel: 'Quero controlar as despesas com combustível',
+                link: '/combustivel'
+
             }
         ],
         advantages: [
@@ -252,7 +254,7 @@ export const productsData = [
                     },
                     {
                         question: 'Como comprar o meu Hit?',
-                        answer: 'Depois de escolher o Hit ideal para você, clique nos botões de <a onClick="document.getElementById(`modalproduct`).style.display = `block`;" style="cursor: pointer; text-decoration: underline;font-weight: bold;">“Contrate agora”</a> ou nos links a seguir e dê início ao processo de compra, você só precisa inserir seus dados iniciais e solicitar seu cartão :) <br><br> <a href="" style="text-decoration: underline;font-weight: bold">Contratar Controle de Combustível</a>',
+                        answer: 'Depois de escolher o Hit ideal para você, clique nos botões de <a target="_blank" onClick="document.getElementById(`modalproduct`).style.display = `block`;" style="cursor: pointer; text-decoration: underline;font-weight: bold;">“Contrate agora”</a> ou nos links a seguir e dê início ao processo de compra, você só precisa inserir seus dados iniciais e solicitar seu cartão :) <br><br> <a target="_blank" href="" style="text-decoration: underline;font-weight: bold">Contratar Controle de Combustível</a>',
                     },
                     {
                         question: 'Já comprei o meu Hit, e agora?',
@@ -260,11 +262,11 @@ export const productsData = [
                     },
                     {
                         question: 'Como acessar minha plataforma?',
-                        answer: 'Acesse pelo computador ou app, como preferir :) <br/><br/>Hits Combustível: <br/><a href="https://plataforma.ticketlog.com.br/" style="text-decoration: underline;font-weight: bold;">Sou Log + </a><br/><a href="https://play.google.com/store/apps/details?id=com.embratec.ecofrotas&hl=pt_BR&gl=US" style="text-decoration: underline;font-weight: bold;">App do Gestor (Android)</a><br/><a href="https://apps.apple.com/br/app/minha-mobilidade/id886670547" style="text-decoration: underline;font-weight: bold;">App do Gestor (IOS)</a>',
+                        answer: 'Acesse pelo computador ou app, como preferir :) <br/><br/>Hits Combustível: <br/><a target="_blank" href="https://plataforma.ticketlog.com.br/" style="text-decoration: underline;font-weight: bold;">Sou Log + </a><br/><a target="_blank" href="https://play.google.com/store/apps/details?id=com.embratec.ecofrotas&hl=pt_BR&gl=US" style="text-decoration: underline;font-weight: bold;">App do Gestor (Android)</a><br/><a target="_blank" href="https://apps.apple.com/br/app/minha-mobilidade/id886670547" style="text-decoration: underline;font-weight: bold;">App do Gestor (IOS)</a>',
                     },
                     {
                         question: 'Sou um estabelecimento e quero ser parceiro da Edenred?',
-                        answer: 'Na base da parceria e da tecnologia, a gente faz a diferença no cotidiano dos nossos clientes, usando toda a expertise da Edenred a favor dos pequenos empreendedores. Entre em contato pelo <a style="text-decoration: underline;font-weight: bold;" href="https://www.ticketlog.com.br/credencie-se/">site para parceiros</a> e faça parte da Edenred!',
+                        answer: 'Na base da parceria e da tecnologia, a gente faz a diferença no cotidiano dos nossos clientes, usando toda a expertise da Edenred a favor dos pequenos empreendedores. Entre em contato pelo <a target="_blank" style="text-decoration: underline;font-weight: bold;" href="https://www.ticketlog.com.br/credencie-se/">site para parceiros</a> e faça parte da Edenred!',
                     },
                 ]
             }
@@ -281,7 +283,8 @@ export const productsData = [
                 title: 'Quer mais sucesso?',
                 text: 'Se você quer ter controle total das despesas do negócio, se destacar da concorrência e poder focar no que mais importa, também temos uma solução completa para você.',
                 label: 'Hit #1',
-                textLabel: 'Quero controlar as despesas do negócio'
+                textLabel: 'Quero controlar as despesas do negócio',
+                link: '/despesas'
             }
         ],
         advantages: [

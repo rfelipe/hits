@@ -10,7 +10,7 @@ const Sobre: NextPage = () => {
   return (
     <MainTemplate>
       <Head>
-        <title>Sobre a Endered | Ticket Log</title>
+        <title>Sobre a Endered | Edenred Hits</title>
         <meta name="description" content=""></meta>
       </Head>
       <div className="lg:pt-10">
