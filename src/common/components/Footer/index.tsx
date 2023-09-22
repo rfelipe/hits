@@ -7,6 +7,7 @@ import Facebook from './images/facebook.png';
 import Youtube from './images/youtube.png';
 import Spotify from './images/spotify.png';
 import Instagram from './images/instagram.png';
+import dex from './images/dEx.png';
 import Optanon from "../../../common/lib/Optanon";
 
 const Footer = () => {
@@ -104,6 +105,9 @@ const Footer = () => {
                       );
           }}>Gerenciar Cookies</a>
           </div>
+          <a href="https://dexdigital.com.br" target="_blank" rel="noreferrer">
+            <Image alt="dEx digital" src={dex}/>
+          </a>
         </div>
       </div>
     </footer>
