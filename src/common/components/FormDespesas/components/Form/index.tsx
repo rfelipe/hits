@@ -17,7 +17,6 @@ const initialValues = {
   email: "",
   phone: "",
   cnpj: "",
-  cars_quantity: "",
   porte: "",
 };
 
@@ -34,9 +33,6 @@ const validationSchema = Yup.object({
       return isValidCNPJ(value || "");
     })
     .required("Insira seu cnpj"),
-  cars_quantity: Yup.number()
-    .min(1, "O valor precisa ser positivo")
-    .required("Insira a quantidade de veículos"),
   porte: Yup.string().required("selecione o porte da empresa"),
 });
 
@@ -54,7 +50,7 @@ const Form = ({ className, successCallback }: Props) => {
     onSubmit: async (values) => {
       setSending(true);
       try {
-        const { name, email, phone, cnpj, cars_quantity, porte } = values;
+        const { name, email, phone, cnpj, porte } = values;
         const trackerParams = await DataLayer.getTrackerParams();
 
         await fetch(
@@ -69,7 +65,6 @@ const Form = ({ className, successCallback }: Props) => {
               email,
               phone,
               cnpj,
-              cars_quantity,
               porte,
               type: "hits",
               source: "hits-despesas",
@@ -84,7 +79,6 @@ const Form = ({ className, successCallback }: Props) => {
 
         DataLayer.logEvent({
           event: "success",
-          "car-quantity": cars_quantity,
           cnpj: md5(cnpj),
           "cnpj_sem_hash": cnpj,
           "e-mail": sha256(email),
@@ -145,18 +139,6 @@ const Form = ({ className, successCallback }: Props) => {
             error={formik.touched.cnpj ? formik.errors.cnpj : ""}
           />
         </div>
-      </div>
-
-      <div className="w-full mt-6 lg:mt-8">
-        <Input
-          type="Number"
-          label="Quantidade de veículos"  
-          maxlength={4}
-          fieldInputProps={formik.getFieldProps("cars_quantity")}
-          error={
-            formik.touched.cars_quantity ? formik.errors.cars_quantity : ""
-          }
-        />
       </div>
       <div className="w-full mt-6 lg:mt-8">
         <select name="porte" className={`

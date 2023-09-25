@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Intro } from '../../../../../types';
 import cart from "../../../Header/images/shopping-cart.png"
+import cart_red from "../../../Header/images/shopping-cart-red.png"
 import Image from 'next/image';
 import Button from '../../../Buttons';
 
@@ -72,9 +73,17 @@ const IntroSection: React.FC<IntroProps> = ({ intro }) => {
                         )}
 
                         {!i.showInput && (
-                            <div  className="button bg-original-red border-original-red text-white hover:bg-black hover:border-black py-3 px-10 rounded-full border cursor-pointer font-normal inline-flex items-center lg:justify-between justify-center max-h-12 max-w-32">
-                                <a href='/' className="flex items-center gap-3"><Image src={cart} height={25} width={25} alt=''/>Contrate agora</a>
-                            </div>
+                        <a className="button group border-original-red text-original-red hover:bg-original-red hover:border-original-red hover:text-white py-3 px-10 rounded-full border cursor-pointer font-normal inline-flex items-center lg:justify-between justify-center max-h-12 max-w-32" 
+                        href={i.urlInput} target='_blank' rel='noreferrer' >
+                            <a target="_blank" className="flex items-center gap-1 transition-all duration-500">
+                                <div className='group-hover:hidden'>
+                                    <Image  src={cart_red} height={25} width={25} alt=''/>
+                                </div>
+                                <div className='group-hover:block hidden'>
+                                    <Image  src={cart} height={25} width={25} alt=''/>
+                                </div>Contrate agora
+                            </a>
+                        </a>
                         )}
                     </div>
                 </div>

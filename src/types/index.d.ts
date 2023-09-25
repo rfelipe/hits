@@ -81,12 +81,14 @@ export interface Video {
   image?: any;
   title?: string;
   text?: string;
+  url?: string;
 }
 
 export interface Price {
   title: string;
   price: string;
   text: string;
+  urlInput: string;
   colors?: string[];
   images: any[];
 }
@@ -98,6 +100,7 @@ export interface Intro {
   text?: string;
   showInput?: boolean;
   textInput?: string;
+  urlInput?: string;
   colors?: string[];
 }
 

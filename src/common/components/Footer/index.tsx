@@ -35,7 +35,7 @@ const Footer = () => {
   ]
   return (
     <footer className="md:max-w-7xl mx-auto px-6">
-      <div className="flex justify-between flex-col-reverse md:flex-row">
+      <div className="relative flex justify-between flex-col-reverse md:flex-row">
         <div className="relative w-[315px] h-[479px] mx-auto">
           <svg width="315" height="479" viewBox="0 0 315 479" fill="none" xmlns="http://www.w3.org/2000/svg" className="mx-auto md:mx-0">
             <path d="M59.0001 280C85.8445 301.264 119.916 314 157 314C194.084 314 228.156 301.273 255 280C228.156 258.736 194.084 246 157 246C119.916 246 85.8445 258.727 59.0001 280Z" fill="#FED0C8" />
@@ -44,6 +44,11 @@ const Footer = () => {
           </svg>
           <div className="absolute top-24 -left-2 md:left-0 right-0 w-48 m-auto text-center">
             <span className="text-white text-2xl font-light">Acelere seu sucesso com os <strong className="font-bold">Hits da Edenred</strong></span>
+          </div>
+          <div className="w-full flex items-center justify-center absolute bottom-3">
+            <a className="md:hidden mx-auto " href="https://dexdigital.com.br" target="_blank" rel="noreferrer">
+                <Image alt="dEx digital" src={dex}/>
+            </a>
           </div>
         </div>
         <div className="flex flex-col md:self-end items-center">
@@ -94,6 +99,9 @@ const Footer = () => {
                 <Image src={Youtube} alt={'Icon'} width={24} height={24}></Image>
               </a>
             </Link>
+            <a className="hidden md:block absolute right-14" href="https://dexdigital.com.br" target="_blank" rel="noreferrer">
+              <Image alt="dEx digital" src={dex}/>
+            </a>
           </div>
           <div className="flex max-md:flex-col max-md:text-center max-md:gap-5 max-md:m-auto gap-10 my-5 mr-auto max-md:pb-14 px-6 text-xs">
               <a href="https://www.ticketlog.com.br/lgpd/#termos-de-servico" target="_blank" rel="noreferrer">Termos de Uso e Política de Privacidade</a>
@@ -105,9 +113,6 @@ const Footer = () => {
                       );
           }}>Gerenciar Cookies</a>
           </div>
-          <a href="https://dexdigital.com.br" target="_blank" rel="noreferrer">
-            <Image alt="dEx digital" src={dex}/>
-          </a>
         </div>
       </div>
     </footer>

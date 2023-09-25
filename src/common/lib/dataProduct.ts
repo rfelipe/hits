@@ -36,6 +36,7 @@ export const productsData = [
                 text: 'Com o Hit #1 você tem controle de todas as despesas... Fica tão fácil que parece invisível!',
                 showInput: false,
                 textInput: 'Quero Conhecer',
+                urlInput: 'https://loja.ticketlog.com.br/controle-de-despesas/informacoes',
                 colors: productTypeColors.despesas
             },
         ],
@@ -44,6 +45,7 @@ export const productsData = [
                 title: 'Quanto você acha justo pagar para resolver de vez a organização das despesas do dia a dia da sua empresa?',
                 price: '1,50',
                 text: 'E sem pagar nada nos dois primeiros meses?',
+                urlInput: 'https://loja.ticketlog.com.br/controle-de-despesas/informacoes',
                 colors: productTypeColors.despesas,
                 images: [img1Hits3, img2Hits3, img3Hits3],
             },
@@ -106,7 +108,7 @@ export const productsData = [
                     },
                     {
                         question: 'Como comprar o meu Hits?',
-                        answer: 'Depois de escolher o Hits ideal para você, clique nos botões de <a target="_blank" onClick="document.getElementById(`modalproduct`).style.display = `block`;" style="cursor: pointer; text-decoration: underline;font-weight: bold;">“Contrate agora”</a> ou nos links a seguir e dê início ao processo de compra, você só precisa inserir seus dados iniciais e solicitar seu cartão :) <br/><br/> <a target="_blank" href="" style="text-decoration: underline;font-weight: bold;">Contratar Controle de Despesas</a>',
+                        answer: 'Depois de escolher o Hits ideal para você, clique nos botões de <a target="_blank" onClick="document.getElementById(`modalproduct`).style.display = `block`;" style="cursor: pointer; text-decoration: underline;font-weight: bold;">“Contrate agora”</a> ou nos links a seguir e dê início ao processo de compra, você só precisa inserir seus dados iniciais e solicitar seu cartão :) <br/><br/> <a target="_blank" href="https://loja.ticketlog.com.br/controle-de-despesas/informacoes" style="text-decoration: underline;font-weight: bold;">Contratar Controle de Despesas</a>',
                     },
                     {
                         question: 'Já comprei o meu Hits, e agora?',
@@ -121,8 +123,9 @@ export const productsData = [
         ],
         video: {
             image: videoHits1,
-            title: 'Lorem ipsum dolor sit',
-            text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam et lacinia eros. Duis cursus, nisi a pellentesque finibus, elit tellus porttitor est.'
+            title: 'Controle de despesas',
+            text: 'Para se destacar da concorrência e ter mais foco no seu negócio.',
+            url: 'https://www.youtube.com/watch?v=d4XXM3UaTwg&feature=youtu.be'
         },
         success: [
             {
@@ -181,6 +184,7 @@ export const productsData = [
                 title: 'Já sabe como dar o primeiro passo para controle de despesas?',
                 text: 'Separe os gastos com combustível e mobilidade das outras despesas da empresa tendo o Ticket Car na palma da mão.',
                 showInput: false,
+                urlInput: 'https://loja.ticketlog.com.br/ticket-car/informacoes',
                 textInput: 'Quero Conhecer',
                 colors: productTypeColors.combustivel
             },
@@ -191,6 +195,7 @@ export const productsData = [
                 price: '1,00',
                 text: 'E sem pagar nada nos dois primeiros meses?',
                 colors: productTypeColors.combustivel,
+                urlInput: 'https://loja.ticketlog.com.br/ticket-car/informacoes',
                 images: [img1Hits2, img5Hits2, img3Hits2],
             },
         ],
@@ -254,7 +259,7 @@ export const productsData = [
                     },
                     {
                         question: 'Como comprar o meu Hit?',
-                        answer: 'Depois de escolher o Hit ideal para você, clique nos botões de <a target="_blank" onClick="document.getElementById(`modalproduct`).style.display = `block`;" style="cursor: pointer; text-decoration: underline;font-weight: bold;">“Contrate agora”</a> ou nos links a seguir e dê início ao processo de compra, você só precisa inserir seus dados iniciais e solicitar seu cartão :) <br><br> <a target="_blank" href="" style="text-decoration: underline;font-weight: bold">Contratar Controle de Combustível</a>',
+                        answer: 'Depois de escolher o Hit ideal para você, clique nos botões de <a target="_blank" onClick="document.getElementById(`modalproduct`).style.display = `block`;" style="cursor: pointer; text-decoration: underline;font-weight: bold;">“Contrate agora”</a> ou nos links a seguir e dê início ao processo de compra, você só precisa inserir seus dados iniciais e solicitar seu cartão :) <br><br> <a target="_blank" href="https://loja.ticketlog.com.br/ticket-car/informacoes" style="text-decoration: underline;font-weight: bold">Contratar Controle de Combustível</a>',
                     },
                     {
                         question: 'Já comprei o meu Hit, e agora?',
@@ -273,8 +278,9 @@ export const productsData = [
         ],
         video: {
             image: videoHits2,
-            title: 'Lorem ipsum dolor sit',
-            text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam et lacinia eros. Duis cursus, nisi a pellentesque finibus, elit tellus porttitor est.'
+            title: 'Controle de combustível',
+            text: 'Para iniciar o controle de despesas, separando os gastos com abastecimento de outros custos.',
+            url: 'https://www.youtube.com/watch?si=sV1OhdQ_9gqUYORH&v=U9z3YqibeRg&feature=youtu.be'
         },
         success: [
             {

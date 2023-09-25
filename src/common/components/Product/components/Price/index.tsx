@@ -69,9 +69,17 @@ const PriceSection: React.FC<PricesProps> = ({ prices }) => {
                                     <p>ao dia do mês, tá bom pra você?</p>
                                 </div>
                                 <span className='font-ubuntu text-grey md:text-black text-base font-light mb-6 block'>{price.text}</span>
-                                <div className='group'>
-                                    <Button type="borderRed" href="/"><div className='group-hover:hidden'><Image  src={cart_red} height={25} width={25} alt=''/></div><div className='group-hover:block hidden'><Image  src={cart} height={25} width={25} alt=''/></div>Contrate agora</Button>
-                                </div>
+                                <a className="button group border-original-red text-original-red hover:bg-original-red hover:border-original-red hover:text-white py-3 px-10 rounded-full border cursor-pointer font-normal inline-flex items-center lg:justify-between justify-center max-h-12 max-w-32" 
+                                href={price.urlInput} target='_blank' rel='noreferrer' >
+                                    <a target="_blank" className="flex items-center gap-1 transition-all duration-500">
+                                        <div className='group-hover:hidden'>
+                                            <Image  src={cart_red} height={25} width={25} alt=''/>
+                                        </div>
+                                        <div className='group-hover:block hidden'>
+                                            <Image  src={cart} height={25} width={25} alt=''/>
+                                        </div>Contrate agora
+                                    </a>
+                                </a>
                             </div>
                         </div>
                     </div>
