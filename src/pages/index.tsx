@@ -94,8 +94,8 @@ const Home: NextPage = () => {
                     </Fade>
                 )}
                 <div className="pt-14 md:pt-20">
-                    <h2 className="md:text-5xl text-5xl text-black font-light text-center md:max-w-2xl mx-auto mb-8">Descubra como ter controle total do seu negócio!</h2>
-                    <p className="text-grey md:text-black text-base md:text-lg font-light font-ubuntu mb-8 lg:w-[608px] mx-auto text-center">
+                    <h2 className="px-6 md:text-5xl text-[2.6rem] leading-[2.6rem] text-black font-light text-center md:max-w-2xl mx-auto mb-8">Descubra como ter controle total do seu negócio!</h2>
+                    <p className="px-6 text-grey md:text-black text-base md:text-lg font-light font-ubuntu mb-8 lg:w-[608px] mx-auto text-center">
                         Você é o protagonista dessa história e nossos hits são a trilha sonora para te acompanhar no corre do dia a dia.
                     </p>
                     <div className="flex justify-between flex-wrap md:gap-5">
@@ -306,7 +306,7 @@ const Home: NextPage = () => {
                         </div>
                         </Fade>
                         <Fade right>
-                            <h2 className="text-black text-3xl ml-auto my-auto font-light max-xl:max-w-4xl text-center max-xl:mb-10 xl:w-[500px] mx-auto">Nossa dupla de milhões, pronta para passar pelos altos e baixos do empreendedorismo ao seu lado!</h2>
+                            <h2 className="text-black text-3xl px-6 ml-auto my-auto font-light max-xl:max-w-4xl text-center max-xl:mb-10 xl:w-[500px] mx-auto">Nossa dupla de milhões, pronta para passar pelos altos e baixos do empreendedorismo ao seu lado!</h2>
                         </Fade>
                     </div>
                     <Fade right>

@@ -74,7 +74,7 @@ const Footer = () => {
               <Image src={LogoEdenred} alt={'Logo Edenred'} width={105} height={67}></Image>
           </div>
 
-          <div className="flex md:mb-14 md:justify-normal flex-col md:flex-row w-full justify-start mx-auto">
+          <div className="flex max-md:items-center md:mb-14 md:justify-normal flex-col md:flex-row w-full justify-start mx-auto">
             <Button type="readMore" href="https://www.iflexaccmm.com.br">Acesso a plataforma Hit Despesas</Button>
             <Button type="readMore" href="https://plataforma.ticketlog.com.br/">Acesso a plataforma Hit Combustível</Button>
           </div>
