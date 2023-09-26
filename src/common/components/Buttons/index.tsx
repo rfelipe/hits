@@ -6,6 +6,7 @@ interface ButtonProps {
   type: 'red' | 'learnMore' | 'readMore' | 'borderRed';
   children: React.ReactNode;
   href?: string;
+  target?: string;
 }
 
 const typeToClassMap = {
@@ -27,7 +28,7 @@ const arrowVariants = {
 
 const initialVariant = 'hidden';
 
-const Button: React.FC<ButtonProps> = ({ type, children, href }) => {
+const Button: React.FC<ButtonProps> = ({ type, children, href, target }) => {
   const buttonClassName = `button ${typeToClassMap[type]} cursor-pointer font-normal inline-flex items-center lg:justify-between justify-center max-h-12 max-w-32`;
   const [isHovered, setIsHovered] = useState(false);
 
@@ -44,7 +45,7 @@ const Button: React.FC<ButtonProps> = ({ type, children, href }) => {
   };
 
   return (
-    <Link href={href} passHref>
+    <a target={target} href={href} rel="noreferrer">
       <motion.div
         className={buttonClassName}
         onMouseEnter={handleMouseEnter}
@@ -96,7 +97,7 @@ const Button: React.FC<ButtonProps> = ({ type, children, href }) => {
               )}
         </a>
       </motion.div>
-    </Link>
+    </a>
   );
 };
 

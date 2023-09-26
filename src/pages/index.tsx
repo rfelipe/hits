@@ -22,10 +22,6 @@ import Hits1Img1 from '../static/images/img1_hits1.png';
 import Hits1Img1Mob from '../static/images/home/Group 47274.png';
 import Hits2Img2Mob from '../static/images/home/Group 47246.png';
 import Hits2Img2 from '../static/images/img1_hits2.png';
-import imgNovidades1 from '../static/images/home/novidades1.png'
-import imgNovidades2 from '../static/images/home/novidades2.png'
-import imgNovidades3 from '../static/images/home/novidades3.png'
-import bighits1 from '../static/images/home/bighit1.png'
 import IconList from '../common/layouts/Planos/images/planos-list.svg';
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper";
@@ -33,6 +29,7 @@ import Logo from '../common/components/Header/images/edenred-logo.svg'
 import Slide from 'react-reveal/Slide';
 import Fade from 'react-reveal/Fade';
 
+import Noticias from '../common/components/Noticias';
 
 const Home: NextPage = () => {
     const [bannerHits1, setbannerHits1] = useState(false);
@@ -267,71 +264,7 @@ const Home: NextPage = () => {
                         </div>
                     </div>
                 </div>
-                <div className="pt-14 md:pt-32">
-                    <h2 className="text-5xl text-black font-light text-center mb-16">Veja as novidades</h2>
-                    <div className="lg:max-w-[90%] ml-auto mr-auto mt-12">
-                        <Swiper slidesPerView={3} initialSlide={2} spaceBetween={30}
-                            breakpoints={{
-                                320: {
-                                    slidesPerView: 1,
-                                    spaceBetween: 20,
-                                    initialSlide: 0
-                                },
-                                1024: {
-                                    slidesPerView: 2,
-                                    spaceBetween: 20,
-                                    initialSlide: 0
-                                },
-                                1200: {
-                                    slidesPerView: 3,
-                                    spaceBetween: 20,
-                                    allowTouchMove: true,
-                                    initialSlide: 1
-                                }
-                              }}
-                        >
-                            <SwiperSlide className="flex justify-center">
-                                <div className="w-[368px] h-[440px]">
-                                    <div className="h-[220px] bg-grey rounded-t-3xl overflow-hidden"><Image src={imgNovidades1} alt=""/></div>
-                                    <div className="h-[205px] bg-cold-white rounded-b-3xl p-10">
-                                        <span className="font-ubuntu text-grey block mb-6">19 Jun 2023</span>
-                                        <h3 className="text-black font-medium text-base mb-4">Cartão de combustível: o que é, como funciona  e qual o melhor?</h3>
-                                        <div className="-ml-[20px]">
-                                            <Button type="readMore" href="/">Leia mais</Button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </SwiperSlide>
-                            <SwiperSlide className="flex justify-center">
-                                <div className="w-[368px] h-[440px]">
-                                    <div className="h-[220px] bg-grey rounded-t-3xl overflow-hidden"><Image src={imgNovidades2} alt=""/></div>
-                                    <div className="h-[205px] bg-cold-white rounded-b-3xl p-10">
-                                        <span className="font-ubuntu text-grey block mb-6">19 Jun 2023</span>
-                                        <h3 className="text-black font-medium text-base mb-4">Cartão de combustível: o que é, como funciona  e qual o melhor?</h3>
-                                        <div className="-ml-[20px]">
-                                            <Button type="readMore" href="/">Leia mais</Button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </SwiperSlide>
-                            <SwiperSlide className="flex justify-center">
-                                <div className="w-[368px] h-[440px]">
-                                    <div className="h-[220px] bg-grey rounded-t-3xl overflow-hidden"><Image className="w-full" src={imgNovidades3} alt=""/></div>
-                                    <div className="h-[205px] bg-cold-white rounded-b-3xl p-10">
-                                        <span className="font-ubuntu text-grey block mb-6">19 Jun 2023</span>
-                                        <h3 className="text-black font-medium text-base mb-4">Cartão de combustível: o que é, como funciona  e qual o melhor?</h3>
-                                        <div className="-ml-[20px]">
-                                            <Button type="readMore" href="/">Leia mais</Button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </SwiperSlide>
-                        </Swiper>
-                    </div>
-                    <div className="flex justify-center mt-10">
-                        <Button type="learnMore" href="https://www.ticketlog.com.br/blog/">Confira todas as notícias</Button>
-                    </div>
-                </div>
+                <Noticias/>
                 <div className="pt-14 md:pt-32 mb-14">
                     
                     <div className="flex max-xl:flex-col-reverse max-xl:flex-wrap mb-10">
