@@ -33,7 +33,7 @@ const Cards = () => {
                 <p className="text-xs mt-2">Valor por cartão. Consultar condições</p>
             </div>
             <div className="mt-6">
-                <Button type="red" href="/">Simular proposta</Button>
+                <Button type="red" target="_blank" href="https://loja.ticketlog.com.br/controle-de-despesas/informacoes">Simular proposta</Button>
             </div>
             <div className="mt-4 block md:hidden">
                 <h2 onClick={() => setDespesas(!Despesas)} className="flex justify-center gap-4">Conheça os benefícios 
@@ -99,7 +99,7 @@ const Cards = () => {
                 <p className="text-xs mt-2">Valor por cartão. Consultar condições</p>
             </div>
             <div className="mt-6">
-                <Button type="red" href="/">Simular proposta</Button>
+                <Button target="_blank" type="red" href="https://loja.ticketlog.com.br/ticket-car/informacoes">Simular proposta</Button>
             </div>
             <div className="mt-4 block md:hidden">
                 <h2 onClick={() => setCombustivel(!Combustivel)} className="flex justify-center gap-4">Conheça os benefícios 

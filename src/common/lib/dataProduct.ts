@@ -108,7 +108,7 @@ export const productsData = [
                     },
                     {
                         question: 'Como comprar o meu Hits?',
-                        answer: 'Depois de escolher o Hits ideal para você, clique nos botões de <a target="_blank" onClick="document.getElementById(`modalproduct`).style.display = `block`;" style="cursor: pointer; text-decoration: underline;font-weight: bold;">“Contrate agora”</a> ou nos links a seguir e dê início ao processo de compra, você só precisa inserir seus dados iniciais e solicitar seu cartão :) <br/><br/> <a target="_blank" href="https://loja.ticketlog.com.br/controle-de-despesas/informacoes" style="text-decoration: underline;font-weight: bold;">Contratar Controle de Despesas</a>',
+                        answer: 'Depois de escolher o Hits ideal para você, clique nos botões de <a target="_blank" href="https://loja.ticketlog.com.br/controle-de-despesas/informacoes" style="cursor: pointer; text-decoration: underline;font-weight: bold;">“Contrate agora”</a> ou nos links a seguir e dê início ao processo de compra, você só precisa inserir seus dados iniciais e solicitar seu cartão :) <br/><br/> <a target="_blank" href="https://loja.ticketlog.com.br/controle-de-despesas/informacoes" style="text-decoration: underline;font-weight: bold;">Contratar Controle de Despesas</a>',
                     },
                     {
                         question: 'Já comprei o meu Hits, e agora?',
@@ -125,7 +125,7 @@ export const productsData = [
             image: videoHits1,
             title: 'Controle de despesas',
             text: 'Para se destacar da concorrência e ter mais foco no seu negócio.',
-            url: 'https://www.youtube.com/watch?v=d4XXM3UaTwg&feature=youtu.be'
+            url: 'https://www.youtube.com/embed/d4XXM3UaTwg'
         },
         success: [
             {
@@ -259,7 +259,7 @@ export const productsData = [
                     },
                     {
                         question: 'Como comprar o meu Hit?',
-                        answer: 'Depois de escolher o Hit ideal para você, clique nos botões de <a target="_blank" onClick="document.getElementById(`modalproduct`).style.display = `block`;" style="cursor: pointer; text-decoration: underline;font-weight: bold;">“Contrate agora”</a> ou nos links a seguir e dê início ao processo de compra, você só precisa inserir seus dados iniciais e solicitar seu cartão :) <br><br> <a target="_blank" href="https://loja.ticketlog.com.br/ticket-car/informacoes" style="text-decoration: underline;font-weight: bold">Contratar Controle de Combustível</a>',
+                        answer: 'Depois de escolher o Hit ideal para você, clique nos botões de <a target="_blank" href="https://loja.ticketlog.com.br/ticket-car/informacoes" style="cursor: pointer; text-decoration: underline;font-weight: bold;">“Contrate agora”</a> ou nos links a seguir e dê início ao processo de compra, você só precisa inserir seus dados iniciais e solicitar seu cartão :) <br><br> <a target="_blank" href="https://loja.ticketlog.com.br/ticket-car/informacoes" style="text-decoration: underline;font-weight: bold">Contratar Controle de Combustível</a>',
                     },
                     {
                         question: 'Já comprei o meu Hit, e agora?',
@@ -267,7 +267,7 @@ export const productsData = [
                     },
                     {
                         question: 'Como acessar minha plataforma?',
-                        answer: 'Acesse pelo computador ou app, como preferir :) <br/><br/>Hits Combustível: <br/><a target="_blank" href="https://plataforma.ticketlog.com.br/" style="text-decoration: underline;font-weight: bold;">Sou Log + </a><br/><a target="_blank" href="https://play.google.com/store/apps/details?id=com.embratec.ecofrotas&hl=pt_BR&gl=US" style="text-decoration: underline;font-weight: bold;">App do Gestor (Android)</a><br/><a target="_blank" href="https://apps.apple.com/br/app/minha-mobilidade/id886670547" style="text-decoration: underline;font-weight: bold;">App do Gestor (IOS)</a>',
+                        answer: 'Acesse pelo computador ou app, como preferir :) <br/><br/>Hits Combustível: <br/><a target="_blank" href="https://plataforma.ticketlog.com.br/" style="text-decoration: underline;font-weight: bold;">Plataforma Sou Log+ (web)</a><br/><a target="_blank" href="https://play.google.com/store/apps/details?id=com.ticketlog.empresas&hl=pt_BR&gl=US" style="text-decoration: underline;font-weight: bold;">Sou Log+ (Android)</a><br/><a target="_blank" href="https://apps.apple.com/br/app/sou-log-app-do-gestor/id1353125779" style="text-decoration: underline;font-weight: bold;">Sou Log+ (IOS)</a><br/><a target="_blank" href="https://play.google.com/store/apps/details?id=com.embratec.ecofrotas&hl=pt_BR&gl=US" style="text-decoration: underline;font-weight: bold;">App Minha Mobilidade (Android)</a><br/><a target="_blank" href="https://apps.apple.com/br/app/minha-mobilidade/id886670547" style="text-decoration: underline;font-weight: bold;">App Minha Mobilidade (IOS)</a>',
                     },
                     {
                         question: 'Sou um estabelecimento e quero ser parceiro da Edenred?',
@@ -280,7 +280,7 @@ export const productsData = [
             image: videoHits2,
             title: 'Controle de combustível',
             text: 'Para iniciar o controle de despesas, separando os gastos com abastecimento de outros custos.',
-            url: 'https://www.youtube.com/watch?si=sV1OhdQ_9gqUYORH&v=U9z3YqibeRg&feature=youtu.be'
+            url: 'https://www.youtube.com/embed/U9z3YqibeRg'
         },
         success: [
             {

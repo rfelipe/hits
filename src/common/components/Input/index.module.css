@@ -30,6 +30,7 @@
   pointer-events: none;
   display: flex;
   transition: 0.2s ease;
+  z-index: 0;
 }
 
 .label::before {

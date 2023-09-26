@@ -2,7 +2,6 @@ import { useState, useEffect } from 'react';
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper";
 import Button from "../Buttons";
-import imgNovidades1 from '../../../static/images/home/novidades1.png'
 import Image from "next/image";
 
 

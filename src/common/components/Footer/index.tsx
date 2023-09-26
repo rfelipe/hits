@@ -99,9 +99,6 @@ const Footer = () => {
                 <Image src={Youtube} alt={'Icon'} width={24} height={24}></Image>
               </a>
             </Link>
-            <a className="hidden md:block absolute right-14" href="https://dexdigital.com.br" target="_blank" rel="noreferrer">
-              <Image alt="dEx digital" src={dex}/>
-            </a>
           </div>
           <div className="flex max-md:flex-col max-md:text-center max-md:gap-5 max-md:m-auto gap-10 my-5 mr-auto max-md:pb-14 px-6 text-xs">
               <a href="https://www.ticketlog.com.br/lgpd/#termos-de-servico" target="_blank" rel="noreferrer">Termos de Uso e Política de Privacidade</a>
@@ -111,7 +108,10 @@ const Footer = () => {
                         "OneTrust Cookie Consent",
                         "Banner Open Preferences"
                       );
-          }}>Gerenciar Cookies</a>
+                }}>Gerenciar Cookies</a>
+            <a className="hidden md:block absolute right-0" href="https://dexdigital.com.br" target="_blank" rel="noreferrer">
+              <Image alt="dEx digital" src={dex}/>
+            </a>
           </div>
         </div>
       </div>

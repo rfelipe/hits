@@ -62,7 +62,7 @@ const Header: React.FC<Props> = ({ links }) => {
                           <div className="pl-6">
                               <span className="inline-flex justify-center bg-[#C8C3FF]  px-4 py-2 rounded-full w-fit mb-2">Hit #1</span>
                               <p className="text-lg text-center mx-auto max-w-[150px] mb-2">Quero controlar as despesas do negócio</p>
-                              <Button type="red" href="/despesas">Contrate agora</Button>
+                              <Button target='_blank' type="red" href="https://loja.ticketlog.com.br/controle-de-despesas/informacoes">Contrate agora</Button>
                           </div>
                       </div>
                   </div>
@@ -71,7 +71,7 @@ const Header: React.FC<Props> = ({ links }) => {
                           <div className="pr-6">
                               <span className="inline-flex justify-center bg-[#DCF691]  px-4 py-2 rounded-full w-fit mb-2">Hit #2</span>
                               <p className="text-lg text-center mx-auto max-w-[150px] mb-2">Quero controlar as despesas com combustível</p>
-                              <Button type="red" href="/combustivel">Contrate agora</Button>
+                              <Button target='_blank' type="red" href="https://loja.ticketlog.com.br/ticket-car/informacoes">Contrate agora</Button>
                           </div>
                       </div>
                       <div className="min-[1337px]:block hidden absolute -right-[65px]">
