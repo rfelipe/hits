@@ -55,7 +55,7 @@ const Form = ({ className, successCallback }: Props) => {
         const trackerParams = await DataLayer.getTrackerParams();
 
         await fetch(
-          `https://server.dexdigital.com.br/ticketlog-hub/api/contact/send`,
+          `https://www.ticketlog.com.br/hub/api/contact/send`,
           {
             method: "POST",
             headers: {
