@@ -9,7 +9,7 @@ const Combustivel: NextPage = () => {
   return (
     <MainTemplate>
       <Head>
-        <title>Combustível | Edenred Hits</title>
+        <title>Combustível | Hits da Edenred</title>
         <meta name="description" content=""></meta>
       </Head>
       <>

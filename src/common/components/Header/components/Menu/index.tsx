@@ -70,10 +70,10 @@ const Menu = ({ links, setIsMenuOpen, isMenuOpen, setIsModalOpen, isModalOpen  }
                 </Link>
               </>
             ))}
-            <div className='bg-white bottom-0 rounded-t-full absolute w-full h-1/2 flex justify-center items-center flex-col'>
+            <div className='bg-white bottom-0 rounded-t-full absolute w-full h-2/5 px-10 flex justify-center items-center flex-col'>
               <p className='mb-8'>Login</p>
-              <Button type='readMore' href='/'>Acesso a plataforma Hit Despesas</Button>
-              <Button type='readMore' href='/'>Acesso a plataforma Hit Combustível</Button>
+              <Button type='readMore' href='/'><p className='max-[375px]:text-xs'>Acesso a plataforma Hit Despesas</p></Button>
+              <Button type='readMore' href='/'><p className='max-[375px]:text-xs'>Acesso a plataforma Hit Combustível</p></Button>
               <div onClick={() => { setIsModalOpen(true); }} className="button bg-original-red border-original-red text-white hover:bg-black hover:border-black py-3 px-10 rounded-full border cursor-pointer font-normal inline-flex items-center lg:justify-between justify-center max-h-12 max-w-32">
                 <a className="flex items-center gap-3"><Image src={cart} height={25} width={25} alt=''/>Contrate agora</a>
               </div>

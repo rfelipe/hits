@@ -59,7 +59,7 @@ const Planos: NextPage = () => {
   return (
     <MainTemplate>
       <Head>
-        <title>Planos | Edenred Hits</title>
+        <title>Planos | Hits da Edenred</title>
         <meta name="description" content=""></meta>
       </Head>      
       <div className="relative overflow-hidden pt-20  pb-20">

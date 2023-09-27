@@ -41,7 +41,7 @@ const Home: NextPage = () => {
     return (
         <MainTemplate>
             <Head>
-                <title>Edenred Hits</title>
+                <title>Hits da Edenred</title>
                 <meta name="description" content=""></meta>
             </Head>
             <>
