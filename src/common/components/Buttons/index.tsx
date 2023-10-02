@@ -75,7 +75,7 @@ const Button: React.FC<ButtonProps> = ({ type, children, href, target }) => {
               </motion.svg>
             </a>
           )}
-        <a className="flex items-center gap-1 transition-all duration-500 group">
+        <a className="flex items-center gap-1 transition-all duration-500 group max-[320px]:text-xs">
           {type === 'readMore' && (
             <motion.svg
               xmlns="http://www.w3.org/2000/svg"

@@ -99,10 +99,11 @@ const Home: NextPage = () => {
                         Você é o protagonista dessa história e nossos hits são a trilha sonora para te acompanhar no corre do dia a dia.
                     </p>
                     <div className="flex justify-between flex-wrap md:gap-5">
-                        {/* HITS 01 */} {!bannerHits2 && (
+                        {/* HITS 01 */} 
+                        {!bannerHits2 && (
                            <Slide left>
-                            <div className="relative flex items-center w-[704px] h-[500px]">
-                                <div className={`hidden md:block absolute  top-0 ${ bannerHits1  ? '-right-[533px]' : 'right-0'}  `}>
+                            <div className="relative flex items-center w-[575px] h-[500px] max-[320px]:h-[370px]">
+                                <div className={`hidden md:block absolute  top-0 ${ bannerHits1  ? '-right-[587px]' : 'right-0'}  `}>
                                     <Image src={Hits1Img1} alt="" className=" top-0" width={500} height={500}></Image>
                                 </div>
                                 <div className="md:hidden absolute left-0 top-0">
@@ -110,19 +111,19 @@ const Home: NextPage = () => {
                                 </div>
 
                                 {bannerHits1 ? (
-                                    <svg className="hidden md:block absolute z-10 left-0 top-0" width="846" height="500" viewBox="0 0 846 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <svg className="hidden md:block absolute z-10 -left-[75px] top-0" width="846" height="500" viewBox="0 0 846 500" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path fill-rule="evenodd" clip-rule="evenodd" d="M596 0H-1247V500H596C734.071 500 846 388.071 846 250C846 111.929 734.071 0 596 0Z" fill="#C8C3FF"/>
                                         <path fill-rule="evenodd" clip-rule="evenodd" d="M791 406.459C825.411 363.627 846 309.218 846 250C846 190.782 825.411 136.373 791 93.541C756.589 136.373 736 190.782 736 250C736 309.218 756.589 363.627 791 406.459Z" fill="#B0EFFF"/>
                                     </svg>
                                 ) : (
-                                    <svg width="314" height="500" viewBox="0 0 314 500" fill="none" xmlns="http://www.w3.org/2000/svg" className="hidden md:block absolute z-10 left-0 top-0">
+                                    <svg width="314" height="500" viewBox="0 0 314 500" fill="none" xmlns="http://www.w3.org/2000/svg" className="hidden md:block absolute z-10 -left-[131px] top-0">
                                         <path fill-rule="evenodd" clip-rule="evenodd" d="M64 0H-1779V500H64C202.071 500 314 388.071 314 250C314 111.929 202.071 0 64 0Z" fill="#C8C3FF"/>
                                         <path fill-rule="evenodd" clip-rule="evenodd" d="M259 406.459C293.411 363.627 314 309.218 314 250C314 190.782 293.411 136.373 259 93.541C224.589 136.373 204 190.782 204 250C204 309.218 224.589 363.627 259 406.459Z" fill="#B0EFFF"/>                               
                                     </svg>
                                 )}
 
                                 {bannerHits1 && (
-                                    <div className={`hidden md:block md:pr-6 text-center md:text-left absolute max-md:left-24 max-md:bottom-20 md:right-16 z-10`}>
+                                    <div className={`hidden md:block md:pr-6 text-center md:text-left absolute max-md:left-24 max-md:bottom-20 md:right-0 z-10`}>
                                         <p className='text-2xl'>Por menos de</p>
                                         <span className=' text-6xl font-semibold'>R$ 1,50</span>
                                         <p className="text-2xl mt-2">ao dia por mês, você pode:</p>
@@ -134,9 +135,9 @@ const Home: NextPage = () => {
                                         <Button type="red" href="/despesas">SAIBA MAIS</Button>
                                     </div>
                                 )}
-                                <div className={`md:pr-6 text-center md:text-left absolute max-md:left-24 max-md:bottom-20  ${ bannerHits1  ? 'md:-right-[27rem]' : 'md:right-16'}`}>
+                                <div className={`md:pr-6 text-center md:text-left absolute max-md:left-24 max-md:bottom-20 max-[320px]:left-16 max-[320px]:bottom-8 max-[320px]:w-[220px] ${ bannerHits1  ? 'md:-right-[30rem]' : 'md:right-24'}`}>
                                     <span className="inline-flex justify-center bg-light-violet px-4 py-2 rounded-full w-fit mb-2">Hit #1</span>
-                                    <p className="text-white text-3xl max-w-[250px] mb-2">Quero controlar as despesas do negócio</p>
+                                    <p className="text-white text-3xl max-w-[250px] mb-2 max-[320px]:text-xs ">Quero controlar as despesas do negócio</p>
                                     {!bannerHits1 ? (
                                         <button onClick={() => setbannerHits1(!bannerHits1)} className="bg-original-red border-original-red text-white hover:bg-black hover:border-black py-3 px-10 rounded-full border" >Eu quero</button>
                                     ) : (
@@ -151,27 +152,27 @@ const Home: NextPage = () => {
                         )}
                         {/* HITS 02 */} {!bannerHits1 && (
                            <Slide right>
-                            <div className="relative flex items-center ml-auto w-[704px] h-[500px]">
-                                <div className={`hidden md:block absolute  top-0 ${ bannerHits2 ? '-left-[500px]' : 'left-0' }  `}>
+                            <div className="relative flex items-center ml-auto w-[575px] h-[500px] max-[320px]:h-[370px]">
+                                <div className={`hidden md:block absolute  top-0 ${ bannerHits2 ? '-left-[556px]' : 'left-0' }  `}>
                                     <Image src={Hits2Img2} alt="" className=" top-0" width={500} height={500}></Image>
                                 </div>
                                 <div className="md:hidden absolute right-0 top-0   ">
                                     <Image src={Hits2Img2Mob} alt="" className=" top-0" width={400} height={400}></Image>
                                 </div>
                                 {bannerHits2 ? (
-                                    <svg className="hidden md:block absolute z-10 right-0 top-0" width="815" height="500" viewBox="0 0 815 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <svg className="hidden md:block absolute z-10 -right-[75px] top-0" width="815" height="500" viewBox="0 0 815 500" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path fill-rule="evenodd" clip-rule="evenodd" d="M250 500L2093 500V0L250 0C111.929 0 0 111.929 0 250C0 388.071 111.929 500 250 500Z" fill="#DCF691"/>
                                         <path fill-rule="evenodd" clip-rule="evenodd" d="M55 93.5407C20.5894 136.373 0 190.782 0 250C0 309.218 20.5894 363.627 55 406.459C89.4106 363.627 110 309.218 110 250C110 190.782 89.4106 136.373 55 93.5407Z" fill="#FED0C8"/>
                                     </svg>
                                 ) : (
-                                    <svg width="314" height="500" viewBox="0 0 314 500" fill="none" xmlns="http://www.w3.org/2000/svg" className="hidden md:block absolute z-10 right-0 top-0">
+                                    <svg width="314" height="500" viewBox="0 0 314 500" fill="none" xmlns="http://www.w3.org/2000/svg" className="hidden md:block absolute z-10 -right-[131px] top-0">
                                         <path fill-rule="evenodd" clipRule="evenodd" d="M250 500C111.929 500 0 388.071 0 250C0 111.929 111.929 0 250 0H500V250V500H250Z" fill="#DCF691"/>
                                         <path fill-rule="evenodd" clipRule="evenodd" d="M55 406.459C20.5894 363.627 0 309.218 0 250C0 190.782 20.5894 136.373 55 93.541C89.4106 136.373 110 190.782 110 250C110 309.218 89.4106 363.627 55 406.459Z" fill="#FED0C8"/>
                                     </svg>
                                 )}
 
                                 {bannerHits2 && (
-                                    <div className={`hidden md:block md:pr-6 text-center md:text-left absolute max-md:right-24 max-md:bottom-20 md:right-16 z-10`}>
+                                    <div className={`hidden md:block md:pr-6 text-center md:text-left absolute max-md:right-24 max-md:bottom-20 md:right-0 z-10`}>
                                         <p className='text-2xl'>Por menos de</p>
                                         <span className=' text-6xl font-semibold'>R$ 1,00</span>
                                         <p className="text-2xl mt-2">ao dia por mês, você pode:</p>
@@ -184,9 +185,9 @@ const Home: NextPage = () => {
                                     </div>
                                 )}        
                                 
-                                <div className={`pr-6 md:text-right text-center max-md:right-16 max-md:bottom-20  absolute ${ bannerHits2  ? 'md:-left-[27rem]' : 'md:left-16'}`}>
+                                <div className={`pr-6 md:text-right text-center max-md:right-16 max-md:bottom-20  absolute max-[320px]:left-12 max-[320px]:bottom-8 max-[320px]:w-[220px] ${ bannerHits2  ? 'md:-left-[30rem]' : 'md:left-28'}`}>
                                     <span className="inline-flex justify-center bg-[#DCF691]  px-4 py-2 rounded-full w-fit mb-2">Hit #2</span>
-                                    <p className="text-white text-3xl max-w-[250px] mb-2">Quero controlar as despesas com combustível</p>
+                                    <p className="text-white text-3xl max-w-[250px] max-[320px]:text-xs mb-2">Quero controlar as despesas com combustível</p>
                                     {!bannerHits2 ? (
                                         <button onClick={() => setbannerHits2(!bannerHits2)} className="bg-original-red border-original-red text-white hover:bg-black hover:border-black py-3 px-10 rounded-full border" >Eu quero</button>
                                     ) : (
@@ -225,7 +226,7 @@ const Home: NextPage = () => {
                               }}
                         >
                             <SwiperSlide className="flex justify-center">
-                                <div className="w-[243px] h-[243px] border mr-6 rounded-full bg-cold-white flex flex-col justify-center items-center">
+                                <div className="w-[243px] h-[243px] border rounded-full bg-cold-white flex flex-col justify-center items-center">
                                     <div className="mb-4">
                                         <Phone />
                                     </div>
@@ -234,7 +235,7 @@ const Home: NextPage = () => {
                                 </div>
                             </SwiperSlide>
                             <SwiperSlide className="flex justify-center">
-                                <div className="w-[243px] h-[243px] border mr-6 rounded-full bg-cold-white flex flex-col justify-center items-center">
+                                <div className="w-[243px] h-[243px] border rounded-full bg-cold-white flex flex-col justify-center items-center">
                                     <div className="mb-4">
                                         <Gas />
                                     </div>
@@ -243,7 +244,7 @@ const Home: NextPage = () => {
                                 </div>
                             </SwiperSlide>
                             <SwiperSlide className="flex justify-center">
-                                <div className="w-[243px] h-[243px] border mr-6 rounded-full bg-cold-white flex flex-col justify-center items-center">
+                                <div className="w-[243px] h-[243px] border rounded-full bg-cold-white flex flex-col justify-center items-center">
                                     <div className="mb-4">
                                         <Note />
                                     </div>
@@ -252,7 +253,7 @@ const Home: NextPage = () => {
                                 </div>
                             </SwiperSlide>
                             <SwiperSlide className="flex justify-center">
-                                <div className="w-[243px] h-[243px] border mr-6 rounded-full bg-cold-white flex flex-col justify-center items-center">
+                                <div className="w-[243px] h-[243px] border rounded-full bg-cold-white flex flex-col justify-center items-center">
                                     <div className="mb-4">
                                         <Clock />
                                     </div>
