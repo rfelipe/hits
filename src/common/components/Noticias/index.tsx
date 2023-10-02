@@ -57,8 +57,8 @@ function ApiData() {
                     >
                         {data.map((item,index) => (
                         <SwiperSlide key={index} className="flex justify-center">
-                                <div className="w-[368px] h-[440px]">
-                                    <div className="h-[220px] bg-grey rounded-t-3xl overflow-hidden">
+                                <div className="w-[368px] max-[320px]:w-[290px] h-[440px]">
+                                    <div className="h-[220px] max-[320px]:h-[173px] bg-grey rounded-t-3xl overflow-hidden">
                                         <Image src={item.image.url} width={368} height={220} alt=""/>
                                         </div>
                                     <div className="h-[205px] bg-cold-white rounded-b-3xl px-10 py-5">
