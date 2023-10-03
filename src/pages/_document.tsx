@@ -2,7 +2,7 @@ import { Html, Head, Main, NextScript } from "next/document";
 import Script from "next/script";
 
 const Document = () => (
-  <Html lang="pt-br">
+  <Html lang="pt-br" className="overflow-x-hidden">
     <Head>
       <link
         rel="shortcut icon"
