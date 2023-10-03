@@ -19,8 +19,8 @@ import Img4 from '../static/images/home/img4.png';
 
 import Image from "next/image";
 import Hits1Img1 from '../static/images/img1_hits1.webp';
-import Hits1Img1Mob from '../static/images/home/hit2.webp';
-import Hits2Img2Mob from '../static/images/home/hit1.webp';
+import Hits1Img1Mob from '../static/images/home/hit1.webp';
+import Hits2Img2Mob from '../static/images/home/hit2.webp';
 import Hits2Img2 from '../static/images/img1_hits2.webp';
 import IconList from '../common/layouts/Planos/images/planos-list.svg';
 import { Swiper, SwiperSlide } from "swiper/react";
