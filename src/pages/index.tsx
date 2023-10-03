@@ -5,23 +5,23 @@ import MainTemplate from "../common/templates/main";
 import { Phone, Clock, Note, Gas } from "../common/components/icons";
 import Button from "../common/components/Buttons";
 
-import Img2 from '../static/images/home/img1.png';
+import Img2 from '../static/images/home/img1.webp';
 import finalImg2 from '../static/images/home/bg-final2.png'
 
-import Img1 from '../static/images/home/img2.png';
+import Img1 from '../static/images/home/img2.webp';
 import finalImg1 from '../static/images/home/bg-final1.png'
-import finalCircleImg1 from '../static/images/home/bg-circle1.png'
-import finalCircleImg2 from '../static/images/home/bg-circle2.png'
+import finalCircleImg1 from '../static/images/home/bg-circle1.webp'
+import finalCircleImg2 from '../static/images/home/bg-circle2.webp'
 
 
 import Img3 from '../static/images/home/img3.png';
 import Img4 from '../static/images/home/img4.png';
 
 import Image from "next/image";
-import Hits1Img1 from '../static/images/img1_hits1.png';
-import Hits1Img1Mob from '../static/images/home/Group 47274.png';
-import Hits2Img2Mob from '../static/images/home/Group 47246.png';
-import Hits2Img2 from '../static/images/img1_hits2.png';
+import Hits1Img1 from '../static/images/img1_hits1.webp';
+import Hits1Img1Mob from '../static/images/home/hit2.webp';
+import Hits2Img2Mob from '../static/images/home/hit1.webp';
+import Hits2Img2 from '../static/images/img1_hits2.webp';
 import IconList from '../common/layouts/Planos/images/planos-list.svg';
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper";

@@ -3,43 +3,22 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import { Note, Gas, Computer, Construction, Coffee, Mail, CarMarket } from '../../../icons';
 import { Carousel } from '../../../../../types';
-import useWindowSize from '../../../../hooks/useWindowSize';
-import usePageChecker from '../../../../hooks/usePageChecker';
-import novenove from '../../../../../static/images/99.png';
+
 import bikeItau from '../../../../../static/images/bike-itau.png';
-import kdOficina from '../../../../../static/images/kd-oficina.png';
 import emoving from '../../../../../static/images/emoving.png';
 import supermercado from '../../../../../static/images/supermercado.jpg';
 import graficas from '../../../../../static/images/graficas.jpg';
 import viagens from '../../../../../static/images/viagens.jpg';
-
+import novenove from '../../../../../static/images/99.png';
+import kdOficina from '../../../../../static/images/kd-oficina.png';
 import nove from '../../../../../static/images/parceiros/logo-992.png';
 import uber from '../../../../../static/images/parceiros/logo-uber2.png';
-import bikeBH from '../../../../../static/images/parceiros/BikeBH.png';
-import BikeBicicletar from '../../../../../static/images/parceiros/BikeBicicletar.png';
 import BikeItau from '../../../../../static/images/parceiros/bike-itau2.png';
-import BikePelotas from '../../../../../static/images/parceiros/BikePelotas.png';
-import BikePetrolina from '../../../../../static/images/parceiros/BikePetrolina.png';
-import BikeSambaSJC from '../../../../../static/images/parceiros/BikeSambaSJC.png';
-import BikeSantos from '../../../../../static/images/parceiros/BikeSantos.png';
-import BikeSerra from '../../../../../static/images/parceiros/BikeSerra.png';
 import CarBee from '../../../../../static/images/parceiros/carbee2.png';
-import Cittamobi from '../../../../../static/images/parceiros/Cittamobi.png';
-import Copark from '../../../../../static/images/parceiros/Copark.png';
 import Emoving from '../../../../../static/images/parceiros/e-moving2.png';
 import EZvolt from '../../../../../static/images/parceiros/ezvolt2.png';
-import Frame from '../../../../../static/images/parceiros/Frame.png';
 import Fretadao from '../../../../../static/images/parceiros/fretadao2.png';
-import LavadoresCredenciados from '../../../../../static/images/parceiros/LavadoresCredenciados.png';
 import Tembici from '../../../../../static/images/parceiros/tembici2.png';
-import Tupinamba from '../../../../../static/images/parceiros/Tupinamba.png';
-import VaDeTaxi from '../../../../../static/images/parceiros/VaDeTaxi.png';
-import ZAE from '../../../../../static/images/parceiros/ZAE.png';
-import ZAERECIFE from '../../../../../static/images/parceiros/ZAERECIFE.png';
-import ZAESANTOS from '../../../../../static/images/parceiros/ZAESANTOS.png';
-import ZAESERRA from '../../../../../static/images/parceiros/ZAESERRA.png';
-import ZAESJC from '../../../../../static/images/parceiros/ZAESJC.png';
-import Zapya from '../../../../../static/images/parceiros/Zapya.png';
 
 
 import Image from 'next/image';

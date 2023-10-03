@@ -1,24 +1,21 @@
 import { ProductTypeColors } from "../../types";
-import imgPriceDespesas from '../../static/images/img1_hits3.png';
-import imgPriceCombustivel from '../../static/images/img1_hits2.png';
-import videoHits1 from '../../static/images/video_hits1.png';
-import videoHits2 from '../../static/images/video_hits2.jpg';
-import img1Hits1 from '../../static/images/img1_hits1.png';
-import img2Hits1 from '../../static/images/img2_hits1.png';
-import img3Hits1 from '../../static/images/img3_hits1.png';
+import videoHits1 from '../../static/images/video_hits1.webp';
+import videoHits2 from '../../static/images/video_hits2.webp';
+import img1Hits1 from '../../static/images/img1_hits1.webp';
+import img2Hits1 from '../../static/images/img2_hits1.webp';
+import img3Hits1 from '../../static/images/img3_hits1.webp';
 
-import img1Hits2 from '../../static/images/img1_hits2.png';
-import img2Hits2 from '../../static/images/img2_hits2.png';
-import img5Hits2 from '../../static/images/img5_hits2.png';
+import img1Hits2 from '../../static/images/img1_hits2.webp';
+import img5Hits2 from '../../static/images/img5_hits2.webp';
 
-import img3Hits2 from '../../static/images/img3_hits2.png';
-import img4Hits1 from '../../static/images/img4_hits1.png';
-import img4Hits2 from '../../static/images/img4_hits2.png';
-import img4Hits3 from '../../static/images/img4_hits3.png';
-import img2Hits3 from '../../static/images/img2_hits3.png';
-import img3Hits3 from '../../static/images/img3_hits3.png';
-import img1Hits3 from '../../static/images/img1_hits3.png';
-import card_ticket from '../../static/images/card-ticket.png';
+import img3Hits2 from '../../static/images/img3_hits2.webp';
+import img4Hits1 from '../../static/images/img4_hits1.webp';
+import img4Hits2 from '../../static/images/img4_hits2.webp';
+import img4Hits3 from '../../static/images/img4_hits3.webp';
+import img2Hits3 from '../../static/images/img2_hits3.webp';
+import img3Hits3 from '../../static/images/img3_hits3.webp';
+import img1Hits3 from '../../static/images/img1_hits3.webp';
+import card_ticket from '../../static/images/card-ticket.webp';
 
 const productTypeColors: ProductTypeColors = {
     despesas: ['#C8C3FF', '#B0EFFF'],

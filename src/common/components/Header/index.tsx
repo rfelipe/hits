@@ -7,8 +7,8 @@ import Image from 'next/image';
 import Button from '../Buttons';
 import Menu from './components/Menu'
 import Duvida from "../../../common/layouts/Planos/Duvida";
-import Img1 from '../../../common/layouts/Planos/Duvida/images/img1-2.png';
-import Img2 from '../../../common/layouts/Planos/Duvida/images/img2-2.png';
+import Img1 from '../../../common/layouts/Planos/Duvida/images/img1-2.webp';
+import Img2 from '../../../common/layouts/Planos/Duvida/images/img2-2.webp';
 import ImgBg1 from '../../../common/layouts/Planos/Duvida/images/bg-p1.png';
 import ImgBg2 from '../../../common/layouts/Planos/Duvida/images/bg-p.png';
 

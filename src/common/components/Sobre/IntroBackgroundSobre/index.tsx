@@ -1,5 +1,5 @@
 import React from "react";
-import Img1 from "./images/img1.png";
+import Img1 from "./images/img1.webp";
 import Image from "next/image";
 
 const IntroBackgroundSobre = () => {

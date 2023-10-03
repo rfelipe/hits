@@ -2,8 +2,8 @@ import React from "react";
 import Image from "next/image";
 import Button from "../../../components/Buttons"
 
-import Img1 from './images/img1-2.png';
-import Img2 from './images/img2-2.png';
+import Img1 from './images/img1-2.webp';
+import Img2 from './images/img2-2.webp';
 import ImgBg1 from './images/bg-p1.png';
 import ImgBg2 from './images/bg-p.png';
 

@@ -2,7 +2,7 @@ import React from "react";
 import Button from "../../Buttons";
 import CountUp from "react-countup";
 import Image from "next/image";
-import mapImg from "./images/map.png"
+import mapImg from "./images/map.webp"
 
 const GlobalMap = () => {
   return (
