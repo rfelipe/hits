@@ -102,7 +102,7 @@ const Home: NextPage = () => {
                         {/* HITS 01 */} 
                         {!bannerHits2 && (
                            <Slide left>
-                            <div className="relative flex items-center w-[575px] h-[500px] max-[320px]:h-[370px]">
+                            <div className="relative flex items-center w-[575px] h-[500px] max-[340px]:h-[370px] max-[380px]:h-[420px]">
                                 <div className={`hidden md:block absolute  top-0 ${ bannerHits1  ? '-right-[587px]' : 'right-0'}  `}>
                                     <Image src={Hits1Img1} alt="" className=" top-0" width={500} height={500}></Image>
                                 </div>
@@ -135,9 +135,9 @@ const Home: NextPage = () => {
                                         <Button type="red" href="/despesas">SAIBA MAIS</Button>
                                     </div>
                                 )}
-                                <div className={`md:pr-6 text-center md:text-left absolute max-md:left-24 max-md:bottom-20 max-[320px]:left-16 max-[320px]:bottom-8 max-[320px]:w-[220px] ${ bannerHits1  ? 'md:-right-[30rem]' : 'md:right-24'}`}>
+                                <div className={`md:pr-6 text-center md:text-left absolute max-md:left-24 max-md:bottom-20 max-[380px]:bottom-10 max-[380px]:left-24 max-[340px]:left-16 max-[340px]:bottom-8 max-[340px]:w-[220px] ${ bannerHits1  ? 'md:-right-[30rem]' : 'md:right-24'}`}>
                                     <span className="inline-flex justify-center bg-light-violet px-4 py-2 rounded-full w-fit mb-2">Hit #1</span>
-                                    <p className="text-white text-3xl max-w-[250px] mb-2 max-[320px]:text-xs ">Quero controlar as despesas do negócio</p>
+                                    <p className="text-white text-3xl max-w-[250px] mb-2 max-[340px]:text-xs max-[380px]:max-w-[200px] max-[380px]:text-lg">Quero controlar as despesas do negócio</p>
                                     {!bannerHits1 ? (
                                         <button onClick={() => setbannerHits1(!bannerHits1)} className="bg-original-red border-original-red text-white hover:bg-black hover:border-black py-3 px-10 rounded-full border" >Eu quero</button>
                                     ) : (
@@ -152,7 +152,7 @@ const Home: NextPage = () => {
                         )}
                         {/* HITS 02 */} {!bannerHits1 && (
                            <Slide right>
-                            <div className="relative flex items-center ml-auto w-[575px] h-[500px] max-[320px]:h-[370px]">
+                            <div className="relative flex items-center ml-auto w-[575px] h-[500px] max-[340px]:h-[370px] max-[380px]:h-[420px]">
                                 <div className={`hidden md:block absolute  top-0 ${ bannerHits2 ? '-left-[556px]' : 'left-0' }  `}>
                                     <Image src={Hits2Img2} alt="" className=" top-0" width={500} height={500}></Image>
                                 </div>
@@ -185,9 +185,9 @@ const Home: NextPage = () => {
                                     </div>
                                 )}        
                                 
-                                <div className={`pr-6 md:text-right text-center max-md:right-16 max-md:bottom-20  absolute max-[320px]:left-12 max-[320px]:bottom-8 max-[320px]:w-[220px] ${ bannerHits2  ? 'md:-left-[30rem]' : 'md:left-28'}`}>
+                                <div className={`pr-6 md:text-right text-center max-md:right-16 max-md:bottom-20  absolute max-[380px]:bottom-10 max-[380px]:left-14 max-[340px]:left-12 max-[340px]:bottom-8 max-[340px]:w-[220px] ${ bannerHits2  ? 'md:-left-[30rem]' : 'md:left-28'}`}>
                                     <span className="inline-flex justify-center bg-[#DCF691]  px-4 py-2 rounded-full w-fit mb-2">Hit #2</span>
-                                    <p className="text-white text-3xl max-w-[250px] max-[320px]:text-xs mb-2">Quero controlar as despesas com combustível</p>
+                                    <p className="text-white text-3xl max-w-[250px] max-[380px]:text-lg max-[340px]:text-xs mb-2">Quero controlar as despesas com combustível</p>
                                     {!bannerHits2 ? (
                                         <button onClick={() => setbannerHits2(!bannerHits2)} className="bg-original-red border-original-red text-white hover:bg-black hover:border-black py-3 px-10 rounded-full border" >Eu quero</button>
                                     ) : (
