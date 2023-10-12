@@ -89,7 +89,7 @@ const Footer = () => {
                 <Image src={Facebook} alt={'Icon'} width={24} height={24}></Image>
               </a>
             </Link>
-            <Link href={'https://www.instagram.com/ticket.log/'} key="instagram">
+            <Link href={'https://www.instagram.com/edenredhits/'} key="instagram">
               <a target="_blank" className="hover:scale-125 transition-all">
                 <Image src={Instagram} alt={'Icon'} width={24} height={24}></Image>
               </a>
