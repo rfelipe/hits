@@ -138,7 +138,7 @@ const CircleNumbers = () => {
             </div>
             <div className="lg:w-1/2">
                 <div className='p-6 lg:w-[470px] container mx-auto'>
-                    <p className='text-lg mb-6 font-light'>No Brasl, contamos com mais de 130 mil empresas clientes, 8,3 milhões de empregados beneficiados e 500 mil comerciantes credenciados.</p>
+                    <p className='text-lg mb-6 font-light'>No Brasil, contamos com mais de 130 mil empresas clientes, 8,3 milhões de empregados beneficiados e 500 mil comerciantes credenciados.</p>
                     <p className='text-lg mb-6 font-light'>No mercado nacional, trabalhamos com três linhas de negócios:.</p>
                     <ul className="lg:ml-10 ml-4">
                         <li className="before:inline-block before:-ml-4 before:text-light-red before:font-bold before:w-4 before:content-['\2022'] text-base mt-3 font-medium"><strong>Benefícios ao trabalhador</strong>, com a marca Ticket;</li>
