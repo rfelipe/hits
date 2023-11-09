@@ -61,6 +61,16 @@ const Planos: NextPage = () => {
       <Head>
         <title>Planos | Hits da Edenred</title>
         <meta name="description" content=""></meta>
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://www.edenredhits.com.br/planos/" />
+        <meta property="og:title" content="Planos | Hits da Edenred" />
+        <meta property="og:description" content="" />
+        <meta property="og:image" content="https://www.edenredhits.com.br/_next/static/media/img2.7c87ea43.webp" />
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:url" content="https://www.edenredhits.com.br/planos/" />
+        <meta property="twitter:title" content="Planos | Hits da Edenred" />
+        <meta property="twitter:description" content="" />
+        <meta property="twitter:image" content="https://www.edenredhits.com.br/_next/static/media/img2.7c87ea43.webp" />
       </Head>      
       <div className="relative overflow-hidden pt-20  pb-20">
         <div className="absolute top-[50px] left-1/2 transform -translate-x-1/2 w-[1890px] h-[58%] max-md:h-[71%] bg-[#F1F7FF] rounded-[100%] z-[-1]"></div>
