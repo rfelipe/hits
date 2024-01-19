@@ -30,7 +30,7 @@ const Cards = () => {
             <div className='text-3xl text-black font-normal mt-6'>
                 <p className=''>A partir de</p>
                 <span className=' text-6xl font-semibold'>R$ 27,90</span>
-                <p className="text-xs mt-2">Valor por cartão. Consultar condições</p>
+                <p className="text-xs mt-2">Por cartão, + 3% sobre o valor da recarga. Consulte as condições.</p>
             </div>
             <div className="mt-6">
                 <Button type="red" target="_blank" href="https://loja.ticketlog.com.br/controle-de-despesas/informacoes">Simular proposta</Button>
@@ -96,7 +96,7 @@ const Cards = () => {
             <div className='text-3xl text-black font-normal mt-6'>
                 <p className=''>A partir de</p>
                 <span className=' text-6xl font-semibold'>R$ 17,90</span>
-                <p className="text-xs mt-2">Valor por cartão. Consultar condições</p>
+                <p className="text-xs mt-2">Por cartão ao mês.</p>
             </div>
             <div className="mt-6">
                 <Button target="_blank" type="red" href="https://loja.ticketlog.com.br/ticket-car/informacoes">Simular proposta</Button>

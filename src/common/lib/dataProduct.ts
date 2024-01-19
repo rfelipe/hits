@@ -96,25 +96,38 @@ export const productsData = [
                 colors: productTypeColors.despesas,
                 items: [
                     {
-                        question: 'O que é o Hit Controle de Despesas?',
-                        answer: 'O <strong>Controle de Despesas</strong> é o hit ideal para quem quer ter controle de todas as despesas do negócio, se destacar da concorrência e ter tempo para focar no que mais importa. Você tem um cartão recarregável com bandeiras Elo e Good Card para usar onde quiser, um aplicativo de carteira virtual para acompanhar e reportar despesas e uma plataforma web para baixar relatórios e ter controle de movimentações.',
+                        question: 'O que é o Controle de Despesas?',
+                        answer: 'O Controle de Despesas simplifica a gestão para empresas de todos os tamanhos, eliminando processos como solicitações de reembolso e adiantamentos. Utilize o aplicativo Edenred Wallet para enviar notas e justificativas, e a plataforma web para acompanhamento em tempo real.<br><br>Além disso, você tem um cartão recarregável com abrangência nacional e internacional, +8.7 milhões de estabelecimentos e cobertura em +36 mil postos e oficinas. Nossos serviços permitem que você se destaque na concorrência, dedicando mais tempo ao que realmente importa.',
                     },
                     {
-                        question: 'Como funciona a modalidade de pagamento do Hit de Despesas?',
-                        answer: 'Hits Controle de Despesas funciona com a modalidade recarga de crédito, onde você recarrega os seus cartões e paga conforme o uso.',
+                        question: 'Como funciona o teste gratuito do Controle de Despesas?',
+                        answer: 'O teste grátis é a isenção da mensalidade por 60 (sessenta) dias. Para utilizar, basta solicitar seus cartões e começar a usar!<br><br>Vale lembrar que os 60 dias de gratuidade começam a contar a partir da primeira transação realizada no cartão, não temos taxas adicionais para cancelamento',
                     },
                     {
-                        question: 'Como comprar o meu Hits?',
-                        answer: 'Depois de escolher o Hits ideal para você, clique nos botões de <a target="_blank" href="https://loja.ticketlog.com.br/controle-de-despesas/informacoes" style="cursor: pointer; text-decoration: underline;font-weight: bold;">“Contrate agora”</a> ou nos links a seguir e dê início ao processo de compra, você só precisa inserir seus dados iniciais e solicitar seu cartão :) <br/><br/> <a target="_blank" href="https://loja.ticketlog.com.br/controle-de-despesas/informacoes" style="text-decoration: underline;font-weight: bold;">Contratar Controle de Despesas</a>',
+                        question: 'O que é o Portal do Gestor?',
+                        answer: 'O Portal do Gestor é a plataforma web do Hit #1 Controle de Despesas que você pode realizar o pedido de cartões, visualizar relatórios para controle de movimentações (carga, transferências etc), extração de relatórios em Excel, bloqueio e desbloqueio dos cartões e muito mais! Tudo isso pra que você possa economizar tempo e focar no que mais importa, que é o seu negócio',
                     },
                     {
-                        question: 'Já comprei o meu Hits, e agora?',
-                        answer: 'Fique de olho em nosso contato por e-mail ou WhatsApp! <br/> Para <strong>Hits Despesas</strong>, finalize pedido na <a target="_blank" href="https://www.iflexaccmm.com.br" style="text-decoration: underline;font-weight: bold;">plataforma</a>, próximos passos em nosso contato. ',
+                        question: 'Qual é o valor da mensalidade após seu período de teste grátis?',
+                        answer: 'Você ganhou 60 (sessenta) dias para utilizar a solução de Controle de Despesas, lembrando que o seu teste inicia a partir do primeiro pedido do cartão, e quando finalizar o período gratuito você terá uma mensalidade a partir de R$27,90 por cartão ativo. Por enquanto, você só recarrega seu cartão e paga uma taxa de 3% sobre a recarga.',
                     },
                     {
-                        question: 'Como acessar minha plataforma?',
-                        answer: 'Acesse pelo computador ou app, como preferir :) <br/><br/>Hits Despesas: <br/><a target="_blank" href="https://www.iflexaccmm.com.br" style="text-decoration: underline;font-weight: bold;">Portal do Gestor </a> <br/><a target="_blank" href="https://play.google.com/store/apps/details?id=com.edenred.espp.digitalaccount&hl=pt_BR&gl=US" style="text-decoration: underline;font-weight: bold;">App da carteira digital (Android)</a><br/><a target="_blank" href="https://apps.apple.com/br/app/edenred-wallet/id1542995489" style="text-decoration: underline;font-weight: bold;">App da carteira digital (IOS)</a>',
-                    }
+                        question: 'Onde e quando posso utilizar o Controle de Despesas?',
+                        answer: 'O Controle de Despesas te acompanhe no corre do dia a dia. Você tem um cartão recarregável pra usar onde quiser, com abrangência nacional e internacional, +8.7 milhões de estabelecimentos e cobertura em +36 mil postos e oficinas. Nossos serviços permitem que você se destaque na concorrência, dedicando mais tempo ao que realmente importa.',
+                    },
+                    {
+                        question: 'Qual a bandeira dos cartões Controle de Despesas?',
+                        answer: 'Com o Controle de Despesas você pode contar com uma tecnologia inovadora e aproveitar o melhor das duas bandeiras Good Card e Elo em um só cartão. São bandeiras com mais 8.7 milhões de estabelecimentos comerciais, aceitação internacional e cobertura de +36 mil postos e oficinas. Além de organizar todas as despesas com um aplicativo de carteira digital e controlar todos os relatórios pela plataforma web.',
+                    },
+                    {
+                        question: 'O Controle de Despesas é um cartão de crédito?',
+                        answer: 'O Controle de Despesas é um cartão recarregável e só transaciona quando tiver saldo. Não há limite de crédito e não é possível o parcelamento de compras.',
+                    },
+                    {
+                        question: 'Como funciona a modalidade de pagamento do Controle de Despesas?',
+                        answer: 'O Controle de Despesas funciona com a modalidade recarga antecipada: você recarrega seus saldos e paga apenas pelo que utiliza. A cada nova recarga, há uma taxa fixa de 3% sobre o valor selecionado.',
+                    },
+                    
                 ]
             }
         ],

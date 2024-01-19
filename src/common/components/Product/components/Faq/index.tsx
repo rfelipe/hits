@@ -32,7 +32,7 @@ const FaqSection: React.FC<FaqProps> = ({ faqs }) => {
                             </svg>
                         </div>
                     </div><div className="z-10 relative px-6">
-                            <h2 className="text-3xl md:text-6xl text-center font-light pt-12 md:pt-32 mb-6">Perguntas frequentes</h2>
+                            <h2 className="text-3xl md:text-6xl text-center font-light pt-12 md:pt-20 mb-6">Perguntas frequentes</h2>
                             <p className="hidden md:block text-lg font-ubuntu text-end w-full lg:w-[808px] mb-16 mx-auto">{faq.description}</p>
                             <div className='w-full lg:w-[598px] mx-auto'>
                                 {faq.items.map((item, index) => (
