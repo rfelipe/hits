@@ -32,8 +32,8 @@ const Document = () => (
           `,
         }}
       />  
-            <script src="https://cdn.data2.media/file/powercord-0.0.1.min.js"></script>
-      <script src="https://cdn.data2.media/file/powercord-0.0.1.min.js" dangerouslySetInnerHTML={{
+      {/* <script defer src="https://cdn.data2.media/file/powercord-0.0.1.min.js"></script> */}
+      <script async src="https://cdn.data2.media/file/powercord-0.0.1.min.js" dangerouslySetInnerHTML={{
           __html: 
         `
         const urlParams = new URLSearchParams(window.location.search);
