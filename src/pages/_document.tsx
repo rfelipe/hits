@@ -32,10 +32,10 @@ const Document = () => (
           `,
         }}
       />  
-      {/* <script defer src="https://cdn.data2.media/file/powercord-0.0.1.min.js"></script> */}
-      <script async src="https://cdn.data2.media/file/powercord-0.0.1.min.js" dangerouslySetInnerHTML={{
+      <script src="https://cdn.data2.media/file/powercord-0.0.1.min.js"></script>
+      <script  dangerouslySetInnerHTML={{
           __html: 
-        `
+        `console.log("xxxxx");
         const urlParams = new URLSearchParams(window.location.search);
         let chatId = urlParams.get("chat_id");
         
