@@ -1,5 +1,4 @@
 import { Html, Head, Main, NextScript } from "next/document";
-import Script from "next/script";
 
 const Document = () => (
   <Html lang="pt-br">
@@ -32,12 +31,15 @@ const Document = () => (
           `,
         }}
       />  
-      <script src="https://cdn.data2.media/file/powercord-0.0.1.min.js"></script>
-      <script  dangerouslySetInnerHTML={{
+      <script
+        src="https://cdn.data2.media/file/powercord-0.0.1.min.js"
+        type="text/javascript"></script>
+      <script  
+        dangerouslySetInnerHTML={{
           __html: 
-        `console.log("xxxxx");
+        `
         const urlParams = new URLSearchParams(window.location.search);
-        let chatId = urlParams.get("chat_id");
+        let chatId = urlParams.get('chat_id');
         
         const queryParams = {
           "d2_pl-prv": true,
