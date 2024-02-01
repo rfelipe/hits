@@ -101,6 +101,7 @@ const Document = () => (
                     width: "70px",
                     height: "70px",
                     bottom: "0px",
+                    right: "10px",
                   },
                 });
             
