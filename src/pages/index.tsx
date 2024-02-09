@@ -30,6 +30,7 @@ import Slide from 'react-reveal/Slide';
 import Fade from 'react-reveal/Fade';
 
 import Noticias from '../common/components/Noticias';
+import Popup from "../common/components/Popup";
 
 const Home: NextPage = () => {
     const [bannerHits1, setbannerHits1] = useState(false);
@@ -360,6 +361,7 @@ const Home: NextPage = () => {
                     </Fade>
                 </div>
             </>
+            <Popup></Popup>
         </MainTemplate>
     );
 };
