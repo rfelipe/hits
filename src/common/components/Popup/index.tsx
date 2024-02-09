@@ -94,9 +94,25 @@ const Popup = () => {
           )}
   
           {currentScreen === 2 && (
-            <div>
-              <p>Tela 2</p>
-              {/* Formulário com campo de email */}
+            <div style={{ width:'461px', height:'141px',position: 'absolute',top: '80px',right: '10%'}}>
+              <p style={{   fontSize: '18px',
+                            fontWeight:500,
+                            lineHeight:'24.03px',
+                            textAlign: 'center',
+                            marginBottom: '20px'
+
+              }}>Baixe gratuitamente nossas dicas:</p>
+              <form>
+                <label>E-mail</label>
+                <input type="email" style={{
+                            border: '0.77px solid #D5D8DD',
+                            borderRadius: '18px',
+                            height: '37px',
+                            width: '461px',
+                            }}
+                            ></input>
+              </form>
+              <PrivacyPolicy />
               <button onClick={handleBack}>Voltar</button>
               <button onClick={handleSend}>Enviar</button>
             </div>
