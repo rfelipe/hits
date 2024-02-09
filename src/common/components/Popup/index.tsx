@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import PrivacyPolicy from './PrivacyPolicy';
 import Image from "next/image";
 import popupdesk from './imagem/popupdesk.svg';
 import gift from './imagem/iconGift.svg';
@@ -88,7 +89,7 @@ const Popup = () => {
                         <Image src={arrow} alt="Seta" />
                     </div>
                 </button>
-                <p style={{
+                {/* <p style={{
                     fontSize:'10px',
                     fontWeight:'300',
                     lineHeight:'13.24px',
@@ -105,7 +106,8 @@ const Popup = () => {
                                                         style={{fontWeight:'500',lineHeight:'13.35px'}}>
                                                             Política de Privacidade da Edenred Pay.
                                                     </a>
-                </p>
+                </p> */}
+                <PrivacyPolicy />
             </div>
           )}
   
