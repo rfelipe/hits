@@ -9,11 +9,10 @@ const PrivacyPolicy = () => {
       textAlign: 'center',
       width: '458px',
       height: '26px',
-      marginTop: '30px',
+      marginTop: '10px',
     }}>
       Você concorda que os dados informados podem ser utilizados para o envio de ofertas de produtos
-      e serviços, de acordo com nossa 
-      <a
+      e serviços, de acordo com nossa <a
         href="https://www.edenredpay.com.br/politica-privacidade/"
         target="_blank"
         rel="noreferrer"
