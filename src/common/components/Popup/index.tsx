@@ -7,6 +7,7 @@ import {
     isValidMobilePhone,
     isValidCNPJ,
 } from "@brazilian-utils/brazilian-utils";
+import DataLayer from "../../lib/DataLayer";
 import popupdesk from './imagem/popupdesk.svg';
 import popupdeskthks from './imagem/popupdeskthks.svg';
 import gift from './imagem/iconGift.svg';
@@ -53,22 +54,6 @@ const Popup = () => {
     closeModal();
   };
 
-  const handleSend = async () => {
-    switch (currentScreen) {
-      case 2:
-        // Validar e enviar formulário 2
-        await validateAndSend(form2Schema, form2Data);
-        break;
-      case 3:
-        // Validar e enviar formulário 3
-        await validateAndSend(form3Schema, form3Data);
-        break;
-      default:
-        break;
-    }
-  };
-
-
   const [form2Data, setForm2Data] = useState({
     email: "",
     // ... (outros campos do form2)
@@ -82,37 +67,28 @@ const Popup = () => {
     companySize: "Pequena empresa",
   });
 
+  const [form2Errors, setForm2Errors] = useState<{ email?: string }>({});
+  
+  const [form3Errors, setForm3Errors] = useState<{ fullName?: string; email?: string; whatsapp?: string; cnpj?: string }>({});
+
+
   const form2Schema = Yup.object().shape({
-    email: Yup.string().email("E-mail inválido").required("Campo obrigatório"),
+    email: Yup.string().email("E-mail inválido").required("Campo E-mail é obrigatório."),
     // ... (outras validações do form2)
   });
 
   const form3Schema = Yup.object().shape({
-    fullName: Yup.string().required("Campo obrigatório"),
-    email: Yup.string().email("E-mail inválido").required("Campo obrigatório"),
+    fullName: Yup.string().required("Campo nome é obrigatório."),
+    email: Yup.string().email("E-mail inválido").required("Campo E-mail é obrigatório."),
     whatsapp: Yup.string().test(
       "whatsapp",
-      "Número de WhatsApp inválido",
+      "Número de WhatsApp inválido.",
       isValidMobilePhone
     ),
-    cnpj: Yup.string().test("cnpj", "CNPJ inválido", isValidCNPJ),
+    cnpj: Yup.string().test("cnpj", "CNPJ inválido.", isValidCNPJ),
     // ... (outras validações do form3)
   });
 
-  // Função para validar e enviar formulário usando o schema Yup
-  const validateAndSend = async (formSchema, formData) => {
-    try {
-      await formSchema.validate(formData, { abortEarly: false });
-      // Lógica para enviar o formulário (chame a API, etc.)
-      // Após o envio, você pode chamar setCurrentScreen(4) para ir para a tela 4
-      setCurrentScreen(4);
-    } catch (error) {
-      console.error("Erro de validação:", error.errors);
-      // Tratar os erros de validação, exibindo mensagens, etc.
-    }
-  };
-
-  // Funções para manipular mudanças nos dados dos formulários
   const handleChangeForm2 = (field, value) => {
     setForm2Data((prevData) => ({
       ...prevData,
@@ -125,6 +101,67 @@ const Popup = () => {
       ...prevData,
       [field]: value,
     }));
+  };
+
+  const handleSend = async () => {
+    switch (currentScreen) {
+      case 2:
+        try {
+          await form2Schema.validate(form2Data, { abortEarly: false });
+          await sendFormData(form2Data);
+          setCurrentScreen(4);
+        } catch (error) {
+          console.error("Erro de validação:", error.errors);
+          setForm2Errors(getValidationErrors(error));
+        }
+        break;
+      case 3:
+        try {
+          await form3Schema.validate(form3Data, { abortEarly: false });
+          await sendFormData(form3Data);
+          setCurrentScreen(4);
+        } catch (error) {
+          console.error("Erro de validação:", error.errors);
+          setForm3Errors(getValidationErrors(error));
+        }
+        break;
+      default:
+        break;
+    }
+  };
+
+  const getValidationErrors = (error) => {
+    const validationErrors = {};
+    error.inner.forEach((err) => {
+      validationErrors[err.path] = err.message;
+    });
+    return validationErrors;
+  };
+
+  const sendFormData = async (formData) => {
+    try {
+      const trackerParams = await DataLayer.getTrackerParams();
+
+      await fetch(
+        process.env.NEXT_PUBLIC_HUB_BASE_URL+'/api/contact/send',
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            ...formData,
+            type: "hits", // ou outro tipo dependendo do seu requisito
+            ...trackerParams,
+          }),
+        }
+      );
+
+      // Lógica adicional após o envio, se necessário
+    } catch (error) {
+      console.error("Erro ao enviar formulário:", error);
+      // Tratar erros no envio, exibindo mensagens, etc.
+    }
   };
 
   return (
@@ -193,6 +230,9 @@ const Popup = () => {
               </button>
               <button onClick={handleSend} style={{ border: '0.77px solid', padding: '10px', display: 'flex', justifyContent: 'center', alignItems: 'center', borderRadius: '18px', height: '37px', width: '168px', fontSize: '14px', fontWeight: 500, lineHeight: '18.69px', background: 'red', color: 'white' }}>Receber material</button>
             </div>
+              <div style={{ marginBottom: '10px', color: 'red', fontSize: '12px',position: 'absolute',top: '200px',right: '35%'}}>
+                {form2Errors.email}
+              </div>
           </div>
         )}
 
@@ -270,6 +310,12 @@ const Popup = () => {
                 Voltar
               </button>
               <button onClick={handleSend} style={{ border: '0.77px solid', padding: '10px', display: 'flex', justifyContent: 'center', alignItems: 'center', borderRadius: '18px', height: '37px', width: '168px', fontSize: '14px', fontWeight: 500, lineHeight: '18.69px', background: 'red', color: 'white' }}>Enviar</button>
+            </div>
+            <div style={{ marginBottom: '10px', color: 'red', fontSize: '12px',position: 'absolute',top: '210px',width: '100%',display: 'flex',flexWrap: 'wrap',justifyContent: 'space-around',flexDirection: 'row', alignItems: 'stretch'}}>
+                <p>{form3Errors.email}</p>
+                <p>{form3Errors.email}</p>
+                <p>{form3Errors.email}</p>
+                <p>{form3Errors.email}</p>
             </div>
           </div>
         )}
