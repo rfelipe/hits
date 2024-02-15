@@ -2,6 +2,11 @@ import React, { useState, useEffect } from 'react';
 import PrivacyPolicy from './PrivacyPolicy';
 import Image from "next/image";
 import InputMask from "react-input-mask";
+import * as Yup from "yup";
+import {
+    isValidMobilePhone,
+    isValidCNPJ,
+} from "@brazilian-utils/brazilian-utils";
 import popupdesk from './imagem/popupdesk.svg';
 import popupdeskthks from './imagem/popupdeskthks.svg';
 import gift from './imagem/iconGift.svg';
@@ -9,6 +14,7 @@ import arrow from './imagem/iconArrow.svg';
 import arrowSimple from './imagem/iconArrowSimple.png'
 import arrowMore from './imagem/More.png';
 import arrowMoreUp from './imagem/MoreUp.png';
+import thnks from './imagem/thnks.png';
 
 const Popup = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -43,20 +49,102 @@ const Popup = () => {
     setIsSelectOpen(!isSelectOpen);
   };
 
-  const handleSend = () => {
-    // Lógica para enviar o formulário
-    // Você pode implementar a lógica de envio aqui
-    // Após o envio, você pode chamar setCurrentScreen(4) para ir para a tela 4
+  const handleClose = () => {
+    closeModal();
+  };
+
+  const handleSend = async () => {
+    switch (currentScreen) {
+      case 2:
+        // Validar e enviar formulário 2
+        await validateAndSend(form2Schema, form2Data);
+        break;
+      case 3:
+        // Validar e enviar formulário 3
+        await validateAndSend(form3Schema, form3Data);
+        break;
+      default:
+        break;
+    }
+  };
+
+
+  const [form2Data, setForm2Data] = useState({
+    email: "",
+    // ... (outros campos do form2)
+  });
+
+  const [form3Data, setForm3Data] = useState({
+    fullName: "",
+    email: "",
+    whatsapp: "",
+    cnpj: "",
+    companySize: "Pequena empresa",
+  });
+
+  const form2Schema = Yup.object().shape({
+    email: Yup.string().email("E-mail inválido").required("Campo obrigatório"),
+    // ... (outras validações do form2)
+  });
+
+  const form3Schema = Yup.object().shape({
+    fullName: Yup.string().required("Campo obrigatório"),
+    email: Yup.string().email("E-mail inválido").required("Campo obrigatório"),
+    whatsapp: Yup.string().test(
+      "whatsapp",
+      "Número de WhatsApp inválido",
+      isValidMobilePhone
+    ),
+    cnpj: Yup.string().test("cnpj", "CNPJ inválido", isValidCNPJ),
+    // ... (outras validações do form3)
+  });
+
+  // Função para validar e enviar formulário usando o schema Yup
+  const validateAndSend = async (formSchema, formData) => {
+    try {
+      await formSchema.validate(formData, { abortEarly: false });
+      // Lógica para enviar o formulário (chame a API, etc.)
+      // Após o envio, você pode chamar setCurrentScreen(4) para ir para a tela 4
+      setCurrentScreen(4);
+    } catch (error) {
+      console.error("Erro de validação:", error.errors);
+      // Tratar os erros de validação, exibindo mensagens, etc.
+    }
+  };
+
+  // Funções para manipular mudanças nos dados dos formulários
+  const handleChangeForm2 = (field, value) => {
+    setForm2Data((prevData) => ({
+      ...prevData,
+      [field]: value,
+    }));
+  };
+
+  const handleChangeForm3 = (field, value) => {
+    setForm3Data((prevData) => ({
+      ...prevData,
+      [field]: value,
+    }));
   };
 
   return (
     <div style={{ display: isOpen ? 'block' : 'none', position: 'fixed', top: 0, left: 0, width: '100%', height: '100%', background: 'rgba(0, 0, 0, 0.5)', zIndex: 9999 }}>
-      <div style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)', padding: '20px', 
-                    width: `${currentScreen === 4 ? '670px' : '945px'}`, 
-                    height: '352px',
-                    backgroundImage: `url(${currentScreen === 4 ? popupdeskthks.src : popupdesk.src})`
-                    }}>
-        {currentScreen === 1 && (              
+      <div style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)', padding: '20px', height: '352px',
+                    width: `${currentScreen === 4 ? '670px' : '945px'}`, backgroundImage: `url(${currentScreen === 4 ? popupdeskthks.src : popupdesk.src})`
+                  }}>
+          {isOpen && (
+            <div
+              style={{ position: 'absolute',top: '2px',right: '72px',cursor: 'pointer',width: '35px',height: '35px',borderRadius: '50%',
+                backgroundColor: '#ffffff',display: 'flex',alignItems: 'center',justifyContent: 'center',boxShadow: '0px 0px 10px rgba(0, 0, 0, 0.1)',
+              }}
+              onClick={handleClose}
+            >
+              <span style={{ color: '#000000', fontSize: '20px', fontWeight: 'bold' }}>
+                &times; {/* Caractere "x" */}
+              </span>
+            </div>
+          )}
+        {currentScreen != 4 && (              
         <div style={{ width: '161px', height: '205px', position: 'absolute', top: '80px', left: '85px' }}>
           <div style={{ marginLeft: 'auto', marginRight: 'auto', width: '49px' }}>
             <Image alt="" src={gift} />
@@ -72,7 +160,7 @@ const Popup = () => {
                 <Image src={arrow} alt="Seta" />
               </div>
             </button>
-            <button onClick={() => handleOptionClick(4)} className="font-ubuntu" style={{ border: '0.77px solid #000000', padding: '10px', display: 'flex', justifyContent: 'space-between', alignItems: 'center', borderRadius: '18px', height: '37px', width: '461px', marginTop: '20px', fontSize: '12px', fontWeight: 400, lineHeight: '13.79px' }}>
+            <button onClick={() => handleOptionClick(3)} className="font-ubuntu" style={{ border: '0.77px solid #000000', padding: '10px', display: 'flex', justifyContent: 'space-between', alignItems: 'center', borderRadius: '18px', height: '37px', width: '461px', marginTop: '20px', fontSize: '12px', fontWeight: 400, lineHeight: '13.79px' }}>
               Converse com quem pode te ajudar
               <div style={{ position: 'relative', top: '2px', left: '7px' }}>
                 <Image src={arrow} alt="Seta" />
@@ -87,7 +175,13 @@ const Popup = () => {
             <p style={{ fontSize: '18px', fontWeight: 500, lineHeight: '24.03px', textAlign: 'center', marginBottom: '20px' }}>Baixe gratuitamente nossas dicas:</p>
             <form>
               <label style={{ color: '#6D7787', fontSize: '12px', marginBottom: '10px' }} className='font-ubuntu'>E-mail</label>
-              <input className='font-ubuntu' type="email" style={{ border: '0.77px solid #D5D8DD', borderRadius: '18px', height: '37px', width: '461px', fontWeight: 700, fontSize: '13px', lineHeight: '21.62px' }}></input>
+              <input
+                className='font-ubuntu'
+                type="email"
+                value={form2Data.email}
+                onChange={(e) => handleChangeForm2("email", e.target.value)}
+                style={{ border: '0.77px solid #D5D8DD', borderRadius: '18px', height: '37px', width: '461px', fontWeight: 700, fontSize: '13px', lineHeight: '21.62px' }}
+              />
             </form>
             <PrivacyPolicy />
             <div style={{ display: 'flex', flexWrap: 'nowrap', justifyContent: 'center', gap: '20px', marginTop: '10px' }}>
@@ -108,25 +202,56 @@ const Popup = () => {
               <div style={{ display: 'flex' }}>
                 <div>
                   <label style={{ color: '#6D7787', fontSize: '12px', marginBottom: '10px' }} className='font-ubuntu'>Nome completo</label>
-                  <input className='font-ubuntu' type="text" style={{ border: '0.77px solid #D5D8DD', borderRadius: '18px', height: '37px', width: '215px', fontWeight: 700, fontSize: '13px', lineHeight: '21.62px' }}></input>
+                  <input
+                    className='font-ubuntu'
+                    type="text"
+                    value={form3Data.fullName}
+                    onChange={(e) => handleChangeForm3("fullName", e.target.value)}
+                    style={{ border: '0.77px solid #D5D8DD', borderRadius: '18px', height: '37px', width: '215px', fontWeight: 700, fontSize: '13px', lineHeight: '21.62px' }}
+                  />
                 </div>
                 <div>
                   <label style={{ color: '#6D7787', fontSize: '12px', marginBottom: '10px' }} className='font-ubuntu'>E-mail</label>
-                  <input className='font-ubuntu' type="email" style={{ border: '0.77px solid #D5D8DD', borderRadius: '18px', height: '37px', width: '262px', fontWeight: 700, fontSize: '13px', lineHeight: '21.62px' }}></input>
+                  <input
+                    className='font-ubuntu'
+                    type="email"
+                    value={form3Data.email}
+                    onChange={(e) => handleChangeForm3("email", e.target.value)}
+                    style={{ border: '0.77px solid #D5D8DD', borderRadius: '18px', height: '37px', width: '262px', fontWeight: 700, fontSize: '13px', lineHeight: '21.62px' }}
+                  />
                 </div>
               </div>
               <div style={{ display: 'flex', gap: '16px' }}>
                 <div>
                   <label style={{ color: '#6D7787', fontSize: '12px', marginBottom: '10px' }} className='font-ubuntu'>WhatsApp</label>
-                  <InputMask className='font-ubuntu' type="text" mask="+99 99 99999-9999" style={{ border: '0.77px solid #D5D8DD', borderRadius: '18px', height: '37px', width: '165px', fontWeight: 700, fontSize: '13px', lineHeight: '21.62px' }} />
+                  <InputMask
+                    className='font-ubuntu'
+                    type="text"
+                    mask="+99 99 99999-9999"
+                    value={form3Data.whatsapp}
+                    onChange={(e) => handleChangeForm3("whatsapp", e.target.value)}
+                    style={{ border: '0.77px solid #D5D8DD', borderRadius: '18px', height: '37px', width: '165px', fontWeight: 700, fontSize: '13px', lineHeight: '21.62px' }}
+                  />
                 </div>
                 <div>
                   <label style={{ color: '#6D7787', fontSize: '12px', marginBottom: '10px' }} className='font-ubuntu'>CNPJ</label>
-                  <InputMask className='font-ubuntu' type="text" mask="99.999.999/9999-99" style={{ border: '0.77px solid #D5D8DD', borderRadius: '18px', height: '37px', width: '160px', fontWeight: 700, fontSize: '13px', lineHeight: '21.62px', }} />
+                  <InputMask
+                    className='font-ubuntu'
+                    type="text"
+                    mask="99.999.999/9999-99"
+                    value={form3Data.cnpj}
+                    onChange={(e) => handleChangeForm3("cnpj", e.target.value)}
+                    style={{ border: '0.77px solid #D5D8DD', borderRadius: '18px', height: '37px', width: '160px', fontWeight: 700, fontSize: '13px', lineHeight: '21.62px' }}
+                  />
                 </div>
                 <div>
                   <label style={{ color: '#6D7787', fontSize: '12px', marginBottom: '10px' }} className='font-ubuntu'>Porte da empresa</label>
-                  <select className='font-ubuntu' style={{ border: '0.77px solid #D5D8DD', borderRadius: '18px', height: '37px', width: '136px', fontWeight: 700, fontSize: '13px', lineHeight: '21.62px', appearance: 'none', paddingRight: '30px', backgroundImage: `url(${isSelectOpen ? arrowMoreUp.src : arrowMore.src})`, backgroundRepeat: 'no-repeat', backgroundPosition: 'right center', backgroundSize: '31px 33px' }} onClick={handleSelectClick}>
+                  <select
+                    className='font-ubuntu'
+                    value={form3Data.companySize}
+                    onChange={(e) => handleChangeForm3("companySize", e.target.value)}
+                    style={{ border: '0.77px solid #D5D8DD', borderRadius: '18px', height: '37px', width: '136px', fontWeight: 700, fontSize: '13px', lineHeight: '21.62px', appearance: 'none', paddingRight: '30px', backgroundImage: `url(${isSelectOpen ? arrowMoreUp.src : arrowMore.src})`, backgroundRepeat: 'no-repeat', backgroundPosition: 'right center', backgroundSize: '31px 33px' }}
+                  >
                     <option>Pequena empresa</option>
                     <option>Média empresa</option>
                     <option>Grande empresa</option>
@@ -150,14 +275,18 @@ const Popup = () => {
         )}
 
         {currentScreen === 4 && (
-          <div>
-            <div style={{ position: 'relative', top: '2px', right: '5px' }}>
-              <Image src={arrowSimple} alt="Seta" />
+          <div style={{ width:'442px',height:'164px',marginLeft: 'auto', marginRight: 'auto', marginTop: '90px' }}>
+            <div style={{ display: 'flex', justifyContent: 'space-around', marginBottom: '10px' }}>
+              <Image src={thnks} alt="Seta" style={{ width:'51px',height:'51px'}}/>
             </div>
-            <p>Pronto, agora é só aguardar!
-                Em breve entraremos em contato com você,
-                e poderá ser via whatsapp ou ligação.
-                Fique de olho.</p>
+            <div style={{ display: 'flex', justifyContent: 'space-around' }}>
+                <p style={{ textAlign:'center' }}>
+                  Pronto, agora é só aguardar!
+                  Em breve entraremos em contato com você,
+                  e poderá ser via whatsapp ou ligação.
+                  Fique de olho.
+                </p>
+            </div>
             {/* <button onClick={closeModal}>Fechar</button> */}
           </div>
         )}
