@@ -361,7 +361,7 @@ const Home: NextPage = () => {
                     </Fade>
                 </div>
             </>
-            <Popup></Popup>
+            <Popup type="hits-popup-home" tempo={30000}></Popup>
         </MainTemplate>
     );
 };

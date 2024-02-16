@@ -17,14 +17,14 @@ import arrowMore from './imagem/More.png';
 import arrowMoreUp from './imagem/MoreUp.png';
 import thnks from './imagem/thnks.png';
 
-const Popup = () => {
+const Popup = ({ type="", tempo=30000}) => {
   const [isOpen, setIsOpen] = useState(false);
   const [currentScreen, setCurrentScreen] = useState(1);
 
   useEffect(() => {
     const interval = setInterval(() => {
       setIsOpen(true);
-    }, 1000);
+    }, tempo);
 
     return () => {
       clearInterval(interval);
@@ -108,7 +108,7 @@ const Popup = () => {
       case 2:
         try {
           await form2Schema.validate(form2Data, { abortEarly: false });
-          await sendFormData(form2Data);
+          await sendFormData(form2Data,type);
           setCurrentScreen(4);
         } catch (error) {
           console.error("Erro de validação:", error.errors);
@@ -118,7 +118,7 @@ const Popup = () => {
       case 3:
         try {
           await form3Schema.validate(form3Data, { abortEarly: false });
-          await sendFormData(form3Data);
+          await sendFormData(form3Data,type);
           setCurrentScreen(4);
         } catch (error) {
           console.error("Erro de validação:", error.errors);
@@ -138,12 +138,19 @@ const Popup = () => {
     return validationErrors;
   };
 
-  const sendFormData = async (formData) => {
+  const sendFormData = async (formData, type) => {
     try {
       const trackerParams = await DataLayer.getTrackerParams();
-
+      let source = "";
+  
+      if (type === "hits-popup-home") {
+        source = currentScreen === 2 ? "hits-popup-home-news" : "hits-popup-home-lead-despesas";
+      } else if (type === "hits-popup-despesas") {
+        source = currentScreen === 2 ? "hits-popup-despesas-news" : "hits-popup-despesas-lead";
+      }
+  
       await fetch(
-        process.env.NEXT_PUBLIC_HUB_BASE_URL+'/api/contact/send',
+        process.env.NEXT_PUBLIC_HUB_BASE_URL + '/api/contact/send',
         {
           method: "POST",
           headers: {
@@ -151,7 +158,8 @@ const Popup = () => {
           },
           body: JSON.stringify({
             ...formData,
-            type: "hits", // ou outro tipo dependendo do seu requisito
+            type: type,
+            source: source, // Adiciona a propriedade source
             ...trackerParams,
           }),
         }
@@ -292,9 +300,11 @@ const Popup = () => {
                     onChange={(e) => handleChangeForm3("companySize", e.target.value)}
                     style={{ border: '0.77px solid #D5D8DD', borderRadius: '18px', height: '37px', width: '136px', fontWeight: 700, fontSize: '13px', lineHeight: '21.62px', appearance: 'none', paddingRight: '30px', backgroundImage: `url(${isSelectOpen ? arrowMoreUp.src : arrowMore.src})`, backgroundRepeat: 'no-repeat', backgroundPosition: 'right center', backgroundSize: '31px 33px' }}
                   >
-                    <option>Pequena empresa</option>
-                    <option>Média empresa</option>
-                    <option>Grande empresa</option>
+                    <option>Pequena</option>
+                    <option>Micro</option>
+                    <option>Pequena</option>
+                    <option>Média</option>
+                    <option>Grande</option>
                   </select >
                 </div>
               </div>
@@ -312,10 +322,10 @@ const Popup = () => {
               <button onClick={handleSend} style={{ border: '0.77px solid', padding: '10px', display: 'flex', justifyContent: 'center', alignItems: 'center', borderRadius: '18px', height: '37px', width: '168px', fontSize: '14px', fontWeight: 500, lineHeight: '18.69px', background: 'red', color: 'white' }}>Enviar</button>
             </div>
             <div style={{ marginBottom: '10px', color: 'red', fontSize: '12px',position: 'absolute',top: '210px',width: '100%',display: 'flex',flexWrap: 'wrap',justifyContent: 'space-around',flexDirection: 'row', alignItems: 'stretch'}}>
+                <p>{form3Errors.fullName}</p>
                 <p>{form3Errors.email}</p>
-                <p>{form3Errors.email}</p>
-                <p>{form3Errors.email}</p>
-                <p>{form3Errors.email}</p>
+                <p>{form3Errors.whatsapp}</p>
+                <p>{form3Errors.cnpj}</p>
             </div>
           </div>
         )}

@@ -5,6 +5,7 @@ import { ProductProvider } from "../common/components/ProductContext";
 import { Product } from "../types";
 import { productsData } from "../common/lib/dataProduct";
 import ProductSection from "../common/components/Product";
+import Popup from "../common/components/Popup";
 
 interface ProductProps {
   products: Product[];
@@ -32,6 +33,7 @@ const Despesas: NextPage = () => {
           <ProductSection products={productsData} type="despesas"></ProductSection>
         </ProductProvider>
       </>
+      <Popup type="hits-popup-despesas" tempo={60000}></Popup>
     </MainTemplate>
   );
 };
