@@ -150,7 +150,7 @@ const Popup = ({ type="", tempo=30000}) => {
       }
   
       await fetch(
-        process.env.NEXT_PUBLIC_HUB_BASE_URL + '/api/contact/send',
+        `https://hub.ticketlog/api/contact/send`,
         {
           method: "POST",
           headers: {
