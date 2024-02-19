@@ -12,6 +12,7 @@
     "build-storybook": "build-storybook"
   },
   "dependencies": {
+    "@babel/eslint-parser": "^7.23.10",
     "@brazilian-utils/brazilian-utils": "^1.0.0-rc.12",
     "@types/react-responsive": "^8.0.8",
     "flowbite": "^1.5.3",

@@ -64,7 +64,6 @@ const Popup = ({ type="", tempo=30000}) => {
 
   const [form2Data, setForm2Data] = useState({
     email: "",
-    // ... (outros campos do form2)
   });
 
   const [form3Data, setForm3Data] = useState({
@@ -82,7 +81,6 @@ const Popup = ({ type="", tempo=30000}) => {
 
   const form2Schema = Yup.object().shape({
     email: Yup.string().email("E-mail inválido").required("Campo E-mail é obrigatório."),
-    // ... (outras validações do form2)
   });
 
   const form3Schema = Yup.object().shape({
@@ -94,7 +92,6 @@ const Popup = ({ type="", tempo=30000}) => {
       isValidMobilePhone
     ),
     cnpj: Yup.string().test("cnpj", "CNPJ inválido.", isValidCNPJ),
-    // ... (outras validações do form3)
   });
 
   const handleChangeForm2 = (field, value) => {
@@ -158,7 +155,7 @@ const Popup = ({ type="", tempo=30000}) => {
       }
   
       await fetch(
-        `https://server.dexdigital.com.br/ticketlog-hub/api/contact/send`,
+        `https://www.ticketlog.com.br/hub/api/contact/send`,
         {
           method: "POST",
           headers: {
@@ -167,20 +164,18 @@ const Popup = ({ type="", tempo=30000}) => {
           body: JSON.stringify({
             ...formData,
             type: type,
-            source: source, // Adiciona a propriedade source
+            source: source,
             ...trackerParams,
           }),
         }
       );
 
-      // Lógica adicional após o envio, se necessário
     } catch (error) {
       console.error("Erro ao enviar formulário:", error);
-      // Tratar erros no envio, exibindo mensagens, etc.
     }
   };
 
-  // Defina as URLs das imagens para desktop e mobile
+
   const desktopImage = currentScreen === 4 ? popupdeskthks.src : popupdesk.src;
   let mobileImage;
   let mobileHeight;
