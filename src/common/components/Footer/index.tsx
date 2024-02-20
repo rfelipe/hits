@@ -15,22 +15,22 @@ const Footer = () => {
   const links = [
     {
       label: 'Despesas',
-      href: '/despesas',
+      href: 'hits/despesas',
       color: 'bg-light-violet'
     },
     {
       label: 'Combustível',
-      href: '/combustivel',
+      href: 'hits/combustivel',
       color: 'bg-light-olive'
     },
     {
       label: 'Sobre a Edenred',
-      href: '/sobre',
+      href: 'hits/sobre',
       color: 'bg-light-pink'
     },
     {
       label: 'Perguntas Frequentes',
-      href: '/planos#faq',
+      href: 'hits/planos#faq',
       color: 'bg-light-pink'
     }
   ]
