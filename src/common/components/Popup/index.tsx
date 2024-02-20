@@ -343,7 +343,7 @@ const Popup = ({ type="", tempo=30000}) => {
                   <InputMask
                     className="font-ubuntu border border-gray-300 rounded-[20px] h-[37px] w-[165px] font-semibold text-xs leading-21.62 max-sm:w-[208px]"
                     type="text"
-                    mask="+99 99 99999-9999"
+                    mask="(99) 99999-9999"
                     value={form3Data.whatsapp}
                     onChange={(e) => handleChangeForm3("whatsapp", e.target.value)}
                     onFocus={() => setForm3WhatssFocus(true)}
