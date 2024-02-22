@@ -101,8 +101,8 @@ const Popup = ({ type="", tempo=30000}) => {
     ),
     cnpj: Yup.string().test("cnpj", "CNPJ inválido.", isValidCNPJ),
     companySize: Yup.string()
-    .required("Selecione o porte da empresa.")
-    .notOneOf([""], "Selecione o porte da empresa."),
+    .required("Selecione o porte.")
+    .notOneOf([""], "Selecione o porte."),
   });
 
   const handleChangeForm2 = (field, value) => {
@@ -355,7 +355,7 @@ const Popup = ({ type="", tempo=30000}) => {
                     onFocus={() => setForm3WhatssFocus(true)}
                     onBlur={() => setForm3WhatssFocus(false)}
                   />
-                  <div className="mb-[10px] text-red-500 text-[10px] max-sm:top-[160px] max-sm:left-[40%] absolute top-[100px] left-[11%]  flex">
+                  <div className="mb-[10px] text-red-500 text-[10px] max-sm:top-[160px] max-sm:left-[40%] absolute top-[100px] left-[12%]  flex">
                     {(form3Errors.whatsapp && !form3WhatssFocus) && (
                       <>
                         <div className="relative right-[5px] flex items-center">
@@ -377,7 +377,7 @@ const Popup = ({ type="", tempo=30000}) => {
                     onFocus={() => setForm3CnpjFocus(true)}
                     onBlur={() => setForm3CnpjFocus(false)}
                   />
-                  <div className="mb-[10px] text-red-500 text-[10px] max-sm:top-[222px] max-sm:left-[40%] absolute top-[100px] left-[52%] flex">
+                  <div className="mb-[10px] text-red-500 text-[10px] max-sm:top-[222px] max-sm:left-[40%] absolute top-[100px] left-[49%] flex">
                     {(form3Errors.cnpj && !form3CnpjFocus) && (
                       <>
                         <div className="relative right-[5px] flex items-center">
@@ -411,7 +411,7 @@ const Popup = ({ type="", tempo=30000}) => {
                     <option value="Média">Média</option>
                     <option value="Grande">Grande</option>
                   </select>
-                  <div className="mb-[10px] text-red-500 text-[10px] max-sm:top-[277px] max-sm:left-[40%] absolute top-[110px] left-[70%] flex">
+                  <div className="mb-[10px] text-red-500 text-[10px] max-sm:top-[277px] max-sm:left-[40%] absolute top-[127px] left-[75%] flex">
                   {(form3Errors.companySize && !form3CompanyFocus) && (
                     <>
                       <div className="relative right-[5px] flex items-center">
@@ -424,7 +424,7 @@ const Popup = ({ type="", tempo=30000}) => {
                 </div>
               </div>
             </form>
-            <div className="flex justify-space-evenly mt-[4px]">
+            <div className="flex justify-space-evenly mt-[10px]">
               <PrivacyPolicy />
             </div>
             <div className="flex flex-nowrap justify-center gap-[20px] max-sm:gap-[10px] mt-[10px] max-sm:flex-wrap  max-sm:flex-col-reverse max-sm:content-center">
