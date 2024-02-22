@@ -31,10 +31,10 @@ const Document = () => (
           `,
         }}
       />  
-      <script
+      {/* <script
         src="https://cdn.data2.media/file/powercord-0.0.1.min.js"
-        type="text/javascript"></script>
-      <script
+        type="text/javascript"></script> */}
+      {/* <script
         dangerouslySetInnerHTML={{
           __html: `
             (function () {
@@ -156,7 +156,7 @@ const Document = () => (
             })();
           `,
         }}
-      />
+      /> */}
     </Head>
     <body>
       <noscript>

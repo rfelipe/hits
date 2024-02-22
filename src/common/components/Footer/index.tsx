@@ -115,7 +115,10 @@ const Footer = () => {
             </a>
           </div>
         </div>
-      </div>      
+      </div>     
+      <a href="https://api.whatsapp.com/send?phone=5511974221381&text=Ol%C3%A1,%20estou%20com%20d%C3%BAvidas%20sobre%20os%20Hits%20da%20Edenred,%20pode%20me%20ajudar?‌" target="_blank" rel="noreferrer" className="fixed bottom-5 right-5 z-50 translate-y-0 hover:-translate-y-[8px] transition ease-in-out duration-300">
+        <Image src={WhatsAppIcon}  width={50} height={50}></Image>
+      </a> 
     </footer>
   );
 };
