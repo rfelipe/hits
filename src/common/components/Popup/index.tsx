@@ -94,7 +94,17 @@ const Popup = ({ type="", tempo=30000}) => {
   const form3Schema = Yup.object().shape({
     fullName: Yup.string().matches(/^[A-Za-z ]*$/, 'Nome inválido').required("Insira seu nome."),
     email: Yup.string().email("E-mail inválido").required("Insira seu e-mail."),
-    whatsapp: Yup.string().matches(/^\(\d{2}\) \d{5}-\d{4}$/, "WhatsApp inválido."),
+    whatsapp: Yup.string()
+    .test("valid-phone", "Número inválido", (value?: string) => {
+
+      const numericValue = value.replace(/\D/g, '');
+      const isValidLength = numericValue.length === 10 || numericValue.length === 11;
+      const hasOptionalNinthDigit = numericValue.length === 11 && numericValue.charAt(2) === '9';
+      const hasRepeatedOrSequentialNumbers = /^(?:(\d)\1{4,})$/.test(numericValue) || /^(?:012345|12345|23456|34567|45678|56789|67890)$/.test(numericValue);
+      
+      return isValidLength && hasOptionalNinthDigit && !hasRepeatedOrSequentialNumbers;
+    })
+    .required("Insira seu telefone"),
     cnpj: Yup.string()
       .test("valid-cnpj", "CNPJ inválido", (value?: string) => {
         return isValidCNPJ(value || "");
