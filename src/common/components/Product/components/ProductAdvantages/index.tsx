@@ -30,7 +30,7 @@ const AdvantagesSection: React.FC<AdvantageProps> = ({ advantages }) => {
         const nextIndex = (currentIconIndex + 1) % advantages[0].items.length;
         setSelectedData(advantages[0].items[nextIndex]);
       }
-    }, 3000);
+    }, 2000);
 
     return () => clearInterval(intervalId);
   }, [advantages, selectedData, disableAutoChange]);
