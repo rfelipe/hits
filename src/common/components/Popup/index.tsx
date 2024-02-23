@@ -92,14 +92,14 @@ const Popup = ({ type="", tempo=30000}) => {
   });
 
   const form3Schema = Yup.object().shape({
-    fullName: Yup.string().required("Insira seu nome."),
+    fullName: Yup.string().matches(/^[A-Za-z ]*$/, 'Nome inválido').required("Insira seu nome."),
     email: Yup.string().email("E-mail inválido").required("Insira seu e-mail."),
-    whatsapp: Yup.string().test(
-      "whatsapp",
-      "Whats inválido.",
-      isValidMobilePhone
-    ),
-    cnpj: Yup.string().test("cnpj", "CNPJ inválido.", isValidCNPJ),
+    whatsapp: Yup.string().matches(/^\(\d{2}\) \d{5}-\d{4}$/, "WhatsApp inválido."),
+    cnpj: Yup.string()
+      .test("valid-cnpj", "CNPJ inválido", (value?: string) => {
+        return isValidCNPJ(value || "");
+      })
+      .required("Insira seu cnpj"),
     companySize: Yup.string()
     .required("Selecione o porte.")
     .notOneOf([""], "Selecione o porte."),
