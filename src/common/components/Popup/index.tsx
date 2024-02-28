@@ -461,8 +461,8 @@ const Popup = ({ type="", tempo=30000}) => {
               <p className="text-center max-sm:text-[16px] max-sm:text-[16px]">Pronto, agora é só aguardar!</p>
               <p className="text-center max-sm:text-[16px] max-sm:text-[16px]">
               {formType === "news"
-              ? "Fique de olho no seu e-mail para não perder nenhuma novidade 😊!<p>"
-              : "Em breve entraremos em contato com você, e poderá ser via phone ou ligação. Fique de olho."}
+              ? "Fique de olho no seu e-mail para não perder nenhuma novidade 😊!"
+              : "Em breve entraremos em contato com você, e poderá ser via phone ou ligação. Fique de olho!😊"}
               </p>
             </div>
           </div>
