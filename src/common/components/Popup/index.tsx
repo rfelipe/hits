@@ -75,16 +75,16 @@ const Popup = ({ type="", tempo=30000}) => {
   });
 
   const [form3Data, setForm3Data] = useState({
-    fullName: "",
+    name: "",
     email: "",
-    whatsapp: "",
+    phone: "",
     cnpj: "",
-    companySize: "",
+    porte: "",
   });
 
   const [form2Errors, setForm2Errors] = useState<{ email?: string }>({});
   
-  const [form3Errors, setForm3Errors] = useState<{ fullName?: string; email?: string; whatsapp?: string; cnpj?: string; companySize?:string }>({});
+  const [form3Errors, setForm3Errors] = useState<{ name?: string; email?: string; phone?: string; cnpj?: string; porte?:string }>({});
 
 
   const form2Schema = Yup.object().shape({
@@ -98,9 +98,9 @@ const Popup = ({ type="", tempo=30000}) => {
   };
 
   const form3Schema = Yup.object().shape({
-    fullName: Yup.string().matches(/^[A-Za-z ]*$/, 'Nome inválido').required("Insira seu nome."),
+    name: Yup.string().matches(/^[A-Za-z ]*$/, 'Nome inválido').required("Insira seu nome."),
     email: Yup.string().email("E-mail inválido").required("Insira seu e-mail."),
-    whatsapp: Yup.string()
+    phone: Yup.string()
     .test("valid-phone", "Número inválido", (value?: string) => {
       const restOfNumber = value.slice(2);
       const hasRepeatedOrSequentialNumbers = /(.)\1{2,}/.test(restOfNumber);
@@ -113,7 +113,7 @@ const Popup = ({ type="", tempo=30000}) => {
         return isValidCNPJ(value || "");
       })
       .required("Insira seu cnpj"),
-    companySize: Yup.string()
+    porte: Yup.string()
     .required("Selecione o porte.")
     .notOneOf([""], "Selecione o porte."),
   });
@@ -318,18 +318,18 @@ const Popup = ({ type="", tempo=30000}) => {
                   <input
                     className="font-ubuntu border border-gray-300 rounded-[20px] h-[37px] w-[215px] font-semibold text-xs leading-21.62 max-sm:w-[208px]"
                     type="text"
-                    value={form3Data.fullName}
-                    onChange={(e) => handleChangeForm3("fullName", e.target.value)}
+                    value={form3Data.name}
+                    onChange={(e) => handleChangeForm3("name", e.target.value)}
                     onFocus={() => setForm3Focus(true)}
                     onBlur={() => setForm3Focus(false)}
                   />
                   <div className="mb-[10px] text-red-500 text-[10px] max-sm:top-[35px] max-sm:left-[40%]  absolute top-[35px] left-[23%]   flex">
-                  {(form3Errors.fullName && !form3Focus) && (
+                  {(form3Errors.name && !form3Focus) && (
                     <>
                       <div className="relative right-[5px] flex items-center">
                         <Image src={error} alt="Seta" />
                       </div>
-                      {form3Errors.fullName}
+                      {form3Errors.name}
                     </>
                   )}
                   </div>
@@ -358,23 +358,23 @@ const Popup = ({ type="", tempo=30000}) => {
               </div>
               <div className="flex gap-[16px] mt-[4px] max-sm:flex-wrap max-sm:gap-[0px]">
                 <div>
-                  <label className="font-ubuntu text-gray-600 text-xs mb-[2px] max-sm:text-[10px]">WhatsApp</label>
+                  <label className="font-ubuntu text-gray-600 text-xs mb-[2px] max-sm:text-[10px]">phone</label>
                   <InputMask
                     className="font-ubuntu border border-gray-300 rounded-[20px] h-[37px] w-[156px] font-semibold text-xs leading-21.62 max-sm:w-[208px]"
                     type="text"
                     mask="(99) 99999-9999"
-                    value={form3Data.whatsapp}
-                    onChange={(e) => handleChangeForm3("whatsapp", e.target.value)}
+                    value={form3Data.phone}
+                    onChange={(e) => handleChangeForm3("phone", e.target.value)}
                     onFocus={() => setForm3WhatssFocus(true)}
                     onBlur={() => setForm3WhatssFocus(false)}
                   />
                   <div className="mb-[10px] text-red-500 text-[10px] max-sm:top-[160px] max-sm:left-[40%] absolute top-[100px] left-[12%]  flex">
-                    {(form3Errors.whatsapp && !form3WhatssFocus) && (
+                    {(form3Errors.phone && !form3WhatssFocus) && (
                       <>
                         <div className="relative right-[5px] flex items-center">
                           <Image src={error} alt="Seta" />
                         </div>
-                        {form3Errors.whatsapp}
+                        {form3Errors.phone}
                       </>
                     )}
                   </div>
@@ -411,8 +411,8 @@ const Popup = ({ type="", tempo=30000}) => {
                       backgroundPosition: 'right center',
                       backgroundSize: '31px 33px',
                     }}
-                    value={form3Data.companySize}
-                    onChange={(e) => handleChangeForm3("companySize", e.target.value)}
+                    value={form3Data.porte}
+                    onChange={(e) => handleChangeForm3("porte", e.target.value)}
                     onClick={handleSelectClick}
                     onFocus={() => setForm3CompanyFocus(true)}
                     onBlur={() => setForm3CompanyFocus(false)}
@@ -425,12 +425,12 @@ const Popup = ({ type="", tempo=30000}) => {
                     <option value="Grande">Grande</option>
                   </select>
                   <div className="mb-[10px] text-red-500 text-[10px] max-sm:top-[277px] max-sm:left-[40%] absolute top-[127px] left-[75%] flex">
-                  {(form3Errors.companySize && !form3CompanyFocus) && (
+                  {(form3Errors.porte && !form3CompanyFocus) && (
                     <>
                       <div className="relative right-[5px] flex items-center">
                         <Image src={error} alt="Seta" />
                       </div>
-                      {form3Errors.companySize}
+                      {form3Errors.porte}
                     </>
                   )}
                   </div>
@@ -458,10 +458,11 @@ const Popup = ({ type="", tempo=30000}) => {
               <Image src={thnks} alt="Seta" className="w-51 h-51" />
             </div>
             <div className="flex justify-around">
+              <p className="text-center max-sm:text-[16px] max-sm:text-[16px]">Pronto, agora é só aguardar!</p>
               <p className="text-center max-sm:text-[16px] max-sm:text-[16px]">
               {formType === "news"
-              ? "Pronto, agora é só aguardar! Fique de olho no seu e-mail para não perder nenhuma novidade 😊!"
-              : "Pronto, agora é só aguardar! Em breve entraremos em contato com você, e poderá ser via WhatsApp ou ligação. Fique de olho."}
+              ? "Fique de olho no seu e-mail para não perder nenhuma novidade 😊!<p>"
+              : "Em breve entraremos em contato com você, e poderá ser via phone ou ligação. Fique de olho."}
               </p>
             </div>
           </div>
