@@ -426,7 +426,6 @@ const Popup = ({ type="", tempo=30000}) => {
                     <option value="">Porte da empresa</option>
                     <option value="Pequena">Pequena</option>
                     <option value="Micro">Micro</option>
-                    <option value="Pequena">Pequena</option>
                     <option value="Média">Média</option>
                     <option value="Grande">Grande</option>
                   </select>
