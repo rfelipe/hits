@@ -226,8 +226,14 @@ const Popup = ({ type="", tempo=30000}) => {
 
   return (
     <div className={`fixed ${isOpen ? 'block' : 'hidden'} inset-0 bg-black bg-opacity-50 z-50 max-sm:w-[100%] max-sm:h-[100%]`}>
-      <div className={`absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 p-20 h-[352px] max-sm:w-[100%]`} 
-      style={{ backgroundImage: `url(${isMobile ? mobileImage : desktopImage})`,backgroundRepeat: 'no-repeat', backgroundSize: 'contain', height: `${isMobile ? mobileHeight : '352px'}`, width: `${currentScreen === 4 ? '645px' : `${isMobile ? 'inherit' : '945px'}`}`}}>
+      <div className={`absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 p-20 h-[352px]`} 
+        style={{
+          backgroundImage: `url(${isMobile ? mobileImage : desktopImage})`,
+          backgroundRepeat: 'no-repeat',
+          backgroundSize: 'contain',
+          height: `${isMobile ? mobileHeight : '352px'}`,
+          width: `${isMobile ? 'inherit' : (currentScreen === 4 ? '645px' : '945px')}`
+        }}>
         {isOpen && (
           <div
             className="absolute top-2 right-[50px] max-sm:right-[0] max-sm:left-[275px] cursor-pointer w-[35px] h-[35px] rounded-full bg-white flex items-center justify-center shadow-md"
@@ -457,12 +463,17 @@ const Popup = ({ type="", tempo=30000}) => {
             <div className="flex justify-around mb-[10px]">
               <Image src={thnks} alt="Seta" className="w-51 h-51" />
             </div>
-            <div className="flex justify-around">
+            <div className="block justify-around">
               <p className="text-center max-sm:text-[16px] max-sm:text-[16px]">Pronto, agora é só aguardar!</p>
-              <p className="text-center max-sm:text-[16px] max-sm:text-[16px]">
-              {formType === "news"
-              ? "Fique de olho no seu e-mail para não perder nenhuma novidade 😊!"
-              : "Em breve entraremos em contato com você, e poderá ser via phone ou ligação. Fique de olho!😊"}
+              <p className="text-center max-sm:text-[16px] max-sm:text-[16px] max-sm:w-[unset] max-sm:ml-[unset] w-[534px] ml-[-16px]">
+                {formType === "news"
+                ? "Fique de olho no seu e-mail para não perder nenhuma novidade 😊!"
+                : "Em breve entraremos em contato com você, e poderá ser via whatsapp  ou ligação."}
+              </p>
+              <p className="text-center max-sm:text-[16px] max-sm:text-[16px] max-sm:w-[unset] max-sm:ml-[unset] w-[534px] ml-[-16px]">
+                {formType === "news"
+                ? ""
+                : "Fique de olho!😊"}
               </p>
             </div>
           </div>
