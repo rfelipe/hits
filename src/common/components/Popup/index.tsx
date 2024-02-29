@@ -181,7 +181,7 @@ const Popup = ({ type="", tempo=30000}) => {
       }
   
       await fetch(
-        `https://www.ticketlog.com.br/hub/api/contact/send`,
+        `https://server.dexdigital.com.br/ticketlog-hub/api/contact/send`,
         {
           method: "POST",
           headers: {
