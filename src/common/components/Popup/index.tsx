@@ -181,7 +181,7 @@ const Popup = ({ type="", tempo=30000}) => {
       }
   
       await fetch(
-        `https://server.dexdigital.com.br/ticketlog-hub/api/contact/send`,
+        `https://www.ticketlog.com.br/hub/api/contact/send`,
         {
           method: "POST",
           headers: {
@@ -364,7 +364,7 @@ const Popup = ({ type="", tempo=30000}) => {
               </div>
               <div className="flex gap-[16px] mt-[4px] max-sm:flex-wrap max-sm:gap-[0px]">
                 <div>
-                  <label className="font-ubuntu text-gray-600 text-xs mb-[2px] max-sm:text-[10px]">phone</label>
+                  <label className="font-ubuntu text-gray-600 text-xs mb-[2px] max-sm:text-[10px]">Whatsapp</label>
                   <InputMask
                     className="font-ubuntu border border-gray-300 rounded-[20px] h-[37px] w-[156px] font-semibold text-xs leading-21.62 max-sm:w-[208px]"
                     type="text"
